@@ -1,4 +1,5 @@
 import ExampleOfDynamicButton from "@/components/examples/ExampleOfDynamicButton";
+import { Friends } from "@/components/user/Friends";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Link href="/test-route">Test Route</Link>
       <Link href="/questionnaire">Questionnaire</Link>
       <Link href="/trip-propositions">Trip Propositions</Link>
+      <Friends />
     </div>
   );
 }
