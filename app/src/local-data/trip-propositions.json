@@ -1,0 +1,278 @@
+[
+  {
+    "id": "trip-1",
+    "name": "Przygoda po Europie Środkowej",
+    "totalPrice": 659.49,
+    "duration": 7,
+    "destinations": [
+      {
+        "order": 1,
+        "transport": {
+          "from": {
+            "country": "Polska",
+            "region": "Dolnośląskie",
+            "city": "Wrocław"
+          },
+          "fromDate": "2025-10-10",
+          "destination": {
+            "country": "Niemcy",
+            "region": "Berlin",
+            "city": "Berlin"
+          },
+          "destinationDate": "2025-10-10",
+          "price": 89.99,
+          "name": "Autobus FlixBus"
+        },
+        "accommodation": null
+      },
+      {
+        "order": 2,
+        "transport": {
+          "from": {
+            "country": "Niemcy",
+            "region": "Berlin",
+            "city": "Berlin"
+          },
+          "fromDate": "2025-10-12",
+          "destination": {
+            "country": "Czechy",
+            "region": "Praga",
+            "city": "Praga"
+          },
+          "destinationDate": "2025-10-12",
+          "price": 59.00,
+          "name": "Pociąg RegioJet"
+        },
+        "accommodation": {
+          "location": {
+            "country": "Czechy",
+            "region": "Praga",
+            "city": "Praga"
+          },
+          "date": "2025-10-12",
+          "price": 180.00,
+          "beds": 2,
+          "name": "Prague Central Suite",
+          "description": "Nowoczesny apartament w centrum Pragi, idealny punkt wypadowy do zwiedzania miasta.",
+          "images": [
+            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "transport": {
+          "from": {
+            "country": "Czechy",
+            "region": "Praga",
+            "city": "Praga"
+          },
+          "fromDate": "2025-10-15",
+          "destination": {
+            "country": "Polska",
+            "region": "Dolnośląskie",
+            "city": "Wrocław"
+          },
+          "destinationDate": "2025-10-15",
+          "price": 120.50,
+          "name": "Autobus FlixBus"
+        },
+        "accommodation": null
+      }
+    ]
+  },
+  {
+    "id": "trip-2",
+    "name": "Słoneczna Hiszpania",
+    "totalPrice": 829.50,
+    "duration": 5,
+    "destinations": [
+      {
+        "order": 1,
+        "transport": {
+          "from": {
+            "country": "Polska",
+            "region": "Małopolskie",
+            "city": "Kraków"
+          },
+          "fromDate": "2025-10-12",
+          "destination": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Barcelona"
+          },
+          "destinationDate": "2025-10-12",
+          "price": 149.50,
+          "name": "Lot Ryanair"
+        },
+        "accommodation": {
+          "location": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Barcelona"
+          },
+          "date": "2025-10-12",
+          "price": 320.00,
+          "beds": 2,
+          "name": "Casa Sol Boutique Apartment",
+          "description": "Stylowy apartament w centrum Barcelony, idealny dla pary lub małej rodziny. Blisko plaży i atrakcji turystycznych.",
+          "images": [
+            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png",
+            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "transport": {
+          "from": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Barcelona"
+          },
+          "fromDate": "2025-10-14",
+          "destination": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Girona"
+          },
+          "destinationDate": "2025-10-14",
+          "price": 25.00,
+          "name": "Pociąg Renfe"
+        },
+        "accommodation": {
+          "location": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Girona"
+          },
+          "date": "2025-10-13",
+          "price": 210.50,
+          "beds": 4,
+          "name": "Girona Rural Escape",
+          "description": "Urokliwy domek na wsi z widokiem na góry, idealny dla rodzin i grup przyjaciół.",
+          "images": [
+            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png",
+            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "transport": {
+          "from": {
+            "country": "Hiszpania",
+            "region": "Katalonia",
+            "city": "Girona"
+          },
+          "fromDate": "2025-10-16",
+          "destination": {
+            "country": "Polska",
+            "region": "Małopolskie",
+            "city": "Kraków"
+          },
+          "destinationDate": "2025-10-16",
+          "price": 124.50,
+          "name": "Lot Ryanair"
+        },
+        "accommodation": null
+      }
+    ]
+  },
+  {
+    "id": "trip-3",
+    "name": "Włoskie Alpy i Jeziora",
+    "totalPrice": 745.00,
+    "duration": 6,
+    "destinations": [
+      {
+        "order": 1,
+        "transport": {
+          "from": {
+            "country": "Polska",
+            "region": "Dolnośląskie",
+            "city": "Wrocław"
+          },
+          "fromDate": "2025-10-10",
+          "destination": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Bergamo"
+          },
+          "destinationDate": "2025-10-10",
+          "price": 99.00,
+          "name": "Lot Ryanair"
+        },
+        "accommodation": {
+          "location": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Bergamo"
+          },
+          "date": "2025-10-10",
+          "price": 195.00,
+          "beds": 2,
+          "name": "Bergamo Historic Center",
+          "description": "Klimatyczny apartament w starym mieście z widokiem na góry i historyczne centrum.",
+          "images": [
+            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png"
+          ]
+        }
+      },
+      {
+        "order": 2,
+        "transport": {
+          "from": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Bergamo"
+          },
+          "fromDate": "2025-10-13",
+          "destination": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Chiavenna"
+          },
+          "destinationDate": "2025-10-13",
+          "price": 35.00,
+          "name": "Autobus regionalny"
+        },
+        "accommodation": {
+          "location": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Chiavenna"
+          },
+          "date": "2025-10-13",
+          "price": 280.00,
+          "beds": 2,
+          "name": "Alpine Vista Chiavenna",
+          "description": "Malownicza miejscowość na północy Włoch. Poczuj włoski klimat i odwiedź pobliski wodospad.",
+          "images": [
+            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+          ]
+        }
+      },
+      {
+        "order": 3,
+        "transport": {
+          "from": {
+            "country": "Włochy",
+            "region": "Lombardia",
+            "city": "Chiavenna"
+          },
+          "fromDate": "2025-10-16",
+          "destination": {
+            "country": "Polska",
+            "region": "Dolnośląskie",
+            "city": "Wrocław"
+          },
+          "destinationDate": "2025-10-16",
+          "price": 136.00,
+          "name": "Lot Ryanair przez Mediolan"
+        },
+        "accommodation": null
+      }
+    ]
+  }
+]
