@@ -1,4 +1,4 @@
-import { ContextItem } from "@/features/user-context/ContextItem";
+import { ContextItem } from "@/types/context-item";
 
 export class Repository {
   private data: ContextItem[] = [];
