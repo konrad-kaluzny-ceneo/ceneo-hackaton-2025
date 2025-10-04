@@ -1,8 +1,4 @@
-export interface Location {
-  country: string;
-  region: string;
-  city: string;
-}
+import { Location } from './location';
 
 export interface Accommodation {
   location: Location;
