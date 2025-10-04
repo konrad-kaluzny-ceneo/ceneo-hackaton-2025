@@ -115,7 +115,7 @@ function GeneratingTripsContent() {
         {error ? (
           <div className="space-y-4">
             <div className="text-6xl">😔</div>
-            <h1 className="text-2xl font-semibold text-gray-900">Coś poszło nie tak</h1>
+            <h1 className="text-xl font-semibold text-gray-900">Coś poszło nie tak</h1>
             <p className="text-base text-gray-600">{error}</p>
             <button onClick={() => window.location.reload()} className="mt-6 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
               Spróbuj ponownie
@@ -127,7 +127,7 @@ function GeneratingTripsContent() {
               <div className="flex justify-center">
                 <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
               </div>
-              <h1 className="text-2xl font-semibold text-gray-900">Generujemy propozycje wycieczek...</h1>
+              <h1 className="text-xl font-semibold text-gray-900">Generujemy propozycje spersonalizowanych wycieczek...</h1>
               <p className="text-base text-gray-600">Czekaj cierpliwie, to może chwilę potrwać</p>
             </div>
           </div>
