@@ -52,9 +52,10 @@ export default function QuestionnairePage() {
 
   const isAnswerSelected = selectedAnswers[questions[currentQuestion].id] !== undefined;
 
+  const newLocal = "w-full flex flex-col gap-8 max-w-2xl";
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
-      <div className="w-full flex flex-col gap-8">
+      <div className={newLocal}>
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
           <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
@@ -85,7 +86,7 @@ export default function QuestionnairePage() {
                   transition-all duration-200 hover:shadow-md
                   ${selectedAnswers[questions[currentQuestion].id] === answer ? "bg-primary text-white hover:bg-primary" : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"}
                 `}
-                onClick={() => handleAnswerSelect(answer)}
+                onClick={() => { handleAnswerSelect(answer); handleNext(); }}
               >
                 {answer}
               </Badge>
@@ -94,9 +95,9 @@ export default function QuestionnairePage() {
         </div>
 
         {/* Przycisk dalej */}
-        <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
+        {/* <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
           {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
