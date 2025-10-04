@@ -28,5 +28,26 @@
         "accommodationId": null
       }
     ]
+  },
+
+  "history": {
+    "id": "trip-set-001",
+    "name": "Weekend w Karlowych Warach – relaks i historia",
+    "totalPrice": 2847.23,
+    "startDate": "2025-10-09T12:15:00Z",
+    "duration": 7,
+    "image": "https://cdn.tripzaza.com/pl/destinations/wp-content/uploads/2018/11/6-Karlovy_Vary_-_Market_Colonnade-e1541130456260.jpg",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "set2-1",
+        "accommodationId": ["set2-1", "set2-2"]
+      },
+      {
+        "order": 2,
+        "transportId": "set2-2",
+        "accommodationId": null
+      }
+    ]
   }
 }

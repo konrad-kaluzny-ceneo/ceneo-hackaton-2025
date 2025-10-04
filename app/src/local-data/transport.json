@@ -40,6 +40,27 @@
     "type": "flight"
   },
 
+  {
+    "id": "set2-1",
+    "fromLocationId": "pol-kraków-30cfd729",
+    "fromDate": "2025-08-16T12:15:00Z",
+    "toLocationId": "cze-karlow-554817df",
+    "toDate": "2025-08-16T15:46:00Z",
+    "price": 110,
+    "name": "Ryanair",
+    "type": "flight"
+  },
+  {
+    "id": "set2-2",
+    "fromLocationId": "cze-karlow-554817df",
+    "fromDate": "2025-08-18T12:15:00Z",
+    "toLocationId": "pol-kraków-30cfd729",
+    "toDate": "2025-08-19T15:46:00Z",
+    "price": 220,
+    "name": "Ryanair",
+    "type": "flight"
+  },
+
 
 
   {
