@@ -10,6 +10,8 @@ import Image from "next/image";
 import { DEFAULT_IMAGE } from "@/config/images";
 import MoodRatingModal from "./MoodRatingModal";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
+import Link from "next/link";
+import { getLocationIdByCity } from "@/lib/locationMapper";
 
 interface ActiveTripCardProps {
   trip: ActiveTrip;
@@ -27,7 +29,7 @@ function getAirportCode(city: string): string {
     Bergamo: "BGY",
     Berlin: "BER",
     Barcelona: "BCN",
-    Chiavenna: "CHV",
+    Kraków: "KRA",
     Praga: "PRG",
     Mediolan: "MIL",
   };
@@ -98,7 +100,17 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             {trip.currentLocation && (
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-600">
                 <MapPin className="w-4 h-4" />
-                <span>Aktualnie w: {trip.currentLocation}</span>
+                <span>Aktualnie w: </span>
+                {getLocationIdByCity(trip.currentLocation) ? (
+                  <Link 
+                    href={`/location/${getLocationIdByCity(trip.currentLocation)}`}
+                    className="font-semibold text-primary hover:underline"
+                  >
+                    {trip.currentLocation}
+                  </Link>
+                ) : (
+                  <span className="font-semibold">{trip.currentLocation}</span>
+                )}
               </div>
             )}
 
@@ -113,7 +125,16 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                   {trip.experiences.map((experience) => (
                     <div key={experience.id} className="bg-gray-50 rounded-lg p-3">
                       <div className="flex items-center justify-between mb-1">
-                        <span className="font-medium text-sm">{experience.location}</span>
+                        {getLocationIdByCity(experience.location) ? (
+                          <Link 
+                            href={`/location/${getLocationIdByCity(experience.location)}`}
+                            className="font-medium text-sm text-primary hover:underline"
+                          >
+                            {experience.location}
+                          </Link>
+                        ) : (
+                          <span className="font-medium text-sm">{experience.location}</span>
+                        )}
                         <span className="text-xs text-gray-500">{experience.date}</span>
                       </div>
                       <div className="flex items-center gap-3 mb-2">

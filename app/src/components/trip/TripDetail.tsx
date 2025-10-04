@@ -22,7 +22,7 @@ function getAirportCode(city: string): string {
     Bergamo: "BGY",
     Berlin: "BER",
     Barcelona: "BCN",
-    Chiavenna: "CHV",
+    Kraków: "KRA",
     Praga: "PRG",
     Mediolan: "MIL",
   };

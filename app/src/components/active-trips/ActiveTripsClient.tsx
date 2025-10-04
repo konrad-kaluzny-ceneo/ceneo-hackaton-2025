@@ -8,7 +8,7 @@ import ActiveTripCard from "./ActiveTripCard";
 const mockActiveTrips: ActiveTrip[] = [
   {
     id: "active-trip-1",
-    name: "Wrocław → Chiavenna",
+    name: "Wrocław → Kraków",
     totalPrice: 1250,
     duration: 3,
     image: "/images/trip-train.webp",
@@ -25,7 +25,7 @@ const mockActiveTrips: ActiveTrip[] = [
     experiences: [
       {
         id: "exp-1",
-        location: "Chiavenna",
+        location: "Kraków",
         date: "2024-02-16",
         moodRating: {
           peacefulness: 98,
@@ -38,7 +38,7 @@ const mockActiveTrips: ActiveTrip[] = [
         tags: ["góry", "spokój", "natura"],
       },
     ],
-    currentLocation: "Chiavenna",
+    currentLocation: "Kraków",
     destinations: [
       {
         order: 1,
@@ -77,17 +77,17 @@ const mockActiveTrips: ActiveTrip[] = [
         transport: {
           from: { country: "Włochy", region: "Lombardia", city: "Mediolan" },
           fromDate: "2024-02-16T09:00:00Z",
-          destination: { country: "Włochy", region: "Lombardia", city: "Chiavenna" },
+          destination: { country: "Włochy", region: "Lombardia", city: "Kraków" },
           destinationDate: "2024-02-16T11:00:00Z",
           price: 30,
           name: "Pociąg",
         },
         accommodation: {
-          location: { country: "Włochy", region: "Lombardia", city: "Chiavenna" },
+          location: { country: "Włochy", region: "Lombardia", city: "Kraków" },
           date: "2024-02-16",
           price: 150,
           beds: 2,
-          name: "Hotel Chiavenna",
+          name: "Hotel Kraków",
           description: "Malownicze włoskie miasteczko w Alpach, znane z historycznego centrum i pięknych górskich krajobrazów.",
           images: [],
         },
