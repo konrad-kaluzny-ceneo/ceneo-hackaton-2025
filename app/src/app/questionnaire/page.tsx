@@ -87,7 +87,7 @@ export default function QuestionnairePage() {
           }),
         }),
       });
-      redirect('/trip-propositions');
+      redirect(`/generating-trips?userId=${user.id}`);
     }
   };
 
