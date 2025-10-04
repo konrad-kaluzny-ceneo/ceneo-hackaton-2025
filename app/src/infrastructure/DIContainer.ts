@@ -8,10 +8,14 @@ type Constructor<T = any> = new (...args: any[]) => T;
 type InjectionToken<T = any> = Constructor<T> | symbol;
 
 // Mapa tokenów do instancji - obsługuje zarówno klasy jak i symbole
-const providerMap = new Map<InjectionToken, unknown>([
-  [Repository, new Repository()],
-  [AnswerHandler, new AnswerHandler()],
-]);
+const providerMap = new Map<InjectionToken, unknown>();
+
+// Inicjalizacja providerów w odpowiedniej kolejności
+// Najpierw Repository (bez zależności)
+providerMap.set(Repository, new Repository());
+
+// Potem AnswerHandler (zależy od Repository)
+providerMap.set(AnswerHandler, new AnswerHandler());
 
 /**
  * Funkcja inject podobna do tej z Angulara
@@ -19,7 +23,7 @@ const providerMap = new Map<InjectionToken, unknown>([
  *
  * @example
  * // Używając klasy jako tokena
- * const repository = inject(InMemoryRepository);
+ * const repository = inject(Repository);
  * const answerHandler = inject(AnswerHandler);
  */
 export function inject<T>(token: Constructor<T>): T;
