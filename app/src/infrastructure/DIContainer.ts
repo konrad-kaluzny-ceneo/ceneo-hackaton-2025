@@ -1,5 +1,7 @@
 import { AnswerHandler } from "@/features/user-context/AnswerHandler";
 import { Repository } from "./Repository";
+import { TaskQueue } from "./TaskQueue";
+import { WebSocketManager } from "./WebSocketManager";
 
 // Typ dla konstruktora klasy
 type Constructor<T = any> = new (...args: any[]) => T;
@@ -11,8 +13,17 @@ type InjectionToken<T = any> = Constructor<T> | symbol;
 const providerMap = new Map<InjectionToken, unknown>();
 
 // Inicjalizacja providerów w odpowiedniej kolejności
-// Najpierw Repository (bez zależności)
+// Najpierw usługi bez zależności
 providerMap.set(Repository, new Repository());
+
+const taskQueue = new TaskQueue();
+const wsManager = new WebSocketManager();
+
+// Wire up TaskQueue and WebSocketManager
+taskQueue.setWebSocketManager(wsManager);
+
+providerMap.set(TaskQueue, taskQueue);
+providerMap.set(WebSocketManager, wsManager);
 
 // Potem AnswerHandler (zależy od Repository)
 providerMap.set(AnswerHandler, new AnswerHandler());
