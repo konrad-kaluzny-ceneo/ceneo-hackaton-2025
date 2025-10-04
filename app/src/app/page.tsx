@@ -27,13 +27,6 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center h-screen flex-col gap-4">
-      <ExampleOfDynamicButton label="Click me" />
-      <Link href="/test-route">Test Route</Link>
-      <Link href="/start">Start</Link>
-      <Link href="/questionnaire">Questionnaire</Link>
-      <Link href="/trip-propositions">Trip Propositions</Link>
-      <Link href="/trip-history">Trip History</Link>
-      <Friends />
     </div>
   );
 }

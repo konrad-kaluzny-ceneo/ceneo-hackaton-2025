@@ -22,3 +22,5 @@ npx shadcn@latest add button
 - [example of route api (server)](./src/app/api/test-route/route.ts)
 - [example of using route api (client)](./src/app/test-route/page.tsx)
 - [example of dynamic button](./src/components/examples/ExampleOfDynamicButton.tsx)
+
+test
