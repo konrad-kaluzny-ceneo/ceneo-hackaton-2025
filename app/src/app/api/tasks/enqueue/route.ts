@@ -1,10 +1,10 @@
+import { AttractionSearchService } from "@/features/rag";
 import { callAI } from "@/infrastructure/AIService";
 import { inject } from "@/infrastructure/DIContainer";
 import { Repository } from "@/infrastructure/Repository";
 import { TaskQueue } from "@/infrastructure/TaskQueue";
 import { useUserId } from "@/infrastructure/UserAccessor";
 import { NextRequest, NextResponse } from "next/server";
-import fs from 'fs';
 
 const repository = inject(Repository);
 
@@ -13,8 +13,9 @@ const repository = inject(Repository);
  * Enqueues a long-running task
  * Body: { userId: string }
  */
-export async function POST(request: NextRequest) {
+export async function POST() {
   const taskQueue = inject(TaskQueue);
+  const attractionSearchService = inject(AttractionSearchService);
   const userId = await useUserId();
 
   if (!userId) {
@@ -22,22 +23,18 @@ export async function POST(request: NextRequest) {
   }
 
   const taskId = taskQueue.enqueue(async () => {
-    const locationsRaw = fs.readFileSync('./src/local-data/locations.json', 'utf-8');
-    const transportRaw = fs.readFileSync('./src/local-data/transport.json', 'utf-8');
-    const accommodationRaw = fs.readFileSync('./src/local-data/accommodation.json', 'utf-8');
+    const userContext = repository.getContextItems(userId);
 
-    // Limit each list to max 20 elements
-    const locations = JSON.stringify(JSON.parse(locationsRaw).slice(0, 20));
-    const transport = JSON.stringify(JSON.parse(transportRaw).slice(0, 20));
-    const accommodation = JSON.stringify(JSON.parse(accommodationRaw).slice(0, 20));
+    const attractionResult = await attractionSearchService.searchAttractions(
+      userContext.filter(x => x.question == 'Description')?.[0]?.answer || ''
+    );
 
     const aiGeneratedTrips = await callAI(
       `
       Generate a list of 3 trip propositions for a user in JSON format.
       Some data:
-      ${locations}
-      ${transport}
-      ${accommodation}
+      ${JSON.stringify(userContext)}
+      ${JSON.stringify(attractionResult)}
       Ensure the JSON is properly formatted.
       Example:
       [
