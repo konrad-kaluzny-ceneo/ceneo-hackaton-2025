@@ -38,10 +38,12 @@ export default function TripBox({ trip }: TripBoxProps) {
             {trip.destinations
               .map((dest: Destination, idx: number) => {
                 const cities = [];
-                if (idx === 0) {
+                if (idx === 0 && dest.transport) {
                   cities.push(dest.transport.from.city);
                 }
-                cities.push(dest.transport.destination.city);
+                if (dest.transport) {
+                  cities.push(dest.transport.destination.city);
+                }
                 return cities;
               })
               .flat()
