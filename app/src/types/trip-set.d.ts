@@ -5,9 +5,5 @@ export interface TripSet {
   image: string;
   fullPrice: number;
 
-  transport: Transport[];
-  orderOfTransport: string[];
-  
-  accommodation: Accommodation[];
-  orderOfAccommodation: string[];
+  orderOfTransportsAndAccommodations: string[];
 }
