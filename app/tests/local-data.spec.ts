@@ -9,7 +9,7 @@ import {
 } from './type-validators';
 
 const loadJsonData = (filename: string) => {
-  const filePath = join(process.cwd(), 'public', 'local-data', filename);
+  const filePath = join(process.cwd(), 'src', 'local-data', filename);
   return JSON.parse(readFileSync(filePath, 'utf-8'));
 };
 

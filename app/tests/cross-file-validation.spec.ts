@@ -6,7 +6,7 @@ import { Transport } from "@/types/transport";
 import { Accommodation } from "@/types/accommodation";
 
 const loadJsonData = (filename: string) => {
-  const filePath = join(process.cwd(), "public", "local-data", filename);
+  const filePath = join(process.cwd(), "src", "local-data", filename);
   return JSON.parse(readFileSync(filePath, "utf-8"));
 };
 
