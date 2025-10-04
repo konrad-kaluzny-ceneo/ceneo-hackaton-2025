@@ -1,25 +1,28 @@
 [
   {
+    "id": "9w78ey6r-4d5e-9f6a-7b8c9d0e1f2a",
     "fromLocationId":  "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "fromDate": "2025-10-10",
+    "fromDate": "2025-10-10T00:00:00Z",
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "destinationDate": "2025-10-10",
+    "toDate": "2025-10-10T00:00:00Z",
     "price": 89.99,
     "name": "Autobus FlixBus"
   },
   {
+    "id": "1a2b3c4d-4d5e-9f6a-7b8c9d0e1f2a",
     "fromLocationId": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "fromDate": "2025-10-12",
+    "fromDate": "2025-10-12T00:00:00Z",
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "destinationDate": "2025-10-12",
+    "toDate": "2025-10-12T00:00:00Z",
     "price": 149.50,
     "name": "Lot Ryanair"
   },
   {
+    "id": "5f6g7h8i-4d5e-9f6a-7b8c9d0e1f2a",
     "fromLocationId": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "fromDate": "2025-10-15",
+    "fromDate": "2025-10-15T00:00:00Z",
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "destinationDate": "2025-10-15",
+    "toDate": "2025-10-15T00:00:00Z",
     "price": 59.00,
     "name": "Pociąg RegioJet"
   }
