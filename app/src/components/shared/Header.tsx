@@ -14,7 +14,7 @@ export default function Header({ showBackButton = true, title }: HeaderProps) {
   const pathname = usePathname();
   
   // Ukryj przycisk wstecz na głównej stronie i stronie z propozycjami
-  const shouldShowBackButton = showBackButton && pathname !== "/" && pathname !== "/trip-propositions";
+  const shouldShowBackButton = showBackButton && pathname !== "/" && pathname !== "/trip-propositions" && pathname !== "/start";
 
   const handleGoBack = () => {
     router.back();
