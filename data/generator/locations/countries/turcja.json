@@ -1,0 +1,524 @@
+[
+  {
+    "id": "tur-stambu-cf40402e",
+    "location": {
+      "country": "TURCJA",
+      "region": "Marmara",
+      "city": "Stambuł"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "tur-kapado-35e0090f",
+    "location": {
+      "country": "TURCJA",
+      "region": "Anatolia Środkowa",
+      "city": "Kapadocja"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "tur-antaly-addd82a9",
+    "location": {
+      "country": "TURCJA",
+      "region": "Morze Śródziemne",
+      "city": "Antalya"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "tur-bodrum-e29bf620",
+    "location": {
+      "country": "TURCJA",
+      "region": "Morze Egejskie",
+      "city": "Bodrum"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "tur-pamukk-c7428907",
+    "location": {
+      "country": "TURCJA",
+      "region": "Morze Egejskie",
+      "city": "Pamukkale"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "tur-safran-8346a311",
+    "location": {
+      "country": "TURCJA",
+      "region": "Morze Czarne",
+      "city": "Safranbolu"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  }
+]

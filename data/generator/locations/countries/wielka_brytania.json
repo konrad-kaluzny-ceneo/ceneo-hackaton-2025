@@ -1,0 +1,524 @@
+[
+  {
+    "id": "wie-londyn-569a4cb1",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Anglia",
+      "city": "Londyn"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wie-edynbu-bb8590c2",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Szkocja",
+      "city": "Edynburg"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wie-manche-9b129b1c",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Anglia",
+      "city": "Manchester"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wie-bath-942f8568",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Anglia",
+      "city": "Bath"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wie-cotswo-e619eabe",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Anglia",
+      "city": "Cotswolds"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wie-york-e4a56301",
+    "location": {
+      "country": "WIELKA_BRYTANIA",
+      "region": "Anglia",
+      "city": "York"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  }
+]

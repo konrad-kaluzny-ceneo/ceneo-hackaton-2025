@@ -1,0 +1,524 @@
+[
+  {
+    "id": "wło-rzym-9cc4083b",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Lacjum",
+      "city": "Rzym"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wło-wenecj-4784b9be",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Wenecja Euganejska",
+      "city": "Wenecja"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wło-floren-0f3d7c89",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Toskania",
+      "city": "Florencja"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wło-mediol-a11b1099",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Lombardia",
+      "city": "Mediolan"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wło-portof-f831d478",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Liguria",
+      "city": "Portofino"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "wło-sangim-98dd23c3",
+    "location": {
+      "country": "WŁOCHY",
+      "region": "Toskania",
+      "city": "San Gimignano"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  }
+]

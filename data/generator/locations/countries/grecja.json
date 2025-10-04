@@ -1,0 +1,524 @@
+[
+  {
+    "id": "gre-ateny-0c0dc1fb",
+    "location": {
+      "country": "GRECJA",
+      "region": "Attyka",
+      "city": "Ateny"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "gre-santor-936c49b4",
+    "location": {
+      "country": "GRECJA",
+      "region": "Cyklady",
+      "city": "Santorini"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "gre-mykono-fca7e102",
+    "location": {
+      "country": "GRECJA",
+      "region": "Cyklady",
+      "city": "Mykonos"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "gre-delphi-6fad434f",
+    "location": {
+      "country": "GRECJA",
+      "region": "Grecja Środkowa",
+      "city": "Delphi"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "gre-nafpli-2885fa3f",
+    "location": {
+      "country": "GRECJA",
+      "region": "Peloponez",
+      "city": "Nafplio"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "gre-meteor-72fdd196",
+    "location": {
+      "country": "GRECJA",
+      "region": "Tesalia",
+      "city": "Meteora"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  }
+]

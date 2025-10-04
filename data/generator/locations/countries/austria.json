@@ -1,0 +1,524 @@
+[
+  {
+    "id": "aus-wiedeń-a53c0761",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Wiedeń",
+      "city": "Wiedeń"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "aus-salzbu-a8400084",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Salzburg",
+      "city": "Salzburg"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "aus-innsbr-477eb9f2",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Tyrol",
+      "city": "Innsbruck"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "aus-hallst-3dfb3866",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Górna Austria",
+      "city": "Hallstatt"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "aus-badisc-93aa9002",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Górna Austria",
+      "city": "Bad Ischl"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  },
+  {
+    "id": "aus-melk-4b152e69",
+    "location": {
+      "country": "AUSTRIA",
+      "region": "Dolna Austria",
+      "city": "Melk"
+    },
+    "attractions": [
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": null,
+        "description": null,
+        "price": null,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": {
+        "density": null,
+        "temp": null
+      },
+      "2": {
+        "density": null,
+        "temp": null
+      },
+      "3": {
+        "density": null,
+        "temp": null
+      },
+      "4": {
+        "density": null,
+        "temp": null
+      },
+      "5": {
+        "density": null,
+        "temp": null
+      },
+      "6": {
+        "density": null,
+        "temp": null
+      },
+      "7": {
+        "density": null,
+        "temp": null
+      },
+      "8": {
+        "density": null,
+        "temp": null
+      },
+      "9": {
+        "density": null,
+        "temp": null
+      },
+      "10": {
+        "density": null,
+        "temp": null
+      },
+      "11": {
+        "density": null,
+        "temp": null
+      },
+      "12": {
+        "density": null,
+        "temp": null
+      }
+    }
+  }
+]

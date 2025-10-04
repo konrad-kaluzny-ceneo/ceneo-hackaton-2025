@@ -1,0 +1,9 @@
+"attractions": [ 
+    { "name": nazwa, "description": opis, "price": cena / 0, "images": [] }, 
+    ... 
+],
+"conditionsInMonth": { 
+    "1": { "density": null, "temp": null }, 
+    ... 
+    "12": { "density": null, "temp": null } 
+} 

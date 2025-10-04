@@ -6,7 +6,8 @@
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "toDate": "2025-10-10T00:00:00Z",
     "price": 89.99,
-    "name": "Autobus FlixBus"
+    "name": "Pociąg RegioJet",
+    "type": "train"
   },
   {
     "id": "1a2b3c4d-4d5e-9f6a-7b8c9d0e1f2a",
@@ -15,7 +16,8 @@
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "toDate": "2025-10-12T00:00:00Z",
     "price": 149.50,
-    "name": "Lot Ryanair"
+    "name": "Lot Ryanair",
+    "type": "flight"
   },
   {
     "id": "5f6g7h8i-4d5e-9f6a-7b8c9d0e1f2a",
@@ -24,6 +26,7 @@
     "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "toDate": "2025-10-15T00:00:00Z",
     "price": 59.00,
-    "name": "Pociąg RegioJet"
+    "name": "Pociąg RegioJet",
+    "type": "train"
   }
 ]
