@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import { useState, useEffect, Suspense } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import CreatedByOthers from '@/components/custom-trips/CreatedByOthers';
+import { useState, useEffect, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
+import SortFilters from "@/components/sort-filters/SortFilters";
 
-type TaskStatus = 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED';
+type TaskStatus = "PENDING" | "RUNNING" | "COMPLETED" | "FAILED";
 
 interface Task {
   id: string;
@@ -17,12 +18,12 @@ function GeneratingTripsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [task, setTask] = useState<Task | null>(null);
-  const [error, setError] = useState<string>('');
+  const [error, setError] = useState<string>("");
 
   useEffect(() => {
     const initializeTask = async () => {
-      const urlTaskId = searchParams.get('taskId');
-      
+      const urlTaskId = searchParams.get("taskId");
+
       if (urlTaskId) {
         connectToTask(urlTaskId);
       } else {
@@ -34,83 +35,85 @@ function GeneratingTripsContent() {
   }, []);
 
   const createNewTask = async () => {
-    try {      
-      const response = await fetch('/api/tasks/enqueue', {
-        method: 'POST',
+    try {
+      const response = await fetch("/api/tasks/enqueue", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json'
-        }
+          "Content-Type": "application/json",
+        },
       });
 
       const data = await response.json();
 
       if (data.success && data.taskId) {
         const url = new URL(window.location.href);
-        url.searchParams.set('taskId', data.taskId);
-        window.history.pushState({}, '', url);
-        
+        url.searchParams.set("taskId", data.taskId);
+        window.history.pushState({}, "", url);
+
         connectToTask(data.taskId);
       } else {
-        setError(data.error || 'Failed to start generating trips');
+        setError(data.error || "Failed to start generating trips");
       }
     } catch (err) {
-      console.error('Error creating task:', err);
-      setError('Failed to start generating trips');
+      console.error("Error creating task:", err);
+      setError("Failed to start generating trips");
     }
   };
 
   const connectToTask = (taskId: string) => {
     fetch(`/api/tasks/status?taskId=${taskId}`)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         if (data.success && data.task) {
           setTask(data.task);
-          
-          if (data.task.status === 'COMPLETED') {
+
+          if (data.task.status === "COMPLETED") {
             redirectToResults(data.task.result);
           }
         }
       })
-      .catch(err => {
-        console.error('Failed to fetch initial task state:', err);
+      .catch((err) => {
+        console.error("Failed to fetch initial task state:", err);
       });
 
     const eventSource = new EventSource(`/api/tasks/ws?taskId=${taskId}`);
-    
+
     eventSource.onmessage = (event) => {
       try {
         const message = JSON.parse(event.data);
-        if (message.type === 'TASK_UPDATE' && message.task) {
+        if (message.type === "TASK_UPDATE" && message.task) {
           setTask(message.task);
-          
-          if (message.task.status === 'COMPLETED') {
+
+          if (message.task.status === "COMPLETED") {
             eventSource.close();
             redirectToResults(message.task.result);
-          } else if (message.task.status === 'FAILED') {
+          } else if (message.task.status === "FAILED") {
             eventSource.close();
-            setError(message.task.error || 'Failed to generate trips');
+            setError(message.task.error || "Failed to generate trips");
           }
         }
       } catch (err) {
-        console.error('SSE message error:', err);
+        console.error("SSE message error:", err);
       }
     };
 
     eventSource.onerror = () => {
-      console.error('SSE connection error');
+      console.error("SSE connection error");
       // Don't set error here as EventSource will auto-reconnect
     };
   };
 
   const redirectToResults = (result: any) => {
     if (result) {
-      sessionStorage.setItem('tripPropositionsResult', JSON.stringify(result));
+      sessionStorage.setItem("tripPropositionsResult", JSON.stringify(result));
     }
-    router.push('/trip-propositions');
+    router.push("/trip-propositions");
   };
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen p-4 gap-12 w-full">
+      <SortFilters />
+
       <div className="flex flex-col w-full text-center space-y-6">
         {error ? (
           <div className="space-y-4">
@@ -133,7 +136,7 @@ function GeneratingTripsContent() {
           </div>
         )}
       </div>
-      <div className="flex w-full">
+      <div className="flex flex-col gap-4 w-full">
         <CreatedByOthers />
       </div>
     </div>
@@ -142,23 +145,21 @@ function GeneratingTripsContent() {
 
 export default function GeneratingTripsPage() {
   return (
-    <Suspense fallback={
-      <div className="flex justify-center items-center min-h-screen p-4">
-        <div className="w-full text-center space-y-6">
-          <div className="space-y-6">
-            <div className="flex justify-center">
-              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center min-h-screen p-4">
+          <div className="w-full text-center space-y-6">
+            <div className="space-y-6">
+              <div className="flex justify-center">
+                <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+              </div>
+              <h1 className="text-2xl font-semibold text-gray-900">Ładowanie...</h1>
+              <p className="text-base text-gray-600">Przygotowujemy wszystko dla Ciebie</p>
             </div>
-            <h1 className="text-2xl font-semibold text-gray-900">
-              Ładowanie...
-            </h1>
-            <p className="text-base text-gray-600">
-              Przygotowujemy wszystko dla Ciebie
-            </p>
           </div>
         </div>
-      </div>
-    }>
+      }
+    >
       <GeneratingTripsContent />
     </Suspense>
   );
