@@ -1,0 +1,16 @@
+[
+  {
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "locationId": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "date": "2025-10-12",
+    "price": 320.00,
+    "beds": 2,
+    "name": "Casa Sol Boutique Apartment",
+    "description": "Stylowy apartament w centrum Barcelony, idealny dla pary lub małej rodziny. Blisko plaży i atrakcji turystycznych.",
+    "images": [
+      "https://example.com/images/casa-sol-1.jpg",
+      "https://example.com/images/casa-sol-2.jpg"
+    ]
+  },
+  ...
+]

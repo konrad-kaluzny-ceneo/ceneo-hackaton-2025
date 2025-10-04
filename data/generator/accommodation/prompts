@@ -1,0 +1,5 @@
+pliki które tworzysz zawierać mają strukturę która jest łatwa do odczytania dla agenta ai. 
+
+1. przeanalizuj strukture json pliku locations.json,stwórz skrypt w pliku generarate.py, utwórz tablice z 20 losowymi nazwami hoteli, oraz stałą z ilością dni na jaką wygenerować kalendarza wolnych pokoi - ustaw na 60. dla każdego miasta po kolei z locations uruchom 8 pętli - w każdej pętli wylosuj nazwe hotelu z listy nazw, następnie wykonaj kolejną pętle (ilość dni generowania)/2 razy - to będą okienka wolnego pokoju - dla każdego takiego okna wylosuj datę początku okna między dziś a dziś+maxilośćdni, liczbe łóżek(beds) - potem losuj n dni dostępności od 1-20 i wykonaj n zapisów w pliku accomodation.json w formie zgodnym z kontraktem accomodation.contract - wygeneruj niepowtarzalne id, locationId to id lokalizacji miasta z locations, wylosuj cene za noc (między 80 - 400) dla każdego dnia zapisz date dnia (data początku okna + n), opis i zdjęcia powinny być losowane z zestawów opis+tablica url  - przygotuj 5 takich przykładowych zestawów opis+zdjęcia
+
+
