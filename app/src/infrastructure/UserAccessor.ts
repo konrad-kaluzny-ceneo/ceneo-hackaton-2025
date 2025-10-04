@@ -1,7 +1,9 @@
-import { NextRequest } from "next/server";
+import { cookies } from "next/headers";
 
-export function useUserId(request: NextRequest) {
-  const userId = request.cookies.get("userId")?.value;
+export async function useUserId() {
+  const cookieStore = await cookies();
+  const userId = cookieStore.get("userId")?.value;
+  console.log("userId", userId);
 
   if (!userId) {
     throw new Error("Missing userId");

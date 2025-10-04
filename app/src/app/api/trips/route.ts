@@ -4,7 +4,7 @@ import { useUserId } from "@/infrastructure/UserAccessor";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const userId = useUserId(request);
+  const userId = await useUserId();
   const getTripsHandler = inject(GetUserTripsHandler);
   const trips = await getTripsHandler.handle(userId);
 

@@ -4,7 +4,7 @@ import { useUserId } from "@/infrastructure/UserAccessor";
 import { NextRequest } from "next/server";
 
 export async function POST(request: NextRequest) {
-  const userId = useUserId(request);
+  const userId = await useUserId();
   const body = await request.json();
   const answerHandler = inject(AnswerHandler);
 
