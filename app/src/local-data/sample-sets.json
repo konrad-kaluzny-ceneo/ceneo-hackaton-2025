@@ -1,0 +1,32 @@
+{
+  "future": {
+    "id": "trip-set-001",
+    "name": "Magiczne Trio: Kraków - Praga - Brno",
+    "totalPrice": 2847.23,
+    "startDate": "2025-10-09T12:15:00Z",
+    "duration": 7,
+    "image": "https://gte-gcms.images.tshiftcdn.com/resize=width:2048,fit:max/bfDSvRnSiar1ypUJD7nf?crop=1.91:1&width=1200&fit=crop",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "set1-1",
+        "accommodationId": "set1-1"
+      },
+      {
+        "order": 1,
+        "transportId": "set1-1",
+        "accommodationId": "set1-1"
+      },
+      {
+        "order": 1,
+        "transportId": "set1-1",
+        "accommodationId": "set1-1"
+      },
+      {
+        "order": 1,
+        "transportId": "set1-1",
+        "accommodationId": "set1-1"
+      }
+    ]
+  }
+}
