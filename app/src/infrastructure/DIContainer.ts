@@ -2,6 +2,7 @@ import { AnswerHandler } from "@/features/user-context/AnswerHandler";
 import { Repository } from "./Repository";
 import { TaskQueue } from "./TaskQueue";
 import { WebSocketManager } from "./WebSocketManager";
+import { GetUserTripsHandler } from "@/features/trips/GetUserTrips";
 
 // Typ dla konstruktora klasy
 type Constructor<T = any> = new (...args: any[]) => T;
@@ -28,6 +29,9 @@ providerMap.set(WebSocketManager, wsManager);
 // Potem AnswerHandler (zależy od Repository)
 providerMap.set(AnswerHandler, new AnswerHandler());
 
+// GetUserTripsHandler needs lazy initialization to avoid circular dependency
+// It will be created on first access in the inject function
+
 /**
  * Funkcja inject podobna do tej z Angulara
  * Umożliwia wstrzykiwanie zależności za pomocą klas lub symboli
@@ -40,7 +44,16 @@ providerMap.set(AnswerHandler, new AnswerHandler());
 export function inject<T>(token: Constructor<T>): T;
 export function inject<T>(token: symbol): T;
 export function inject<T>(token: InjectionToken<T>): T {
-  const instance = providerMap.get(token);
+  let instance = providerMap.get(token);
+
+  // Lazy initialization for classes that have circular dependencies
+  if (instance === undefined && typeof token === 'function') {
+    // Check if this is GetUserTripsHandler
+    if (token === GetUserTripsHandler) {
+      instance = new GetUserTripsHandler();
+      providerMap.set(token, instance);
+    }
+  }
 
   if (instance === undefined) {
     const tokenName = typeof token === 'function' ? token.name : token.toString();
