@@ -1,0 +1,18 @@
+{
+  "POLSKA": [
+    {"city": "Kraków", "region": "Małopolskie"},
+    {"city": "Warszawa", "region": "Mazowieckie"},
+    {"city": "Gdańsk", "region": "Pomorskie"},
+    {"city": "Zakopane", "region": "Małopolskie"},
+    {"city": "Wrocław", "region": "Dolnośląskie"},
+    {"city": "Kazimierz Dolny", "region": "Lubelskie"}
+  ],
+  "CZECHY": [
+    {"city": "Praga", "region": "Praga"},
+    {"city": "Český Krumlov", "region": "Bohemia Południowa"},
+    {"city": "Brno", "region": "Morawy Południowe"},
+    {"city": "Karlowe Wary", "region": "Karlowe Wary"},
+    {"city": "Telč", "region": "Wysoczyzna"},
+    {"city": "Kutná Hora", "region": "Bohemia Środkowa"}
+  ]
+}
