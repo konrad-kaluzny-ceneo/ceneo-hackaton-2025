@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useUser } from "@/infrastructure/FrontendUserAccessor";
+import { redirect } from "next/navigation";
 
 type Question = {
   id: number;
@@ -59,6 +60,7 @@ export default function QuestionnairePage() {
   const [selectedAnswers, setSelectedAnswers] = useState<
     Record<number, string>
   >({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleAnswerSelect = (answer: string) => {
     setSelectedAnswers((prev) => ({
@@ -71,6 +73,7 @@ export default function QuestionnairePage() {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
     } else {
+      setIsLoading(true);
       await fetch(`/api/context?userId=${user.id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -84,6 +87,7 @@ export default function QuestionnairePage() {
           }),
         }),
       });
+      redirect('/trip-propositions');
     }
   };
 
@@ -147,7 +151,7 @@ export default function QuestionnairePage() {
         {/* Przycisk dalej */}
         <Button
           onClick={handleNext}
-          disabled={!isAnswerSelected}
+          disabled={!isAnswerSelected || isLoading}
           className="w-full py-6 text-base bg-[#3D5A4C] hover:bg-[#2D4A3C] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}

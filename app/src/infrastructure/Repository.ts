@@ -1,7 +1,6 @@
 import { ContextItem } from "@/features/user-context/ContextItem";
-import { IRepository } from "../features/IRepository";
 
-export class InMemoryRepository implements IRepository {
+export class Repository {
   private data: ContextItem[] = [];
 
   public addContextItem(item: ContextItem): void {
