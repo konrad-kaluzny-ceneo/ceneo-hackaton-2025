@@ -1,3 +1,4 @@
+import { callAI } from '@/infrastructure/AIService';
 import { inject } from '@/infrastructure/DIContainer';
 import { Repository } from '@/infrastructure/Repository';
 import { TaskQueue } from '@/infrastructure/TaskQueue';
@@ -26,15 +27,44 @@ export async function POST(request: Request) {
     }
 
     const taskId = taskQueue.enqueue(async () => {
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const aiGeneratedTrips = await callAI(`
+            Generate a list of 3 trip propositions for a user in JSON format. Each trip should include:
+            - destination (string)
+            - duration in days (integer)
+            - budget in USD (integer)
+            - activities (array of strings)
+            Ensure the JSON is properly formatted.
+            Example:
+            {
+                "trips": [
+                    {
+                        "destination": "Paris, France",
+                        "duration": 5,
+                        "budget": 1500,
+                        "activities": ["Eiffel Tower visit", "Louvre Museum tour", "Seine River cruise"]
+                    },
+                    {
+                        "destination": "Kyoto, Japan",
+                        "duration": 7,
+                        "budget": 2000,
+                        "activities": ["Temple visits", "Tea ceremony", "Geisha district tour"]
+                    },
+                    {
+                        "destination": "New York City, USA",
+                        "duration": 4,
+                        "budget": 1200,
+                        "activities": ["Statue of Liberty", "Broadway show", "Central Park walk"]
+                    }
+                ]
+            }
+            `);
 
-        const aiGeneratedTrips = { trips: [] };
 
         repository.addTripProposition({
             id: generateId(),
             userId: userId,
             taskId: taskId,
-            data: aiGeneratedTrips,
+            data: JSON.parse(aiGeneratedTrips),
             createdAt: new Date()
         });
 
