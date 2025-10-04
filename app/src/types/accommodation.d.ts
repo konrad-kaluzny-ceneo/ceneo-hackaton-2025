@@ -1,7 +1,6 @@
-import { Location } from './location';
-
 export interface Accommodation {
-  location: Location;
+  id: string;
+  locationId: string;
   date: string;
   price: number;
   beds: number;
