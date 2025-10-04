@@ -4,6 +4,7 @@
     "name": "Przygoda po Europie Środkowej",
     "totalPrice": 659.49,
     "duration": 7,
+    "image": "/images/mountains.webp",
     "destinations": [
       {
         "order": 1,
@@ -55,7 +56,7 @@
           "name": "Prague Central Suite",
           "description": "Nowoczesny apartament w centrum Pragi, idealny punkt wypadowy do zwiedzania miasta.",
           "images": [
-            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+            "/images/mountains.webp"
           ]
         }
       },
@@ -86,6 +87,7 @@
     "name": "Słoneczna Hiszpania",
     "totalPrice": 829.50,
     "duration": 5,
+    "image": "/images/mountains.webp",
     "destinations": [
       {
         "order": 1,
@@ -117,8 +119,8 @@
           "name": "Casa Sol Boutique Apartment",
           "description": "Stylowy apartament w centrum Barcelony, idealny dla pary lub małej rodziny. Blisko plaży i atrakcji turystycznych.",
           "images": [
-            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png",
-            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png"
+            "/images/mountains.webp",
+            "/images/mountains.webp"
           ]
         }
       },
@@ -152,8 +154,8 @@
           "name": "Girona Rural Escape",
           "description": "Urokliwy domek na wsi z widokiem na góry, idealny dla rodzin i grup przyjaciół.",
           "images": [
-            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png",
-            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+            "/images/mountains.webp",
+            "/images/mountains.webp"
           ]
         }
       },
@@ -184,6 +186,7 @@
     "name": "Włoskie Alpy i Jeziora",
     "totalPrice": 745.00,
     "duration": 6,
+    "image": "/images/mountains.webp",
     "destinations": [
       {
         "order": 1,
@@ -215,7 +218,7 @@
           "name": "Bergamo Historic Center",
           "description": "Klimatyczny apartament w starym mieście z widokiem na góry i historyczne centrum.",
           "images": [
-            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png"
+            "/images/mountains.webp"
           ]
         }
       },
@@ -249,7 +252,7 @@
           "name": "Alpine Vista Chiavenna",
           "description": "Malownicza miejscowość na północy Włoch. Poczuj włoski klimat i odwiedź pobliski wodospad.",
           "images": [
-            "/images/626125574894b1e73b8c07ae99727538dbc51ba0.png"
+            "/images/mountains.webp"
           ]
         }
       },

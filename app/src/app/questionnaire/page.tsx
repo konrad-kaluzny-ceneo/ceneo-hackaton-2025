@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { useUser } from "@/infrastructure/FrontendUserAccessor";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
@@ -18,7 +17,6 @@ type Question = {
 const questions: Question[] = require("@/local-data/questions.json");
 
 export default function QuestionnairePage() {
-  const user = useUser();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [isLoading, setIsLoading] = useState(false);
@@ -35,7 +33,7 @@ export default function QuestionnairePage() {
       setCurrentQuestion((prev) => prev + 1);
     } else {
       setIsLoading(true);
-      await fetch(`/api/context?userId=${user.id}`, {
+      await fetch(`/api/context`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -48,7 +46,7 @@ export default function QuestionnairePage() {
           }),
         }),
       });
-      redirect(`/generating-trips?userId=${user.id}`);
+      redirect(`/generating-trips`);
     }
   };
 
@@ -56,7 +54,7 @@ export default function QuestionnairePage() {
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
-      <div className="w-full max-w-md flex flex-col gap-8">
+      <div className="w-full flex flex-col gap-8">
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
           <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
