@@ -3,8 +3,8 @@ import { inject } from "@/infrastructure/DIContainer";
 import { Repository } from "@/infrastructure/Repository";
 import { TaskQueue } from "@/infrastructure/TaskQueue";
 import { useUserId } from "@/infrastructure/UserAccessor";
-import { RAGService } from "@/infrastructure/RAGService";
 import { NextRequest, NextResponse } from "next/server";
+import fs from 'fs';
 
 const repository = inject(Repository);
 
@@ -22,43 +22,22 @@ export async function POST(request: NextRequest) {
   }
 
   const taskId = taskQueue.enqueue(async () => {
-    // Pobierz kontekst użytkownika z kwestionariusza
-    const userContext = repository.getContextItems(userId);
-    
-    // Użyj RAG z embeddingami do pobrania semantycznie relevantnych danych
-    const ragService = inject(RAGService);
-    const relevantData = await ragService.getRelevantData(userContext, 20);
-    const formattedData = ragService.formatForAI(relevantData);
+    const locationsRaw = fs.readFileSync('./src/local-data/locations.json', 'utf-8');
+    const transportRaw = fs.readFileSync('./src/local-data/transport.json', 'utf-8');
+    const accommodationRaw = fs.readFileSync('./src/local-data/accomodation.json', 'utf-8');
 
-    // Stwórz kontekst użytkownika dla AI
-    const userContextSummary = userContext
-      .map(item => `Q: ${item.question}\nA: ${item.answer}`)
-      .join('\n\n');
+    // Limit each list to max 20 elements
+    const locations = JSON.stringify(JSON.parse(locationsRaw).slice(0, 20));
+    const transport = JSON.stringify(JSON.parse(transportRaw).slice(0, 20));
+    const accommodation = JSON.stringify(JSON.parse(accommodationRaw).slice(0, 20));
 
     const aiGeneratedTrips = await callAI(
       `
       Generate a list of 3 trip propositions for a user in JSON format.
-      
-      USER PREFERENCES (from questionnaire):
-      ${userContextSummary}
-      
-      AVAILABLE DATA (filtered based on user preferences):
-      
-      Locations:
-      ${formattedData.locations}
-      
-      Transport:
-      ${formattedData.transport}
-      
-      Accommodation:
-      ${formattedData.accommodation}
-      
-      IMPORTANT:
-      - Create trips that match the user's preferences from the questionnaire
-      - Use only the locations, transport, and accommodation provided above
-      - Ensure prices are realistic and match the data provided
-      - Consider the user's budget, activity level, and other preferences
-      
+      Some data:
+      ${locations}
+      ${transport}
+      ${accommodation}
       Ensure the JSON is properly formatted.
       Example:
       [
