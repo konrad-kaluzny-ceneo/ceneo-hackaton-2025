@@ -12,7 +12,7 @@ export default function CreatedByOthers() {
         <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
         <p className="text-primary text-2xl font-semibold">Stworzone przez innych</p>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-6">
         {tripsFromOthers.map((trip: TripSet) => (
           <TripBox trip={trip} key={trip.id} />
         ))}

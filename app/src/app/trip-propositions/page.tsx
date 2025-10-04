@@ -5,6 +5,7 @@ import Link from "next/link";
 import TripBox from "@/components/trip/TripBox";
 import { Destination, TripSet } from "@/types/trip-set";
 import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
+import SortFilters from "@/components/sort-filters/SortFilters";
 
 async function getTripPropositions() {
     const res = await fetch('/api/trips');
@@ -31,8 +32,9 @@ export default function TripPropositionsPage() {
   }, []);
 
   return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-primary text-4xl mb-2 font-bold">Here.</h1>
+    <main className="min-h-screen p-8">      
+      <SortFilters />
+      
       <p className="text-lg mb-8 text-gray-600">Specjalnie dla Ciebie</p>
 
       <div className="flex flex-col gap-8">
