@@ -1,7 +1,7 @@
 [
   {
-    "guid": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "location": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "locationId": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "date": "2025-10-12",
     "price": 320.00,
     "beds": 2,
@@ -13,8 +13,8 @@
     ]
   },
   {
-    "guid": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "location": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "locationId": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "date": "2025-10-13",
     "price": 210.50,
     "beds": 4,
@@ -26,8 +26,8 @@
     ]
   },
   {
-    "guid": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
-    "location": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "locationId": "3458f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
     "date": "2025-10-14",
     "price": 150.00,
     "beds": 1,
