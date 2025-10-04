@@ -1,9 +1,8 @@
 export interface TripSet {
-  id: number;
+  id: string;
   name: string;
   description: string;
   image: string;
   fullPrice: number;
-
   orderOfTransportsAndAccommodations: string[];
 }
