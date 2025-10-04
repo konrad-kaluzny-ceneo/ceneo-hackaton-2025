@@ -1,0 +1,20 @@
+pliki które tworzysz zawierać mają strukturę która jest łatwa do odczytania dla agenta ai. 
+
+1. w pliku countries.agent stwórz liste 20 popularnych krajów dla turystów
+
+2. w pliku cities.json wygeneruj listę (4-10) atrakcyjnych dla turystów miast dla każdego z krajów z pliku countries.agent
+zróżnicój miasta pod turystów zainteresowanych różnymi rodzajami wypoczynku, takimi jak:
+- ciszy i spokoju, 
+- wielu atrakcji i zabawy,
+- historii i zwiedzania
+
+dane wyjściowe mają zawerać tylko liste krajów z podlistą miast i regionu gdzie leży miasto zgodnie z kontraktem w pliku cities.contract
+
+3. stwórz w plik u generator.py skrypt który dla każdego miasta w pliku cities.json stworzy element json zgodny z kontraktem w locations.contracti wypełni odpowiadające pole location danymi z cities.json
+pozostałe pola pozostaw z wartością null lub [] dla list 
+
+5. Przejdź przez każdy element na liście w locations.json sprawdź jakiego kraju/regionu/miasta dotyczy wpis i dodaj dla każdego 3 atrakcji w liście attractions z ceną lub 0 jeśli darmowe, dodaj nazwe i krótki opis atrakcji - zdjęcia pozostaw te które są. wypełniaj wszystko generatywnie - nie twórz skryptu
+
+
+
+

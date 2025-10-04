@@ -1,0 +1,170 @@
+{
+  "POLSKA": [
+    {"city": "Kraków", "region": "Małopolskie"},
+    {"city": "Warszawa", "region": "Mazowieckie"},
+    {"city": "Gdańsk", "region": "Pomorskie"},
+    {"city": "Zakopane", "region": "Małopolskie"},
+    {"city": "Wrocław", "region": "Dolnośląskie"},
+    {"city": "Kazimierz Dolny", "region": "Lubelskie"}
+  ],
+  "FRANCJA": [
+    {"city": "Paryż", "region": "Île-de-France"},
+    {"city": "Nicea", "region": "Prowansja-Alpy-Lazurowe Wybrzeże"},
+    {"city": "Cannes", "region": "Prowansja-Alpy-Lazurowe Wybrzeże"},
+    {"city": "Lyon", "region": "Owernia-Rodan-Alpy"},
+    {"city": "Annecy", "region": "Owernia-Rodan-Alpy"},
+    {"city": "Saint-Paul-de-Vence", "region": "Prowansja-Alpy-Lazurowe Wybrzeże"}
+  ],
+  "WŁOCHY": [
+    {"city": "Rzym", "region": "Lacjum"},
+    {"city": "Wenecja", "region": "Wenecja Euganejska"},
+    {"city": "Florencja", "region": "Toskania"},
+    {"city": "Mediolan", "region": "Lombardia"},
+    {"city": "Portofino", "region": "Liguria"},
+    {"city": "San Gimignano", "region": "Toskania"}
+  ],
+  "HISZPANIA": [
+    {"city": "Barcelona", "region": "Katalonia"},
+    {"city": "Madryt", "region": "Wspólnota Madrytu"},
+    {"city": "Sewilla", "region": "Andaluzja"},
+    {"city": "Ibiza", "region": "Baleary"},
+    {"city": "Ronda", "region": "Andaluzja"},
+    {"city": "Toledo", "region": "Kastylia-La Mancha"}
+  ],
+  "NIEMCY": [
+    {"city": "Berlin", "region": "Berlin"},
+    {"city": "Monachium", "region": "Bawaria"},
+    {"city": "Hamburg", "region": "Hamburg"},
+    {"city": "Rothenburg ob der Tauber", "region": "Bawaria"},
+    {"city": "Baden-Baden", "region": "Badenia-Wirtembergia"},
+    {"city": "Heidelberg", "region": "Badenia-Wirtembergia"}
+  ],
+  "WIELKA_BRYTANIA": [
+    {"city": "Londyn", "region": "Anglia"},
+    {"city": "Edynburg", "region": "Szkocja"},
+    {"city": "Manchester", "region": "Anglia"},
+    {"city": "Bath", "region": "Anglia"},
+    {"city": "Cotswolds", "region": "Anglia"},
+    {"city": "York", "region": "Anglia"}
+  ],
+  "GRECJA": [
+    {"city": "Ateny", "region": "Attyka"},
+    {"city": "Santorini", "region": "Cyklady"},
+    {"city": "Mykonos", "region": "Cyklady"},
+    {"city": "Delphi", "region": "Grecja Środkowa"},
+    {"city": "Nafplio", "region": "Peloponez"},
+    {"city": "Meteora", "region": "Tesalia"}
+  ],
+  "TURCJA": [
+    {"city": "Stambuł", "region": "Marmara"},
+    {"city": "Kapadocja", "region": "Anatolia Środkowa"},
+    {"city": "Antalya", "region": "Morze Śródziemne"},
+    {"city": "Bodrum", "region": "Morze Egejskie"},
+    {"city": "Pamukkale", "region": "Morze Egejskie"},
+    {"city": "Safranbolu", "region": "Morze Czarne"}
+  ],
+  "PORTUGALIA": [
+    {"city": "Lizbona", "region": "Lizbona"},
+    {"city": "Porto", "region": "Norte"},
+    {"city": "Lagos", "region": "Algarve"},
+    {"city": "Sintra", "region": "Lizbona"},
+    {"city": "Óbidos", "region": "Centro"},
+    {"city": "Monsaraz", "region": "Alentejo"}
+  ],
+  "AUSTRIA": [
+    {"city": "Wiedeń", "region": "Wiedeń"},
+    {"city": "Salzburg", "region": "Salzburg"},
+    {"city": "Innsbruck", "region": "Tyrol"},
+    {"city": "Hallstatt", "region": "Górna Austria"},
+    {"city": "Bad Ischl", "region": "Górna Austria"},
+    {"city": "Melk", "region": "Dolna Austria"}
+  ],
+  "SZWAJCARIA": [
+    {"city": "Zurych", "region": "Zurych"},
+    {"city": "Genewa", "region": "Genewa"},
+    {"city": "Interlaken", "region": "Berno"},
+    {"city": "Zermatt", "region": "Valais"},
+    {"city": "Lucerna", "region": "Lucerna"},
+    {"city": "Gruyères", "region": "Fribourg"}
+  ],
+  "HOLANDIA": [
+    {"city": "Amsterdam", "region": "Holandia Północna"},
+    {"city": "Rotterdam", "region": "Holandia Południowa"},
+    {"city": "Haga", "region": "Holandia Południowa"},
+    {"city": "Utrecht", "region": "Utrecht"},
+    {"city": "Giethoorn", "region": "Overijssel"},
+    {"city": "Delft", "region": "Holandia Południowa"}
+  ],
+  "CZECHY": [
+    {"city": "Praga", "region": "Praga"},
+    {"city": "Český Krumlov", "region": "Bohemia Południowa"},
+    {"city": "Brno", "region": "Morawy Południowe"},
+    {"city": "Karlowe Wary", "region": "Karlowe Wary"},
+    {"city": "Telč", "region": "Wysoczyzna"},
+    {"city": "Kutná Hora", "region": "Bohemia Środkowa"}
+  ],
+  "NORWEGIA": [
+    {"city": "Oslo", "region": "Oslo"},
+    {"city": "Bergen", "region": "Vestland"},
+    {"city": "Trondheim", "region": "Trøndelag"},
+    {"city": "Stavanger", "region": "Rogaland"},
+    {"city": "Tromsø", "region": "Troms og Finnmark"},
+    {"city": "Geiranger", "region": "Møre og Romsdal"}
+  ],
+  "SZWECJA": [
+    {"city": "Sztokholm", "region": "Sztokholm"},
+    {"city": "Göteborg", "region": "Västra Götaland"},
+    {"city": "Malmö", "region": "Skåne"},
+    {"city": "Uppsala", "region": "Uppsala"},
+    {"city": "Visby", "region": "Gotland"},
+    {"city": "Sigtuna", "region": "Sztokholm"}
+  ],
+  "DANIA": [
+    {"city": "Kopenhaga", "region": "Hovedstaden"},
+    {"city": "Aarhus", "region": "Midtjylland"},
+    {"city": "Odense", "region": "Syddanmark"},
+    {"city": "Aalborg", "region": "Nordjylland"},
+    {"city": "Skagen", "region": "Nordjylland"},
+    {"city": "Ribe", "region": "Syddanmark"}
+  ],
+  "CHORWACJA": [
+    {"city": "Dubrownik", "region": "Dubrownicko-Neretwańska"},
+    {"city": "Split", "region": "Splitsko-Dalmatyńska"},
+    {"city": "Zadar", "region": "Zadarska"},
+    {"city": "Pula", "region": "Istria"},
+    {"city": "Zagreb", "region": "Zagreb"},
+    {"city": "Rovinj", "region": "Istria"}
+  ],
+  "JAPONIA": [
+    {"city": "Tokio", "region": "Kantō"},
+    {"city": "Kioto", "region": "Kansai"},
+    {"city": "Osaka", "region": "Kansai"},
+    {"city": "Hiroszima", "region": "Chūgoku"},
+    {"city": "Nara", "region": "Kansai"},
+    {"city": "Takayama", "region": "Chūbu"}
+  ],
+  "TAJLANDIA": [
+    {"city": "Bangkok", "region": "Środkowa Tajlandia"},
+    {"city": "Phuket", "region": "Południowa Tajlandia"},
+    {"city": "Chiang Mai", "region": "Północna Tajlandia"},
+    {"city": "Pattaya", "region": "Wschodnia Tajlandia"},
+    {"city": "Krabi", "region": "Południowa Tajlandia"},
+    {"city": "Ayutthaya", "region": "Środkowa Tajlandia"}
+  ],
+  "USA": [
+    {"city": "Nowy Jork", "region": "Nowy Jork"},
+    {"city": "Los Angeles", "region": "Kalifornia"},
+    {"city": "San Francisco", "region": "Kalifornia"},
+    {"city": "Las Vegas", "region": "Nevada"},
+    {"city": "Charleston", "region": "Karolina Południowa"},
+    {"city": "Savannah", "region": "Georgia"}
+  ],
+  "AUSTRALIA": [
+    {"city": "Sydney", "region": "Nowa Południowa Walia"},
+    {"city": "Melbourne", "region": "Wiktoria"},
+    {"city": "Brisbane", "region": "Queensland"},
+    {"city": "Perth", "region": "Australia Zachodnia"},
+    {"city": "Adelaide", "region": "Australia Południowa"},
+    {"city": "Byron Bay", "region": "Nowa Południowa Walia"}
+  ]
+}

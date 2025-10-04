@@ -1,0 +1,36 @@
+ [
+    {
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "location": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Barcelona"
+    },
+    "attractions": [
+      {
+        "name": "Budowle Gaudiego",
+        "description": "Ikoniczne dzieła architektoniczne Antoniego Gaudiego, w tym Sagrada Família, Park Güell i Casa Batlló.",
+        "price": 0,
+        "images": [
+          "https://example.com/images/sagrada_familia.jpg",
+          "https://example.com/images/park_guell.jpg"
+        ]
+      },
+      ...
+    ],
+    "conditionsInMonth": {
+      "1": { "density": 2, "temp": 12 },
+      "2": { "density": 2, "temp": 13 },
+      "3": { "density": 4, "temp": 15 },
+      "4": { "density": 6, "temp": 17 },
+      "5": { "density": 7, "temp": 20 },
+      "6": { "density": 9, "temp": 24 },
+      "7": { "density": 10, "temp": 27 },
+      "8": { "density": 10, "temp": 27 },
+      "9": { "density": 8, "temp": 24 },
+      "10": { "density": 5, "temp": 20 },
+      "11": { "density": 4, "temp": 16 },
+      "12": { "density": 3, "temp": 13 }
+    }
+  }
+]
