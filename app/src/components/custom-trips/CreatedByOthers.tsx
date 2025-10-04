@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TripBox from "../trip/TripBox";
+import TripBoxSkeleton from "../trip/TripBoxSkeleton";
 import { TripSet } from "@/types/trip-set";
 import { Skeleton } from "../ui/skeleton";
 
@@ -9,9 +10,14 @@ export default function CreatedByOthers({ isLoading = false }: { isLoading?: boo
   if (isLoading) {
     return (
       <div className="flex flex-col gap-4 w-full items-center">
-        <Skeleton className="h-10 w-24" />
-        <Skeleton className="h-10 w-32" />
-        <Skeleton className="h-10 w-20" />
+        <div className="flex items-center gap-3">
+          <Skeleton className="w-12 h-12 rounded-full" />
+          <Skeleton className="h-8 w-48" />
+        </div>
+        <div className="flex flex-col gap-6 w-full">
+          <TripBoxSkeleton />
+          <TripBoxSkeleton />
+        </div>
       </div>
     );
   }
