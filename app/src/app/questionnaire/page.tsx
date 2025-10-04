@@ -55,7 +55,7 @@ export default function QuestionnairePage() {
     selectedAnswers[questions[currentQuestion].id] !== undefined;
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#EDE8E2] p-4">
+    <div className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-md flex flex-col gap-8">
         {/* Nagłówek */}
         <div className="text-center space-y-2">
@@ -82,7 +82,7 @@ export default function QuestionnairePage() {
           </h2>
 
           {/* Odpowiedzi jako chipy */}
-          <div className="flex flex-col gap-3 mt-6">
+          <div className="flex flex-col gap-3 mt-6 items-center">
             {questions[currentQuestion].answers.map((answer, index) => (
               <Badge
                 key={index}

@@ -12,8 +12,8 @@ function getTripPropositions() {
 export default function TripPropositionsPage() {
     const trips = getTripPropositions();
     return (
-        <main className="bg-[#f5ecd7] min-h-screen p-8">
-            <h1 className="text-[#355c3c] text-4xl mb-2 font-bold">
+        <main className="min-h-screen p-8">
+            <h1 className="text-primary text-4xl mb-2 font-bold">
                 Here.
             </h1>
             <p className="text-lg mb-8 text-gray-600">
@@ -38,7 +38,7 @@ export default function TripPropositionsPage() {
                             />
                             <div className="p-6 flex-1">
                                 <div className="mb-4">
-                                    <h2 className="text-[#355c3c] text-2xl mb-2">
+                                    <h2 className="text-primary text-2xl mb-2">
                                         {trip.name}
                                     </h2>
                                     <div className="text-sm text-gray-600 mb-3">
@@ -46,7 +46,7 @@ export default function TripPropositionsPage() {
                                     </div>
                                     
                                     {/* Trip route */}
-                                    <div className="text-base text-[#355c3c] font-medium">
+                                    <div className="text-base text-primary font-medium">
                                         {trip.destinations.map((dest: any, idx: number) => {
                                             const cities = [];
                                             if (idx === 0) {
@@ -59,7 +59,7 @@ export default function TripPropositionsPage() {
                                 </div>
 
                                 <Link href={`/trip-propositions/${trip.id}`} className="no-underline">
-                                    <button className="mt-4 bg-[#355c3c] text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
+                                    <button className="mt-4 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
                                         Sprawdź
                                     </button>
                                 </Link>
