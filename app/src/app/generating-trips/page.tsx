@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
 import SortFilters from "@/components/sort-filters/SortFilters";
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
 
 type TaskStatus = "PENDING" | "RUNNING" | "COMPLETED" | "FAILED";
 
@@ -122,9 +123,9 @@ function GeneratingTripsContent() {
               <div className="text-6xl">😔</div>
               <h1 className="text-xl font-semibold text-gray-900">Coś poszło nie tak</h1>
               <p className="text-base text-gray-600">{error}</p>
-              <button onClick={() => window.location.reload()} className="mt-6 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
+              <Button onClick={() => window.location.reload()}>
                 Spróbuj ponownie
-              </button>
+              </Button>
             </div>
           ) : (
             <div className="flex w-full justify-center items-center">

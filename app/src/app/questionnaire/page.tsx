@@ -94,7 +94,7 @@ export default function QuestionnairePage() {
         </div>
 
         {/* Przycisk dalej */}
-        <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading} className="w-full py-6 text-base bg-primary hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed">
+        <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
           {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
         </Button>
       </div>
