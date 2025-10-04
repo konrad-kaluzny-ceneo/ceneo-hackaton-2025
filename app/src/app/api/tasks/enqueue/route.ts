@@ -1,12 +1,10 @@
-import { callAI } from '@/infrastructure/AIService';
-import { inject } from '@/infrastructure/DIContainer';
-import { Repository } from '@/infrastructure/Repository';
-import { TaskQueue } from '@/infrastructure/TaskQueue';
-import { NextResponse } from 'next/server';
-
+import { callAI } from "@/infrastructure/AIService";
+import { inject } from "@/infrastructure/DIContainer";
+import { Repository } from "@/infrastructure/Repository";
+import { TaskQueue } from "@/infrastructure/TaskQueue";
+import { NextResponse } from "next/server";
 
 const repository = inject(Repository);
-
 
 /**
  * POST /api/tasks/enqueue
@@ -14,20 +12,17 @@ const repository = inject(Repository);
  * Body: { userId: string }
  */
 export async function POST(request: Request) {
-    const taskQueue = inject(TaskQueue);
-    
-    const body = await request.json();
-    const userId = body.userId;
+  const taskQueue = inject(TaskQueue);
 
-    if (!userId) {
-        return NextResponse.json(
-            { error: 'userId is required' },
-            { status: 400 }
-        );
-    }
+  const body = await request.json();
+  const userId = body.userId;
 
-    const taskId = taskQueue.enqueue(async () => {
-        const aiGeneratedTrips = await callAI(`
+  if (!userId) {
+    return NextResponse.json({ error: "userId is required" }, { status: 400 });
+  }
+
+  const taskId = taskQueue.enqueue(async () => {
+    const aiGeneratedTrips = await callAI(`
             Generate a list of 3 trip propositions for a user in JSON format.
             Ensure the JSON is properly formatted.
             Example:
@@ -63,30 +58,26 @@ export async function POST(request: Request) {
             RETURN ONLY JSON WITHOUT ANY ADDITIONAL TEXT. DO NOT ADD \`\`\`json
         `);
 
-        console.log('AI Generated Trips:', aiGeneratedTrips);
-
-
-        repository.addTripProposition({
-            id: generateId(),
-            userId: userId,
-            taskId: taskId,
-            data: JSON.parse(aiGeneratedTrips),
-            createdAt: new Date()
-        });
-
-        return {
-            message: 'Task completed successfully!',
-            completedAt: new Date().toISOString(),
-            data: aiGeneratedTrips
-        };
+    repository.addTripProposition({
+      id: generateId(),
+      userId: userId,
+      taskId: taskId,
+      data: JSON.parse(aiGeneratedTrips),
+      createdAt: new Date(),
     });
 
-    return NextResponse.json({
-        success: true,
-        taskId
-    });
+    return {
+      message: "Task completed successfully!",
+      completedAt: new Date().toISOString(),
+      data: aiGeneratedTrips,
+    };
+  });
+
+  return NextResponse.json({
+    success: true,
+    taskId,
+  });
 }
 function generateId(): string {
-    return crypto.randomUUID();
+  return crypto.randomUUID();
 }
-
