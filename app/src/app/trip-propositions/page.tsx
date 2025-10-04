@@ -1,19 +1,32 @@
-import { GetUserTripsHandler } from "@/features/trips/GetUserTrips";
-import { inject } from "@/infrastructure/DIContainer";
+"use client";
+
 import { TripSet } from "@/types/trip-set";
 import TripPropositionsClient from "@/components/trip/TripPropositionsClient";
-import { useUserId } from "@/infrastructure/UserAccessor";
+import { useEffect, useState } from "react";
 
-async function getTripPropositions(): Promise<TripSet[]> {
-  const userId = await useUserId();
-  const getTripsHandler = inject(GetUserTripsHandler);
-  const trips = await getTripsHandler.handle(userId);
-  console.log(trips);
-  return trips as unknown as TripSet[];
-}
+export default function TripPropositionsPage() {
+  const [trips, setTrips] = useState<TripSet[]>([]);
+  const [loading, setLoading] = useState(true);
 
-export default async function TripPropositionsPage() {
-  const trips = await getTripPropositions();
+  useEffect(() => {
+    async function fetchTrips() {
+      try {
+        const response = await fetch("/api/trips");
+        const data = await response.json();
+        setTrips(data);
+      } catch (error) {
+        console.error("Error fetching trips:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchTrips();
+  }, []);
+
+  if (loading) {
+    return <div>Ładowanie tripów...</div>;
+  }
 
   return <TripPropositionsClient initialTrips={trips} />;
 }

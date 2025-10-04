@@ -12448,5 +12448,107 @@
         "temp": 1
       }
     }
+  },
+  {
+    "id": "cze-telč-cf2b2729",
+    "location": {
+      "country": "CZECHY",
+      "region": "Wysoczyzna",
+      "city": "Telč"
+    },
+    "attractions": [
+      {
+        "name": "Zabytkowy Rynek w Telču",
+        "description": "Malowniczy renesansowy rynek otoczony kolorowymi kamienicami z podcieniami, wpisany na listę UNESCO.",
+        "price": 0,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": "Zamek Telč",
+        "description": "Renesansowy zamek z pięknymi wnętrzami, ogrodami i muzeum prezentującym historię regionu.",
+        "price": 5,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": "Park Zamkowy",
+        "description": "Rozległy park krajobrazowy idealny na spacery, pikniki i relaks wśród zieleni.",
+        "price": 0,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": { "density": 2, "temp": -1 },
+      "2": { "density": 2, "temp": 0 },
+      "3": { "density": 3, "temp": 5 },
+      "4": { "density": 4, "temp": 10 },
+      "5": { "density": 6, "temp": 15 },
+      "6": { "density": 7, "temp": 19 },
+      "7": { "density": 8, "temp": 21 },
+      "8": { "density": 8, "temp": 20 },
+      "9": { "density": 6, "temp": 16 },
+      "10": { "density": 4, "temp": 10 },
+      "11": { "density": 3, "temp": 5 },
+      "12": { "density": 2, "temp": 0 }
+    }
+  },
+  {
+    "id": "cze-kutnáh-6e7cfa09",
+    "location": {
+      "country": "CZECHY",
+      "region": "Bohemia Środkowa",
+      "city": "Kutná Hora"
+    },
+    "attractions": [
+      {
+        "name": "Kostnica w Sedlcu",
+        "description": "Unikalna kaplica ozdobiona ludzkimi kośćmi, jedno z najbardziej niezwykłych miejsc w Europie.",
+        "price": 4,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": "Katedra św. Barbary",
+        "description": "Majestatyczna gotycka katedra wpisana na listę UNESCO, symbol dawnego bogactwa miasta.",
+        "price": 0,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      },
+      {
+        "name": "Muzeum Srebra",
+        "description": "Interaktywne muzeum prezentujące historię wydobycia srebra i życia górników w średniowieczu.",
+        "price": 6,
+        "images": [
+          "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
+          "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": { "density": 2, "temp": -1 },
+      "2": { "density": 2, "temp": 0 },
+      "3": { "density": 3, "temp": 5 },
+      "4": { "density": 4, "temp": 10 },
+      "5": { "density": 6, "temp": 15 },
+      "6": { "density": 7, "temp": 19 },
+      "7": { "density": 8, "temp": 21 },
+      "8": { "density": 8, "temp": 20 },
+      "9": { "density": 6, "temp": 16 },
+      "10": { "density": 4, "temp": 10 },
+      "11": { "density": 3, "temp": 5 },
+      "12": { "density": 2, "temp": 0 }
+    }
   }
 ]

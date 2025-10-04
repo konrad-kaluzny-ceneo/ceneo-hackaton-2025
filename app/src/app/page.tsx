@@ -10,6 +10,7 @@ export default function Home() {
       <Link href="/start">Start</Link>
       <Link href="/questionnaire">Questionnaire</Link>
       <Link href="/trip-propositions">Trip Propositions</Link>
+      <Link href="/trip-history">Trip History</Link>
       <Friends />
     </div>
   );
