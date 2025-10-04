@@ -16,7 +16,8 @@ pozostałe pola pozostaw z wartością null, wstaw 3 elemnty attraction i pozost
 5. wygeneruj 3 atrakcje w mieście Telč w czechach z informacją o cenie, nazwie i krótkim opisie i polem images z pustą tablicą, następnie wygeneruj liste z średnią temperaturąoraz ilością turystów w skali 1-10 dla każdemo miesiaca - wygeneruj z tego obiekt json w formacie zgodnym z city.contract
 
 { "attractions": [ { "name": nazwa, "description": opis, "price": cena / 0, "images": [] }, ... ],
-"conditionsInMonth": { "1": { "density": null, "temp": null }, ... "12": { "density": null, "temp": null } } }
+"conditionsInMonth": { "1": { "density": null, "temp": null }, 
+... "12": { "density": null, "temp": null } } }
 
 
 
