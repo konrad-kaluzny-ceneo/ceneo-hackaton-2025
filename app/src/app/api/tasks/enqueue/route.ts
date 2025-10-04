@@ -2,7 +2,8 @@ import { callAI } from "@/infrastructure/AIService";
 import { inject } from "@/infrastructure/DIContainer";
 import { Repository } from "@/infrastructure/Repository";
 import { TaskQueue } from "@/infrastructure/TaskQueue";
-import { NextResponse } from "next/server";
+import { useUserId } from "@/infrastructure/UserAccessor";
+import { NextRequest, NextResponse } from "next/server";
 
 const repository = inject(Repository);
 
@@ -11,11 +12,9 @@ const repository = inject(Repository);
  * Enqueues a long-running task
  * Body: { userId: string }
  */
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   const taskQueue = inject(TaskQueue);
-
-  const body = await request.json();
-  const userId = body.userId;
+  const userId = useUserId(request);
 
   if (!userId) {
     return NextResponse.json({ error: "userId is required" }, { status: 400 });

@@ -33,15 +33,12 @@ function GeneratingTripsContent() {
   }, []);
 
   const createNewTask = async () => {
-    try {
-      const userId = searchParams.get('userId') || localStorage.getItem('userId') || 'anonymous';
-      
+    try {      
       const response = await fetch('/api/tasks/enqueue', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ userId })
+        }
       });
 
       const data = await response.json();

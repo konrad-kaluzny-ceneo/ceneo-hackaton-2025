@@ -2,11 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useUser } from "@/infrastructure/FrontendUserAccessor";
 
 async function getTripPropositions() {
-    const userId = useUser();
-    const res = await fetch('/api/trips?userId=' + userId.id);
+    const res = await fetch('/api/trips');
     return await res.json();
 //   const filePath = path.join(
 //     process.cwd(),
