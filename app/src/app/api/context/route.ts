@@ -8,16 +8,8 @@ export async function POST(request: NextRequest) {
 
   await container.answerHadler.handle({
     userId: userId,
-    question: body.question,
-    answer: body.answer,
+    items: body.items
   });
 
   return new Response();
-}
-
-export async function GET(request: NextRequest) {
-  const userId = useUserId(request);
-
-  const contextItems = await container.getUserAnswersHandler.handle(userId);
-  return new Response(JSON.stringify(contextItems), { status: 200 });
 }
