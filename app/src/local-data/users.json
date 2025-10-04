@@ -1,0 +1,66 @@
+[
+    {
+        "id": "user-1",
+        "name": "Kacper Zieliński",
+        "email": "kacper.zielinski@example.com",
+        "image": "/images/users/avatar_1.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-2",
+        "name": "Zofia Wróbel",
+        "email": "zofia.wrobel@example.com",
+        "image": "/images/users/avatar_2.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-3",
+        "name": "Mikołaj Szymański",
+        "email": "mikolaj.szymanski@example.com",
+        "image": "/images/users/avatar_3.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-4",
+        "name": "Piotr Koterski",
+        "email": "piotr.koterski@example.com",
+        "image": "/images/users/avatar_4.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-5",
+        "name": "Aurelia Dąbrowska",
+        "email": "aurelia.dabrowska@example.com",
+        "image": "/images/users/avatar_5.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-6",
+        "name": "Ignacy Pawłowski",
+        "email": "ignacy.pawlowski@example.com",
+        "image": "/images/users/avatar_6.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-7",
+        "name": "Kalina Mazurek",
+        "email": "kalina.mazurek@example.com",
+        "image": "/images/users/avatar_7.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    },
+    {
+        "id": "user-8",
+        "name": "Tadeusz Krawczyk",
+        "email": "tadeusz.krawczyk@example.com",
+        "image": "/images/users/avatar_8.jpg",
+        "historyOfTripSetIds": [],
+        "userFeelingIds": []
+    }
+]
