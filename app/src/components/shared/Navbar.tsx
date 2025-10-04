@@ -1,13 +1,12 @@
 "use client";
 
-import BackButton from "./BackButton";
+import HomeButton from "./HomeButton";
 
 export default function Navbar() {
-
   return (
-    <div className="flex items-center p-4 gap-4">
-      <BackButton />
-      <div className="text-primary text-4xl mb-2 font-bold">Here.</div>
+    <div className="flex items-center p-2 w-full h-12">
+      <HomeButton />
+      <p className="text-primary text-2xl font-bold mb-1">Here.</p>
     </div>
   );
 }
