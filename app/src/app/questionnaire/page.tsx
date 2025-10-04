@@ -5,21 +5,22 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useUser } from "@/infrastructure/FrontendUserAccessor";
 import { redirect } from "next/navigation";
+import Image from "next/image";
+import { Progress } from "@/components/ui/progress";
 
 type Question = {
   id: number;
   text: string;
   answers: string[];
+  image: string;
 };
 
-const questions: Question[] = require('@/local-data/questions.json');
+const questions: Question[] = require("@/local-data/questions.json");
 
 export default function QuestionnairePage() {
   const user = useUser();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<
-    Record<number, string>
-  >({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, string>>({});
   const [isLoading, setIsLoading] = useState(false);
 
   const handleAnswerSelect = (answer: string) => {
@@ -51,25 +52,21 @@ export default function QuestionnairePage() {
     }
   };
 
-  const isAnswerSelected =
-    selectedAnswers[questions[currentQuestion].id] !== undefined;
+  const isAnswerSelected = selectedAnswers[questions[currentQuestion].id] !== undefined;
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-md flex flex-col gap-8">
         {/* Nagłówek */}
-        <div className="text-center space-y-2">
-          <h1 className="text-2xl font-semibold text-gray-900">
-            Jak się dzisiaj czujesz?
-          </h1>
-          <p className="text-sm text-gray-600">
-            Odpowiedz na kilka pytań, aby spersonalizować swoje doświadczenie i
-            otrzymać rekomendacje dopasowane do Twoich potrzeb.
-          </p>
+        <div className="text-center space-y-2 flex flex-col items-center">
+          <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
+          <h1 className="text-2xl font-semibold text-gray-900">Jak się dzisiaj czujesz?</h1>
+          <p className="text-sm text-gray-600">Odpowiedz na kilka pytań, aby spersonalizować swoje doświadczenie i otrzymać rekomendacje dopasowane do Twoich potrzeb.</p>
         </div>
 
         {/* Licznik pytań */}
-        <div className="text-center">
+        <div className="text-start flex flex-col items-start gap-2">
+          <Progress value={((currentQuestion + 1) / questions.length) * 100} />
           <p className="text-sm text-gray-600">
             Pytanie {currentQuestion + 1} z {questions.length}
           </p>
@@ -77,28 +74,18 @@ export default function QuestionnairePage() {
 
         {/* Pytanie */}
         <div className="text-center space-y-4">
-          <h2 className="text-xl font-medium text-gray-900">
-            {questions[currentQuestion].text}
-          </h2>
+          <h2 className="text-xl font-medium text-gray-900">{questions[currentQuestion].text}</h2>
 
           {/* Odpowiedzi jako chipy */}
           <div className="flex flex-col gap-3 mt-6 items-center">
             {questions[currentQuestion].answers.map((answer, index) => (
               <Badge
                 key={index}
-                variant={
-                  selectedAnswers[questions[currentQuestion].id] === answer
-                    ? "default"
-                    : "outline"
-                }
+                variant={selectedAnswers[questions[currentQuestion].id] === answer ? "default" : "outline"}
                 className={`
                   py-3 px-6 cursor-pointer text-base font-normal justify-center
                   transition-all duration-200 hover:shadow-md
-                  ${
-                    selectedAnswers[questions[currentQuestion].id] === answer
-                      ? "bg-primary text-white hover:bg-primary"
-                      : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"
-                  }
+                  ${selectedAnswers[questions[currentQuestion].id] === answer ? "bg-primary text-white hover:bg-primary" : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"}
                 `}
                 onClick={() => handleAnswerSelect(answer)}
               >
@@ -109,11 +96,7 @@ export default function QuestionnairePage() {
         </div>
 
         {/* Przycisk dalej */}
-        <Button
-          onClick={handleNext}
-          disabled={!isAnswerSelected || isLoading}
-          className="w-full py-6 text-base bg-primary hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed"
-        >
+        <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading} className="w-full py-6 text-base bg-primary hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed">
           {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
         </Button>
       </div>

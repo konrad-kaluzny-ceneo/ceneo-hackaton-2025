@@ -6,7 +6,8 @@
             "Szukam ciszy i spokoju",
             "Marzę o odleceniu się od dzieci",
             "Chcę kontaktu z naturą"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
             "Do 2000 zł",
             "2000-5000 zł",
             "Powyżej 5000 zł"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     },
     {
         "id": 3,
@@ -25,7 +27,8 @@
             "Z partnerem",
             "Z rodziną",
             "Ze znajomymi"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     },
     {
         "id": 4,
@@ -34,7 +37,8 @@
             "Weekend (2-3 dni)",
             "Tydzień",
             "Dwa tygodnie lub więcej"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     },
     {
         "id": 5,
@@ -44,7 +48,8 @@
             "Zwiedzanie i kultura",
             "Sport i przygoda",
             "Życie nocne"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     },
     {
         "id": 6,
@@ -53,6 +58,7 @@
             "Ciepło i słońce",
             "Umiarkowany",
             "Zimno i góry"
-        ]
+        ],
+        "image": "/images/questions/question_1.png"
     }
 ]
