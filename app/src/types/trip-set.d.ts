@@ -13,4 +13,5 @@ export interface TripSet {
   image: string | null;
   destinations: Destination[];
   startDate: Date;
+  userId: string;
 }

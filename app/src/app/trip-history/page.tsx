@@ -13,13 +13,23 @@ async function getTripHistory() {
   return userTrips;
 }
 
+async function getFutureTrips() {
+  const futureTripIds = require("@/local-data/future-trips.json");
+  const tripPropositions = require("@/local-data/trip-propositions.json");
+  const futureTrips = tripPropositions.filter((trip: TripSet) => 
+    futureTripIds.includes(trip.id)
+  );
+  return futureTrips;
+}
+
 export default async function TripHistoryPage() {
   const trips = await getTripHistory();
+  const futureTrips = await getFutureTrips();
   
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-primary mb-8">Historia Wycieczek</h1>
-      <TripHistory trips={trips} />
+      <TripHistory trips={trips} futureTrips={futureTrips} />
     </div>
   );
 }
