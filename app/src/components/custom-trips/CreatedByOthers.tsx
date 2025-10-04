@@ -8,9 +8,9 @@ export default function CreatedByOthers() {
     
   return (
     <div className="flex flex-col gap-4 w-full items-center">
-      <div className="flex items-center gap-2">
-        <Image src="/images/icons/loop.png" alt="Loop" width={24} height={24} />
-        <p>Stworzone przez innych</p>
+      <div className="flex items-center gap-3">
+        <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
+        <p className="text-primary text-2xl font-semibold">Stworzone przez innych</p>
       </div>
       <div className="flex flex-col gap-2">
         {tripsFromOthers.map((trip: TripSet) => (
