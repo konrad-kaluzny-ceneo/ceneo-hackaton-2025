@@ -72,11 +72,22 @@ export async function POST(request: NextRequest) {
       RETURN ONLY JSON WITHOUT ANY ADDITIONAL TEXT. DO NOT ADD \`\`\`json
       `);
 
+    let cleanedJson = aiGeneratedTrips.trim();
+    if (cleanedJson.startsWith('```json')) {
+      cleanedJson = cleanedJson.slice(7); // Remove ```json
+    } else if (cleanedJson.startsWith('```')) {
+      cleanedJson = cleanedJson.slice(3); // Remove ```
+    }
+    if (cleanedJson.endsWith('```')) {
+      cleanedJson = cleanedJson.slice(0, -3); // Remove trailing ```
+    }
+    cleanedJson = cleanedJson.trim();
+
     repository.addTripProposition({
       id: generateId(),
       userId: userId,
       taskId: taskId,
-      data: JSON.parse(aiGeneratedTrips),
+      data: JSON.parse(cleanedJson),
       createdAt: new Date(),
     });
 
