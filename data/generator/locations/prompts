@@ -20,5 +20,5 @@ pozostałe pola pozostaw z wartością null, wstaw 3 elemnty attraction i pozost
 ... "12": { "density": null, "temp": null } } }
 
 
-
+6. Przeanalizuj strukture json w locations.json i napisz skrypt w addImages.py któy będzie losował dla każdego elementu attraction w każdym mieście dwa obrazki z tablicy stringów z url (dodaj dwa example url do tej tablicy)
 

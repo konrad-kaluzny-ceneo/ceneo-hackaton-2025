@@ -10,7 +10,7 @@ interface TripBoxProps {
 
 export default function TripBox({ trip }: TripBoxProps) {
   return (
-    <div key={trip.id} className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col gap-4">
+    <div key={trip.id} className="bg-white w-full rounded-2xl shadow-md overflow-hidden flex flex-col gap-4">
       <div className="relative w-full h-48">
         <Image 
           src={trip.image || "/images/trip-train.webp"} 
@@ -22,7 +22,7 @@ export default function TripBox({ trip }: TripBoxProps) {
           loading="eager"
         />
       </div>
-      <div className="px-6 flex-1 pb-4 flex flex-col gap-2">
+      <div className="px-6 flex-1 pb-4 flex flex-col gap-2 w-full">
         <h2 className="text-primary text-2xl">{trip.name}</h2>
         <div className="text-sm text-gray-600">
           Czas trwania: {trip.duration} dni | Całkowity koszt: {trip.totalPrice} PLN
