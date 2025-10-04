@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 type TaskStatus = 'PENDING' | 'RUNNING' | 'COMPLETED' | 'FAILED';
@@ -12,7 +12,7 @@ interface Task {
   error?: string;
 }
 
-export default function GeneratingTripsPage() {
+function GeneratingTripsContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [task, setTask] = useState<Task | null>(null);
@@ -145,5 +145,29 @@ export default function GeneratingTripsPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function GeneratingTripsPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex justify-center items-center min-h-screen bg-[#EDE8E2] p-4">
+        <div className="w-full max-w-md text-center space-y-6">
+          <div className="space-y-6">
+            <div className="flex justify-center">
+              <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+            </div>
+            <h1 className="text-2xl font-semibold text-gray-900">
+              Ładowanie...
+            </h1>
+            <p className="text-base text-gray-600">
+              Przygotowujemy wszystko dla Ciebie
+            </p>
+          </div>
+        </div>
+      </div>
+    }>
+      <GeneratingTripsContent />
+    </Suspense>
   );
 }
