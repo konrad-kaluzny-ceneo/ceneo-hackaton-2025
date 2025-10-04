@@ -21,7 +21,7 @@ export default function Header({ showBackButton = true, title }: HeaderProps) {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className="top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between py-3 px-4 h-16 max-w-2xl mx-auto">
         {/* Przycisk wstecz */}
         {shouldShowBackButton && (
