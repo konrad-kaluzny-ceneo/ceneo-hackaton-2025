@@ -8,5 +8,5 @@ export async function GET(request: NextRequest) {
   const getTripsHandler = inject(GetUserTripsHandler);
   const trips = await getTripsHandler.handle(userId);
 
-  return NextResponse.json(trips);
+  return NextResponse.json(trips?.[0] ?? []);
 }
