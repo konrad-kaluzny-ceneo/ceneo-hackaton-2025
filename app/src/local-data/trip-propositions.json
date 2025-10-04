@@ -5,6 +5,7 @@
     "totalPrice": 659.49,
     "duration": 7,
     "image": "/images/mountains.webp",
+    "startDate": "2025-10-10",
     "destinations": [
       {
         "order": 1,
@@ -88,6 +89,7 @@
     "totalPrice": 829.50,
     "duration": 5,
     "image": "/images/mountains.webp",
+    "startDate": "2025-10-10",
     "destinations": [
       {
         "order": 1,
@@ -187,6 +189,7 @@
     "totalPrice": 745.00,
     "duration": 6,
     "image": "/images/mountains.webp",
+    "startDate": "2025-10-10",
     "destinations": [
       {
         "order": 1,

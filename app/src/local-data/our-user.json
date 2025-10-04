@@ -1,0 +1,14 @@
+[
+    {
+        "id": "our-user",
+        "name": "Kacper Zieliński",
+        "email": "kacper.zielinski@example.com",
+        "image": "/images/users/avatar_1.jpg",
+        "historyOfTripSetIds": [
+            "trip-1",
+            "trip-2",
+            "trip-3"
+        ],
+        "userFeelingIds": []
+    }
+]
