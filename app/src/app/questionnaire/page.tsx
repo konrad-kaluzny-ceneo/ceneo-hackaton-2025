@@ -56,7 +56,7 @@ export default function QuestionnairePage() {
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
-      <div className="w-full max-w-md flex flex-col gap-8">
+      <div className="w-full flex flex-col gap-8">
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
           <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
