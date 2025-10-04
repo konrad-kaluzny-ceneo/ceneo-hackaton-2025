@@ -1,7 +1,7 @@
 [
   {
     "id": "active-trip-1",
-    "name": "Wrocław → Chiavenna",
+    "name": "Wrocław → Kraków",
     "totalPrice": 1250,
     "duration": 3,
     "image": "/images/trip-train.webp",
@@ -10,6 +10,7 @@
     "userId": "user-1",
     "isActive": true,
     "currentStep": 0,
+    "currentLocation": "Kraków",
     "bookingStatus": {
       "transport": false,
       "accommodation": false,
@@ -21,50 +22,50 @@
         "transport": {
           "from": { "country": "Polska", "region": "Dolnośląskie", "city": "Wrocław" },
           "fromDate": "2024-02-15T08:00:00Z",
-          "destination": { "country": "Włochy", "region": "Lombardia", "city": "Bergamo" },
+          "destination": { "country": "Polska", "region": "Wielkopolskie", "city": "Poznań" },
           "destinationDate": "2024-02-15T10:30:00Z",
-          "price": 450,
-          "name": "Lot"
+          "price": 150,
+          "name": "Pociąg"
         },
         "accommodation": null
       },
       {
         "order": 2,
         "transport": {
-          "from": { "country": "Włochy", "region": "Lombardia", "city": "Bergamo" },
-          "fromDate": "2024-02-15T12:00:00Z",
-          "destination": { "country": "Włochy", "region": "Lombardia", "city": "Mediolan" },
-          "destinationDate": "2024-02-15T13:30:00Z",
-          "price": 25,
+          "from": { "country": "Polska", "region": "Wielkopolskie", "city": "Poznań" },
+          "fromDate": "2024-02-15T14:00:00Z",
+          "destination": { "country": "Polska", "region": "Mazowieckie", "city": "Warszawa" },
+          "destinationDate": "2024-02-15T17:30:00Z",
+          "price": 80,
           "name": "Pociąg"
         },
         "accommodation": {
-          "location": { "country": "Włochy", "region": "Lombardia", "city": "Mediolan" },
+          "location": { "country": "Polska", "region": "Mazowieckie", "city": "Warszawa" },
           "date": "2024-02-15",
-          "price": 200,
+          "price": 250,
           "beds": 2,
-          "name": "Hotel Milano Centrale",
-          "description": "Włoskie miasto znane jako stolica mody, designu i finansów.",
+          "name": "Hotel Warszawa Centrum",
+          "description": "Stolica Polski, centrum polityczne i kulturalne kraju.",
           "images": []
         }
       },
       {
         "order": 3,
         "transport": {
-          "from": { "country": "Włochy", "region": "Lombardia", "city": "Mediolan" },
+          "from": { "country": "Polska", "region": "Mazowieckie", "city": "Warszawa" },
           "fromDate": "2024-02-16T09:00:00Z",
-          "destination": { "country": "Włochy", "region": "Lombardia", "city": "Chiavenna" },
-          "destinationDate": "2024-02-16T11:00:00Z",
-          "price": 30,
+          "destination": { "country": "Polska", "region": "Małopolskie", "city": "Kraków" },
+          "destinationDate": "2024-02-16T12:00:00Z",
+          "price": 120,
           "name": "Pociąg"
         },
         "accommodation": {
-          "location": { "country": "Włochy", "region": "Lombardia", "city": "Chiavenna" },
+          "location": { "country": "Polska", "region": "Małopolskie", "city": "Kraków" },
           "date": "2024-02-16",
-          "price": 150,
+          "price": 200,
           "beds": 2,
-          "name": "Hotel Chiavenna",
-          "description": "Malownicze włoskie miasteczko w Alpach, znane z historycznego centrum i pięknych górskich krajobrazów.",
+          "name": "Hotel Kraków Stare Miasto",
+          "description": "Historyczne miasto z zamkiem królewskim, Rynkiem Głównym i bogatym dziedzictwem kulturowym.",
           "images": []
         }
       }
