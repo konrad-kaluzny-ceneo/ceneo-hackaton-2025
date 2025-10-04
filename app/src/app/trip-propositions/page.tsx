@@ -2,6 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import TripBox from "@/components/trip/TripBox";
+import { Destination, TripSet } from "@/types/trip-set";
+import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
 
 async function getTripPropositions() {
     const res = await fetch('/api/trips');
@@ -17,11 +20,11 @@ async function getTripPropositions() {
 }
 
 export default function TripPropositionsPage() {
-  const [trips, setTrips] = useState([]);
+  const [trips, setTrips] = useState<TripSet[]>([]);
 
   useEffect(() => {
     async function fetchTrips() {
-      const data = await getTripPropositions();
+      const data: TripSet[] = await getTripPropositions();
       setTrips(data);
     }
     fetchTrips();
@@ -33,61 +36,20 @@ export default function TripPropositionsPage() {
       <p className="text-lg mb-8 text-gray-600">Specjalnie dla Ciebie</p>
 
       <div className="flex flex-col gap-8">
-        {trips.map((trip: any) => {
+        {trips.map((trip: TripSet) => {
           // Get the first accommodation image from the trip
           const firstAccommodation = trip.destinations.find(
-            (dest: any) => dest.accommodation
+            (dest: Destination) => dest.accommodation
           )?.accommodation;
           const tripImage =
             firstAccommodation?.images?.[0] ||
             "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
 
           return (
-            <div
-              key={trip.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden max-w-[800px] flex gap-6"
-            >
-              <img
-                src={tripImage}
-                alt={trip.name}
-                className="w-[200px] h-[200px] object-cover flex-shrink-0"
-              />
-              <div className="p-6 flex-1">
-                <div className="mb-4">
-                  <h2 className="text-primary text-2xl mb-2">{trip.name}</h2>
-                  <div className="text-sm text-gray-600 mb-3">
-                    Czas trwania: {trip.duration} dni | Całkowity koszt:{" "}
-                    {trip.totalPrice} PLN
-                  </div>
-
-                  {/* Trip route */}
-                  <div className="text-base text-primary font-medium">
-                    {trip.destinations
-                      .map((dest: any, idx: number) => {
-                        const cities = [];
-                        if (idx === 0) {
-                          cities.push(dest.transport.from.city);
-                        }
-                        cities.push(dest.transport.destination.city);
-                        return cities;
-                      })
-                      .flat()
-                      .join(" → ")}
-                  </div>
-                </div>
-
-                <Link
-                  href={`/trip-propositions/${trip.id}`}
-                  className="no-underline"
-                >
-                  <button className="mt-4 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
-                    Sprawdź
-                  </button>
-                </Link>
-              </div>
-            </div>
+            <TripBox trip={trip} key={trip.id} />
           );
         })}
+        <CreatedByOthers />
       </div>
     </main>
   );
