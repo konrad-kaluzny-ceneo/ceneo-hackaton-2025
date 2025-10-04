@@ -1,4 +1,6 @@
+import { ContextItem } from "./user-context/ContextItem";
+
 export interface IRepository {
-  add(item: string): void;
-  getAll(): string[];
+  addContextItem(item: ContextItem): void
+  getContextItems(userId: string): ContextItem[]
 }
