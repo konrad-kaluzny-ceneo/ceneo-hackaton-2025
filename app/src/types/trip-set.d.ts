@@ -1,7 +1,7 @@
 export interface Destination {
   order: number;
   transportId: string;
-  accommodationId: [string] | null;
+  accommodationId: string | null;
 }
 
 export interface TripSet {
