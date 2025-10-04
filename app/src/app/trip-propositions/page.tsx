@@ -24,11 +24,16 @@ async function getTripPropositions() {
 
 export default function TripPropositionsPage() {
   const [trips, setTrips] = useState<TripSet[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function fetchTrips() {
-      const data: TripSet[] = await getTripPropositions();
-      setTrips(data);
+      try {
+        const data: TripSet[] = await getTripPropositions();
+        setTrips(data);
+      } finally {
+        setIsLoading(false);
+      }
     }
     fetchTrips();
   }, []);
@@ -36,7 +41,7 @@ export default function TripPropositionsPage() {
   return (
     <main>
       <MaxWidthWrapper>
-        <SortFilters />
+        <SortFilters isLoading={isLoading} />
 
         {trips.length > 0 && (
           <div className="flex justify-center items-center">
@@ -55,7 +60,7 @@ export default function TripPropositionsPage() {
 
             return <TripBox trip={trip} key={trip.id} />;
           })}
-          <CreatedByOthers />
+          <CreatedByOthers isLoading={isLoading} />
         </div>
       </MaxWidthWrapper>
     </main>
