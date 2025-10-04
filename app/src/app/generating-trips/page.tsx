@@ -111,7 +111,7 @@ function GeneratingTripsContent() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen p-4 gap-12 w-full">
+    <div className="flex flex-col justify-center items-center min-h-screen px-4 py-2 gap-6 w-full">
       <SortFilters />
 
       <div className="flex flex-col w-full text-center space-y-6">

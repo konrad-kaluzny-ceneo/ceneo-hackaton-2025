@@ -6,18 +6,20 @@ import TripBox from "@/components/trip/TripBox";
 import { Destination, TripSet } from "@/types/trip-set";
 import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
 import SortFilters from "@/components/sort-filters/SortFilters";
+import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
+import Image from "next/image";
 
 async function getTripPropositions() {
-    const res = await fetch('/api/trips');
-    return await res.json();
-//   const filePath = path.join(
-//     process.cwd(),
-//     "src",
-//     "local-data",
-//     "trip-propositions.json"
-//   );
-//   const fileContents = fs.readFileSync(filePath, "utf-8");
-//   return JSON.parse(fileContents);
+  const res = await fetch("/api/trips");
+  return await res.json();
+  //   const filePath = path.join(
+  //     process.cwd(),
+  //     "src",
+  //     "local-data",
+  //     "trip-propositions.json"
+  //   );
+  //   const fileContents = fs.readFileSync(filePath, "utf-8");
+  //   return JSON.parse(fileContents);
 }
 
 export default function TripPropositionsPage() {
@@ -32,27 +34,30 @@ export default function TripPropositionsPage() {
   }, []);
 
   return (
-    <main className="min-h-screen p-8">      
-      <SortFilters />
-      
-      <p className="text-lg mb-8 text-gray-600">Specjalnie dla Ciebie</p>
+    <main>
+      <MaxWidthWrapper>
+        <SortFilters />
 
-      <div className="flex flex-col gap-8">
-        {trips.map((trip: TripSet) => {
-          // Get the first accommodation image from the trip
-          const firstAccommodation = trip.destinations.find(
-            (dest: Destination) => dest.accommodation
-          )?.accommodation;
-          const tripImage =
-            firstAccommodation?.images?.[0] ||
-            "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
+        {trips.length > 0 && (
+          <div className="flex justify-center items-center">
+            <div className="flex items-center gap-3 py-4 mx-auto">
+              <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
+              <p className="text-primary text-2xl font-semibold">Specjalnie dla Ciebie</p>
+            </div>
+          </div>
+        )}
 
-          return (
-            <TripBox trip={trip} key={trip.id} />
-          );
-        })}
-        <CreatedByOthers />
-      </div>
+        <div className="flex flex-col gap-8">
+          {trips.map((trip: TripSet) => {
+            // Get the first accommodation image from the trip
+            const firstAccommodation = trip.destinations.find((dest: Destination) => dest.accommodation)?.accommodation;
+            const tripImage = firstAccommodation?.images?.[0] || "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
+
+            return <TripBox trip={trip} key={trip.id} />;
+          })}
+          <CreatedByOthers />
+        </div>
+      </MaxWidthWrapper>
     </main>
   );
 }

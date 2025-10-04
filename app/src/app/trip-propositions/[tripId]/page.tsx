@@ -2,6 +2,10 @@ import React from 'react';
 import path from 'path';
 import fs from 'fs';
 import Link from 'next/link';
+import MaxWidthWrapper from '@/components/shared/MaxWidthWrapper';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
+import BackButton from '@/components/shared/BackButton';
 
 function getTripPropositions() {
     const filePath = path.join(process.cwd(), 'src', 'local-data', 'trip-propositions.json');
@@ -29,11 +33,15 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
     }).flat();
 
     return (
-        <main className="min-h-screen p-8">
+        <main>
+            <MaxWidthWrapper>
 
-            <h1 className="text-primary text-3xl mb-8 text-center">
-                Twoja nowa podróż
-            </h1>
+            <div className="flex items-center mb-8 gap-2">
+                <BackButton />
+                <h1 className="text-primary text-3xl text-center">
+                    Twoja nowa podróż
+                </h1>
+            </div>
 
             {/* Timeline */}
             <div className="relative">
@@ -105,12 +113,11 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
 
             {/* Zakończ button */}
             <div className="flex justify-center mt-8 pb-8">
-                <Link href="/trip-propositions" className="no-underline">
-                    <button className="bg-primary text-white border-none rounded-lg px-12 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
-                        Zakończ
-                    </button>
+                <Link href="/trip-propositions" className={cn(buttonVariants({ variant: "default" }))}>
+                        Powróć
                 </Link>
-            </div>
+                </div>
+            </MaxWidthWrapper>
         </main>
     );
 }
