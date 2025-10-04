@@ -1,0 +1,50 @@
+[
+  {
+    "from": {
+      "country": "Polska",
+      "region": "Dolnośląskie",
+      "city": "Wrocław"
+    },
+    "fromDate": "2025-10-10",
+    "destination": {
+      "country": "Niemcy",
+      "region": "Berlin",
+      "city": "Berlin"
+    },
+    "destinationDate": "2025-10-10",
+    "price": 89.99,
+    "name": "Autobus FlixBus"
+  },
+  {
+    "from": {
+      "country": "Francja",
+      "region": "Île-de-France",
+      "city": "Paryż"
+    },
+    "fromDate": "2025-10-12",
+    "destination": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Barcelona"
+    },
+    "destinationDate": "2025-10-12",
+    "price": 149.50,
+    "name": "Lot Ryanair"
+  },
+  {
+    "from": {
+      "country": "Polska",
+      "region": "Małopolskie",
+      "city": "Kraków"
+    },
+    "fromDate": "2025-10-15",
+    "destination": {
+      "country": "Czechy",
+      "region": "Praga",
+      "city": "Praga"
+    },
+    "destinationDate": "2025-10-15",
+    "price": 59.00,
+    "name": "Pociąg RegioJet"
+  }
+]

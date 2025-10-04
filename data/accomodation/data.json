@@ -1,0 +1,49 @@
+[
+  {
+    "location": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Barcelona"
+    },
+    "date": "2025-10-12",
+    "price": 320.00,
+    "beds": 2,
+    "name": "Casa Sol Boutique Apartment",
+    "description": "Stylowy apartament w centrum Barcelony, idealny dla pary lub małej rodziny. Blisko plaży i atrakcji turystycznych.",
+    "images": [
+      "https://example.com/images/casa-sol-1.jpg",
+      "https://example.com/images/casa-sol-2.jpg"
+    ]
+  },
+  {
+    "location": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Girona"
+    },
+    "date": "2025-10-13",
+    "price": 210.50,
+    "beds": 4,
+    "name": "Girona Rural Escape",
+    "description": "Urokliwy domek na wsi z widokiem na góry, idealny dla rodzin i grup przyjaciół.",
+    "images": [
+      "https://example.com/images/girona-escape-1.jpg",
+      "https://example.com/images/girona-escape-2.jpg"
+    ]
+  },
+  {
+    "location": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Tarragona"
+    },
+    "date": "2025-10-14",
+    "price": 150.00,
+    "beds": 1,
+    "name": "Tarragona Studio by the Sea",
+    "description": "Kompaktowe studio z balkonem i widokiem na morze. Doskonałe dla podróżujących solo.",
+    "images": [
+      "https://example.com/images/tarragona-studio-1.jpg"
+    ]
+  }
+]
