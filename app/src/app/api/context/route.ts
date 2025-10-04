@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
 
   await answerHandler.handle({
     userId: userId,
-    items: body.items
+    items: body.items,
   });
 
   return new Response();
