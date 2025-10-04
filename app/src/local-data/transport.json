@@ -1,5 +1,18 @@
 [
   {
+    "id": "set1-1",
+    "fromLocationId": "pol-warsza-48f4430f",
+    "fromDate": "2025-10-09T12:15:00Z",
+    "toLocationId": "pol-kraków-30cfd729",
+    "toDate": "2025-10-09T15:46:00Z",
+    "price": 131.66,
+    "name": "PKP Intercity",
+    "type": "train"
+  },
+
+
+
+  {
     "id": "d3f4e2d7-c0c5-4a49-8237-b6c631481ee6",
     "fromLocationId": "cze-praga-39f04dd8",
     "fromDate": "2025-10-04T13:45:00Z",
