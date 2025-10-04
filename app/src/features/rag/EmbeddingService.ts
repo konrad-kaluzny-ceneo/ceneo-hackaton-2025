@@ -3,10 +3,6 @@ import { pipeline, env } from '@xenova/transformers';
 // Disable local model storage in browser-like environments
 env.allowLocalModels = false;
 
-/**
- * Embedding Service using Hugging Face's all-MiniLM-L6-v2 model
- * This service generates embeddings for text to enable semantic search
- */
 export class EmbeddingService {
   private static instance: EmbeddingService;
   private embedder: any = null;
@@ -27,10 +23,10 @@ export class EmbeddingService {
   private async initialize(): Promise<void> {
     if (this.isInitialized) return;
 
-    console.log('Loading all-MiniLM-L6-v2 model...');
+    console.log('Loading paraphrase-multilingual-MiniLM-L12-v2 model...');
     this.embedder = await pipeline(
       'feature-extraction',
-      'Xenova/all-MiniLM-L6-v2'
+      'Xenova/paraphrase-multilingual-MiniLM-L12-v2'
     );
     this.isInitialized = true;
     console.log('Model loaded successfully');
