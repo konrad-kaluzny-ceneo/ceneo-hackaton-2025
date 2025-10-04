@@ -21,7 +21,7 @@ export default function BackButton() {
           <HomeIcon className="w-8 h-8" aria-label="Strona główna" />
         </div>
       ) : (
-        <Button onClick={handleBack} variant="ghost">
+        <Button onClick={handleBack} variant="ghost" size="icon">
           <ArrowLeftIcon className="w-8 h-8" aria-label="Wróć" />
         </Button>
       )}
