@@ -48,7 +48,7 @@ export default function TripPropositionsPage() {
             "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
 
           return (
-            <TripBox trip={trip} />
+            <TripBox trip={trip} key={trip.id} />
           );
         })}
         <CreatedByOthers />

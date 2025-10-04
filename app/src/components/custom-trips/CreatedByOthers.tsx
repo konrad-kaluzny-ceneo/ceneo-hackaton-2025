@@ -14,7 +14,7 @@ export default function CreatedByOthers() {
       </div>
       <div className="flex flex-col gap-2">
         {tripsFromOthers.map((trip: TripSet) => (
-          <TripBox trip={trip} />
+          <TripBox trip={trip} key={trip.id} />
         ))}
       </div>
     </div>
