@@ -10,22 +10,22 @@
       {
         "order": 1,
         "transportId": "set1-1",
-        "accommodationId": "set1-1"
+        "accommodationId": ["set1-1", "set1-1-2"]
       },
       {
-        "order": 1,
-        "transportId": "set1-1",
-        "accommodationId": "set1-1"
+        "order": 2,
+        "transportId": "set1-2",
+        "accommodationId": ["set1-2", "set1-2-2"]
       },
       {
-        "order": 1,
-        "transportId": "set1-1",
-        "accommodationId": "set1-1"
+        "order": 3,
+        "transportId": "set1-3",
+        "accommodationId": ["set1-3", "set1-3-2", "set1-3-3"]
       },
       {
-        "order": 1,
-        "transportId": "set1-1",
-        "accommodationId": "set1-1"
+        "order": 4,
+        "transportId": "set1-4",
+        "accommodationId": null
       }
     ]
   }
