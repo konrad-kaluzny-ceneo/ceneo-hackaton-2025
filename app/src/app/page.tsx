@@ -1,3 +1,5 @@
+"use client";
+
 import ExampleOfDynamicButton from "@/components/examples/ExampleOfDynamicButton";
 import { Friends } from "@/components/user/Friends";
 import Link from "next/link";
@@ -5,16 +7,32 @@ import { useUserId } from "@/infrastructure/UserAccessor";
 import { Repository } from "@/infrastructure/Repository";
 import { inject } from "@/infrastructure/DIContainer";
 import { redirect } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useUser } from "@/infrastructure/FrontendUserAccessor";
 
-export default async function Home() {
-  const userId = await useUserId();
-  console.log("userId", userId);
-  const repository = inject(Repository);
-  const contextItems = repository.getContextItems(userId);
-  if (contextItems.length === 0) {
-    return redirect("/questionnaire");
-  } else {
-    return redirect("/trip-propositions");
+export default function Home() {
+  const [completionResult, setCompletionResult] = useState<any>(null);
+  const userId = useUser().id;
+
+  useEffect(() =>{
+    const userId = useUser().id;
+    fetch('/api/questionnaire/completed')
+      .then(response => response.json())
+      .then(data => {
+        setCompletionResult(data);
+      });
+  }, []);
+
+  if (completionResult) {
+    if (!completionResult.isCompleted) {
+      redirect("/start");
+    }
+
+    if (completionResult.isGenerated) {
+      redirect("/trip-propositions");
+    }
+
+    redirect("/generating-trips");
   }
 
   return (

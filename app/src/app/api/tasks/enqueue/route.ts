@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
   const taskId = taskQueue.enqueue(async () => {
     const locationsRaw = fs.readFileSync('./src/local-data/locations.json', 'utf-8');
     const transportRaw = fs.readFileSync('./src/local-data/transport.json', 'utf-8');
-    const accommodationRaw = fs.readFileSync('./src/local-data/accomodation.json', 'utf-8');
+    const accommodationRaw = fs.readFileSync('./src/local-data/accommodation.json', 'utf-8');
 
     // Limit each list to max 20 elements
     const locations = JSON.stringify(JSON.parse(locationsRaw).slice(0, 20));
