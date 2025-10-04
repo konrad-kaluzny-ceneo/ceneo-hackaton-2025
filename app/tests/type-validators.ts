@@ -1,5 +1,5 @@
 import { Accommodation } from '../src/types/accommodation';
-import { LocationWithDetails, Location, Attraction, MonthConditions } from '../src/types/location';
+import { LocationWithDetails, LocationInApp, Attraction, MonthConditions } from '../src/types/location';
 import { Transport } from '../src/types/transport';
 
 export const isValidString = (value: unknown): value is string => 
@@ -39,7 +39,7 @@ export const isValidAccommodation = (value: unknown): value is Accommodation => 
          isValidStringArray(value.images);
 };
 
-export const isValidLocation = (value: unknown): value is Location => {
+export const isValidLocation = (value: unknown): value is LocationInApp => {
   if (!isValidObject(value)) return false;
   
   const requiredKeys = ['id', 'country', 'region', 'city'];
@@ -91,13 +91,14 @@ export const isValidLocationWithDetails = (value: unknown): value is LocationWit
 export const isValidTransport = (value: unknown): value is Transport => {
   if (!isValidObject(value)) return false;
   
-  const requiredKeys = ['fromLocationId', 'fromDate', 'toLocationId', 'destinationDate', 'price', 'name'];
+  const requiredKeys = ['id', 'fromLocationId', 'fromDate', 'toLocationId', 'toDate', 'price', 'name'];
   if (!hasRequiredKeys(value, requiredKeys)) return false;
   
-  return isValidString(value.fromLocationId) &&
+  return isValidString(value.id) &&
+         isValidString(value.fromLocationId) &&
          isValidDateString(value.fromDate) &&
          isValidString(value.toLocationId) &&
-         isValidDateString(value.destinationDate) &&
+         isValidDateString(value.toDate) &&
          isValidNumber(value.price) &&
          isValidString(value.name);
 };

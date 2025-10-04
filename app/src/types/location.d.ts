@@ -1,4 +1,4 @@
-export interface Location {
+export interface LocationInApp {
   id: string;
   country: string;
   region: string;
@@ -19,7 +19,7 @@ export interface MonthConditions {
 
 export interface LocationWithDetails {
   id: string;
-  location: Location;
+  location: LocationInApp;
   attractions: Attraction[];
   conditionsInMonth: Record<string, MonthConditions>;
 }
