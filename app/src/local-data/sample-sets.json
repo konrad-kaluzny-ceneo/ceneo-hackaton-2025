@@ -1,6 +1,7 @@
 {
   "future": {
     "id": "trip-set-001",
+    "userId": "user-1",
     "name": "Magiczne Trio: Kraków - Praga - Brno",
     "totalPrice": 2847.23,
     "startDate": "2025-10-09T12:15:00Z",
@@ -32,6 +33,7 @@
 
   "history": {
     "id": "trip-set-001",
+    "userId": "user-1",
     "name": "Weekend w Karlowych Warach – relaks i historia",
     "totalPrice": 2847.23,
     "startDate": "2025-10-09T12:15:00Z",

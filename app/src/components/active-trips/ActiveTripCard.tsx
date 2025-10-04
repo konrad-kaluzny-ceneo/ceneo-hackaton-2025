@@ -21,19 +21,6 @@ function getTransportIcon(transportName: string) {
   return <Plane className="w-5 h-5" />;
 }
 
-function getAirportCode(city: string): string {
-  const codes: { [key: string]: string } = {
-    Wrocław: "WRO",
-    Bergamo: "BGY",
-    Berlin: "BER",
-    Barcelona: "BCN",
-    Chiavenna: "CHV",
-    Praga: "PRG",
-    Mediolan: "MIL",
-  };
-  return codes[city] || "XXX";
-}
-
 function formatDate(dateString: string) {
   return new Date(dateString).toLocaleDateString("pl-PL", {
     day: "2-digit",
@@ -59,9 +46,9 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
       <MaxWidthWrapper className="w-full">
         <div className=" bg-white w-full rounded-2xl shadow-md flex flex-col">
           {/* Header with image and trip info */}
-          <div className="relative w-full h-48 flex items-center justify-center">
-            <Image src={trip.image || DEFAULT_IMAGE} alt={trip.name} fill className="object-cover rounded-t-2xl" />
-          </div>
+            <div className="relative w-full h-48 flex items-center justify-center">
+              <img src={trip.image || DEFAULT_IMAGE} alt={trip.name} className="object-cover rounded-t-2xl w-full h-full" style={{ objectFit: "cover" }} />
+            </div>
 
           <div className="px-6 pb-4 flex flex-col gap-2 w-full mt-4">
             <h2 className="text-primary text-2xl font-bold">{trip.name}</h2>
@@ -73,7 +60,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
               </div>
               <div className="flex items-center gap-1">
                 <Euro className="w-4 h-4" />
-                {trip.totalPrice} PLN
+                {trip.totalPrice}
               </div>
             </div>
 
