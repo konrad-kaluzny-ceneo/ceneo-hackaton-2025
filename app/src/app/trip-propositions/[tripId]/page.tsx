@@ -29,28 +29,28 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
     }).flat();
 
     return (
-        <main className="bg-[#f5ecd7] min-h-screen p-8">
+        <main className="min-h-screen p-8">
 
-            <h1 className="text-[#355c3c] text-3xl mb-8 text-center">
+            <h1 className="text-primary text-3xl mb-8 text-center">
                 Twoja nowa podróż
             </h1>
 
             {/* Timeline */}
             <div className="relative">
                 {/* Vertical line */}
-                <div className="absolute left-8 top-5 bottom-5 w-0.5 bg-[#355c3c]" />
+                <div className="absolute left-8 top-5 bottom-5 w-0.5 bg-primary" />
 
                 {/* Timeline items */}
                 {trip.destinations.map((dest: any, idx: number) => (
                     <div key={idx} className="mb-8 relative">
                         {/* Circle marker */}
-                        <div className="absolute left-[23px] top-5 w-5 h-5 rounded-full bg-[#355c3c] border-[3px] border-[#f5ecd7]" />
+                        <div className="absolute left-[23px] top-5 w-5 h-5 rounded-full bg-primary border-[3px] border-[#f5ecd7]" />
 
                         {/* Content */}
                         <div className="ml-16">
                             {/* Transport */}
                             <div className="bg-white rounded-2xl p-6 mb-4">
-                                <h3 className="text-[#355c3c] text-xl mb-2">
+                                <h3 className="text-primary text-xl mb-2">
                                     {dest.transport.name.includes('Lot') ? '✈️' : 
                                      dest.transport.name.includes('Pociąg') ? '🚂' : '🚌'} {dest.transport.name.split(' ')[0]}
                                 </h3>
@@ -65,7 +65,7 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
                                      dest.transport.destination.city === 'Praga' ? 'PRG' : 'XXX'})
                                 </div>
 
-                                <div className="text-sm text-[#355c3c] font-bold mb-2">
+                                <div className="text-sm text-primary font-bold mb-2">
                                     Czas na przesiadkę
                                 </div>
                                 <div className="text-xs text-gray-500">
@@ -84,7 +84,7 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
                             {/* Accommodation */}
                             {dest.accommodation && (
                                 <div className="bg-white rounded-2xl p-6 mb-4">
-                                    <h3 className="text-[#355c3c] text-xl mb-2">
+                                    <h3 className="text-primary text-xl mb-2">
                                         🏠 Zakwaterowanie
                                     </h3>
                                     <div className="text-sm font-bold text-gray-800 mb-1">
@@ -106,7 +106,7 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
             {/* Zakończ button */}
             <div className="flex justify-center mt-8 pb-8">
                 <Link href="/trip-propositions" className="no-underline">
-                    <button className="bg-[#355c3c] text-white border-none rounded-lg px-12 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
+                    <button className="bg-primary text-white border-none rounded-lg px-12 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
                         Zakończ
                     </button>
                 </Link>

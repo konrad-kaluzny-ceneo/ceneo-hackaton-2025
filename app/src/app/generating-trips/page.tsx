@@ -112,7 +112,7 @@ function GeneratingTripsContent() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#EDE8E2] p-4">
+    <div className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-md text-center space-y-6">
         {error ? (
           <div className="space-y-4">
@@ -125,7 +125,7 @@ function GeneratingTripsContent() {
             </p>
             <button 
               onClick={() => window.location.reload()}
-              className="mt-6 bg-[#3D5A4C] text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-[#2D4A3C] transition-colors"
+              className="mt-6 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors"
             >
               Spróbuj ponownie
             </button>
@@ -151,7 +151,7 @@ function GeneratingTripsContent() {
 export default function GeneratingTripsPage() {
   return (
     <Suspense fallback={
-      <div className="flex justify-center items-center min-h-screen bg-[#EDE8E2] p-4">
+      <div className="flex justify-center items-center min-h-screen p-4">
         <div className="w-full max-w-md text-center space-y-6">
           <div className="space-y-6">
             <div className="flex justify-center">

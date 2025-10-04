@@ -30,8 +30,8 @@ export default function TripPropositionsPage() {
   }, []);
 
   return (
-    <main className="bg-[#f5ecd7] min-h-screen p-8">
-      <h1 className="text-[#355c3c] text-4xl mb-2 font-bold">Here.</h1>
+    <main className="min-h-screen p-8">
+      <h1 className="text-primary text-4xl mb-2 font-bold">Here.</h1>
       <p className="text-lg mb-8 text-gray-600">Specjalnie dla Ciebie</p>
 
       <div className="flex flex-col gap-8">
@@ -56,14 +56,14 @@ export default function TripPropositionsPage() {
               />
               <div className="p-6 flex-1">
                 <div className="mb-4">
-                  <h2 className="text-[#355c3c] text-2xl mb-2">{trip.name}</h2>
+                  <h2 className="text-primary text-2xl mb-2">{trip.name}</h2>
                   <div className="text-sm text-gray-600 mb-3">
                     Czas trwania: {trip.duration} dni | Całkowity koszt:{" "}
                     {trip.totalPrice} PLN
                   </div>
 
                   {/* Trip route */}
-                  <div className="text-base text-[#355c3c] font-medium">
+                  <div className="text-base text-primary font-medium">
                     {trip.destinations
                       .map((dest: any, idx: number) => {
                         const cities = [];
@@ -82,7 +82,7 @@ export default function TripPropositionsPage() {
                   href={`/trip-propositions/${trip.id}`}
                   className="no-underline"
                 >
-                  <button className="mt-4 bg-[#355c3c] text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
+                  <button className="mt-4 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
                     Sprawdź
                   </button>
                 </Link>

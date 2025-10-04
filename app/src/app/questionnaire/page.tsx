@@ -55,7 +55,7 @@ export default function QuestionnairePage() {
     selectedAnswers[questions[currentQuestion].id] !== undefined;
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#EDE8E2] p-4">
+    <div className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-md flex flex-col gap-8">
         {/* Nagłówek */}
         <div className="text-center space-y-2">
@@ -82,7 +82,7 @@ export default function QuestionnairePage() {
           </h2>
 
           {/* Odpowiedzi jako chipy */}
-          <div className="flex flex-col gap-3 mt-6">
+          <div className="flex flex-col gap-3 mt-6 items-center">
             {questions[currentQuestion].answers.map((answer, index) => (
               <Badge
                 key={index}
@@ -96,7 +96,7 @@ export default function QuestionnairePage() {
                   transition-all duration-200 hover:shadow-md
                   ${
                     selectedAnswers[questions[currentQuestion].id] === answer
-                      ? "bg-[#3D5A4C] text-white hover:bg-[#2D4A3C]"
+                      ? "bg-primary text-white hover:bg-primary"
                       : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"
                   }
                 `}
@@ -112,7 +112,7 @@ export default function QuestionnairePage() {
         <Button
           onClick={handleNext}
           disabled={!isAnswerSelected || isLoading}
-          className="w-full py-6 text-base bg-[#3D5A4C] hover:bg-[#2D4A3C] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full py-6 text-base bg-primary hover:bg-primary disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
         </Button>
