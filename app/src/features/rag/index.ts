@@ -3,4 +3,8 @@ export { SimilaritySearchService } from './SimilaritySearchService';
 export { LocationService } from './LocationService';
 export { EmbeddingGenerationService } from './EmbeddingGenerationService';
 export { AttractionSearchService } from './AttractionSearchService';
+export { AccommodationService } from './AccommodationService';
+export { AccommodationEmbeddingService } from './AccommodationEmbeddingService';
+export { AccommodationSearchService } from './AccommodationSearchService';
+export { AccommodationSimilaritySearchService } from './AccommodationSimilaritySearchService';
 export * from './types';
