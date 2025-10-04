@@ -29,7 +29,7 @@ export class Repository {
   }
 
   public getTripPropositionsByUserId(userId: string): TripProposition[] {
-    return this.tripPropositions.filter(tp => tp.userId === userId);
+    return this.tripPropositions.filter(tp => tp.userId === userId).map(x => x.data);
   }
 
   public getTripPropositionById(id: string): TripProposition | undefined {

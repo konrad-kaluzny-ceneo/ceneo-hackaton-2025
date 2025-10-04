@@ -57,7 +57,10 @@ export async function POST(request: Request) {
                     }
                 ]
             }
-            `);
+            RETURN ONLY JSON WITHOUT ANY ADDITIONAL TEXT. DO NOT ADD \`\`\`json
+        `);
+
+        console.log('AI Generated Trips:', aiGeneratedTrips);
 
 
         repository.addTripProposition({
