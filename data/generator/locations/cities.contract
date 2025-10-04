@@ -1,0 +1,8 @@
+ [
+  "JAPONIA": [
+    {"city": "Tokio", "region": "..."},
+    {"city": "Kioto", "region": "..."},
+    ...
+  ],
+  ...
+]
