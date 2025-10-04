@@ -29,7 +29,7 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
     }).flat();
 
     return (
-        <main className="bg-[#f5ecd7] min-h-screen p-8">
+        <main className="min-h-screen p-8">
 
             <h1 className="text-primary text-3xl mb-8 text-center">
                 Twoja nowa podróż
@@ -106,7 +106,7 @@ export default function TripDetailPage({ params }: { params: { tripId: string } 
             {/* Zakończ button */}
             <div className="flex justify-center mt-8 pb-8">
                 <Link href="/trip-propositions" className="no-underline">
-                    <button className="bg-primary text-white border-none rounded-lg px-12 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
+                    <button className="bg-primary text-white border-none rounded-lg px-12 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
                         Zakończ
                     </button>
                 </Link>

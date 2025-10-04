@@ -30,7 +30,7 @@ export default function TripPropositionsPage() {
   }, []);
 
   return (
-    <main className="bg-[#f5ecd7] min-h-screen p-8">
+    <main className="min-h-screen p-8">
       <h1 className="text-primary text-4xl mb-2 font-bold">Here.</h1>
       <p className="text-lg mb-8 text-gray-600">Specjalnie dla Ciebie</p>
 
@@ -82,7 +82,7 @@ export default function TripPropositionsPage() {
                   href={`/trip-propositions/${trip.id}`}
                   className="no-underline"
                 >
-                  <button className="mt-4 bg-[#355c3c] text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-[#2a4a30] transition-colors">
+                  <button className="mt-4 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
                     Sprawdź
                   </button>
                 </Link>
