@@ -26,7 +26,7 @@ export async function POST() {
     const userContext = repository.getContextItems(userId);
 
     const attractionResult = await attractionSearchService.searchAttractions(
-      userContext.filter(x => x.question == 'Description')?.[0]?.answer || ''
+      userContext.filter(x => x.question == 'Summary')?.[0]?.answer || ''
     );
 
     const aiGeneratedTrips = await callAI(
