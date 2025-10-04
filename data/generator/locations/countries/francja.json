@@ -1,34 +1,34 @@
 [
   {
-    "id": "pol-kraków-30cfd729",
+    "id": "fra-paryż-39421966",
     "location": {
-      "country": "POLSKA",
-      "region": "Małopolskie",
-      "city": "Kraków"
+      "country": "FRANCJA",
+      "region": "Île-de-France",
+      "city": "Paryż"
     },
     "attractions": [
       {
-        "name": "Rynek Główny z Sukiennicami",
-        "description": "Największy średniowieczny plac w Europie z gotycką Bazyliką Mariacką i renesansowymi Sukiennicami.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Wawel - Zamek Królewski",
-        "description": "Historyczna rezydencja polskich królów z katedrą, skarbcem koronnym i słynnym smokiem wawelskim.",
-        "price": 25,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Kazimierz - Dzielnica Żydowska",
-        "description": "Historyczna dzielnica żydowska z synagogami, klimatycznymi restauracjami i bogatą historią.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -37,85 +37,85 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 3,
-        "temp": -1
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 3,
-        "temp": 1
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 5,
-        "temp": 6
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 7,
-        "temp": 12
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 8,
-        "temp": 17
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 9,
-        "temp": 20
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 10,
-        "temp": 22
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 10,
-        "temp": 21
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 8,
-        "temp": 16
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 6,
-        "temp": 11
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 4,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 4,
-        "temp": 1
+        "density": null,
+        "temp": null
       }
     }
   },
   {
-    "id": "pol-warsza-48f4430f",
+    "id": "fra-nicea-829a61b7",
     "location": {
-      "country": "POLSKA",
-      "region": "Mazowieckie",
-      "city": "Warszawa"
+      "country": "FRANCJA",
+      "region": "Prowansja-Alpy-Lazurowe Wybrzeże",
+      "city": "Nicea"
     },
     "attractions": [
       {
-        "name": "Stare Miasto z Zamkiem Królewskim",
-        "description": "Odbudowane po wojnie zabytkowe centrum z kolorowymi kamieniczkami i rezydencją królewską.",
-        "price": 20,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Pałac na Wodzie w Łazienkach",
-        "description": "Klasycystyczny pałac na wyspie w pięknym parku z pawimi i pomnikiem Chopina.",
-        "price": 15,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Pałac Kultury i Nauki",
-        "description": "Ikona Warszawy i najwyższy budynek w Polsce z panoramicznym tarasem widokowym.",
-        "price": 25,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -124,85 +124,85 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 2,
-        "temp": -2
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 3,
-        "temp": 0
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 5,
-        "temp": 4
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 6,
-        "temp": 10
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 7,
-        "temp": 16
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 8,
-        "temp": 19
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 9,
-        "temp": 21
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 9,
-        "temp": 20
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 7,
-        "temp": 15
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 5,
-        "temp": 9
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 3,
-        "temp": 4
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 3,
-        "temp": 0
+        "density": null,
+        "temp": null
       }
     }
   },
   {
-    "id": "pol-gdańsk-2812f824",
+    "id": "fra-cannes-9909b937",
     "location": {
-      "country": "POLSKA",
-      "region": "Pomorskie",
-      "city": "Gdańsk"
+      "country": "FRANCJA",
+      "region": "Prowansja-Alpy-Lazurowe Wybrzeże",
+      "city": "Cannes"
     },
     "attractions": [
       {
-        "name": "Długi Targ z Fontanną Neptuna",
-        "description": "Główna ulica Starego Miasta z kolorowymi kamienicami kupieckimi i symbolem miasta.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Bazylika Mariacka",
-        "description": "Największa ceglana świątynia na świecie z astronomicznym zegarem i panoramą miasta.",
-        "price": 10,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Stocznia Gdańska i ECS",
-        "description": "Historyczne miejsce narodzin Solidarności z interaktywnym muzeum i pomnikami.",
-        "price": 18,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -211,85 +211,85 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 2,
-        "temp": 0
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 2,
-        "temp": 1
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 4,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 6,
-        "temp": 10
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 7,
-        "temp": 15
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 8,
-        "temp": 18
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 9,
-        "temp": 20
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 9,
-        "temp": 19
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 7,
-        "temp": 15
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 5,
-        "temp": 10
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 3,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 2,
-        "temp": 2
+        "density": null,
+        "temp": null
       }
     }
   },
   {
-    "id": "pol-zakopa-883cd0be",
+    "id": "fra-lyon-68a14103",
     "location": {
-      "country": "POLSKA",
-      "region": "Małopolskie",
-      "city": "Zakopane"
+      "country": "FRANCJA",
+      "region": "Owernia-Rodan-Alpy",
+      "city": "Lyon"
     },
     "attractions": [
       {
-        "name": "Kasprowy Wierch",
-        "description": "Szczyt w Tatrach dostępny kolejką linową z panoramicznymi widokami na góry.",
-        "price": 45,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Krupówki",
-        "description": "Główny deptak Zakopanego z regionalną kuchnią, pamiątkami i góralską atmosferą.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Muzeum Stylu Zakopiańskiego",
-        "description": "Unikalna architektura góralska w Willi Koliba z ekspozycją kultury podhalańskiej.",
-        "price": 12,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -298,85 +298,85 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 8,
-        "temp": -5
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 9,
-        "temp": -3
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 6,
-        "temp": 2
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 4,
-        "temp": 8
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 5,
-        "temp": 13
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 7,
-        "temp": 16
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 10,
-        "temp": 18
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 10,
-        "temp": 17
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 6,
-        "temp": 13
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 4,
-        "temp": 8
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 3,
-        "temp": 2
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 7,
-        "temp": -2
+        "density": null,
+        "temp": null
       }
     }
   },
   {
-    "id": "pol-wrocła-ae7634a1",
+    "id": "fra-annecy-987b5659",
     "location": {
-      "country": "POLSKA",
-      "region": "Dolnośląskie",
-      "city": "Wrocław"
+      "country": "FRANCJA",
+      "region": "Owernia-Rodan-Alpy",
+      "city": "Annecy"
     },
     "attractions": [
       {
-        "name": "Rynek ze Średniowiecznym Ratuszem",
-        "description": "Jeden z najpiękniejszych rynków w Europie z gotyckim ratuszem i kolorowymi kamienicami.",
-        "price": 15,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Ostrów Tumski",
-        "description": "Najstarsza część miasta z gotycka katedrą i romantycznymi mostami.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Kraso ludki Wrocławskie",
-        "description": "Ponad 300 miniaturowych brązowych figurek rozsianych po całym mieście do odnalezienia.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -385,85 +385,85 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 3,
-        "temp": -1
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 3,
-        "temp": 1
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 5,
-        "temp": 6
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 7,
-        "temp": 12
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 8,
-        "temp": 17
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 9,
-        "temp": 20
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 10,
-        "temp": 22
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 10,
-        "temp": 21
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 8,
-        "temp": 16
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 6,
-        "temp": 11
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 4,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 4,
-        "temp": 1
+        "density": null,
+        "temp": null
       }
     }
   },
   {
-    "id": "pol-kazimi-c18a09ef",
+    "id": "fra-saintp-b9d39930",
     "location": {
-      "country": "POLSKA",
-      "region": "Lubelskie",
-      "city": "Kazimierz Dolny"
+      "country": "FRANCJA",
+      "region": "Prowansja-Alpy-Lazurowe Wybrzeże",
+      "city": "Saint-Paul-de-Vence"
     },
     "attractions": [
       {
-        "name": "Rynek z Studnią Trzech Króli",
-        "description": "Malowniczy renesansowy rynek z zabytkową studnią i klimatycznymi kamieniczkami.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Ruiny Zamku Królewskiego",
-        "description": "Pozostałości średniowiecznej twierdzy z panoramicznym widokiem na Wisłę.",
-        "price": 8,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
         ]
       },
       {
-        "name": "Wróble Góry",
-        "description": "Lessowe wzgórza z naturalnymi formacjami skalnymi i ścieżkami spacerowy.",
-        "price": 0,
+        "name": null,
+        "description": null,
+        "price": null,
         "images": [
           "https://rudeiczarne.pl/wp-content/uploads/2019/09/sobor-wasyla-blogoslawionego.jpg?is-pending-load=1",
           "https://tse2.mm.bing.net/th/id/OIP.vDf7w4-HxS5R10hSnCiZNAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -472,52 +472,52 @@
     ],
     "conditionsInMonth": {
       "1": {
-        "density": 2,
-        "temp": 0
+        "density": null,
+        "temp": null
       },
       "2": {
-        "density": 2,
-        "temp": 1
+        "density": null,
+        "temp": null
       },
       "3": {
-        "density": 4,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "4": {
-        "density": 6,
-        "temp": 10
+        "density": null,
+        "temp": null
       },
       "5": {
-        "density": 7,
-        "temp": 15
+        "density": null,
+        "temp": null
       },
       "6": {
-        "density": 8,
-        "temp": 18
+        "density": null,
+        "temp": null
       },
       "7": {
-        "density": 9,
-        "temp": 20
+        "density": null,
+        "temp": null
       },
       "8": {
-        "density": 9,
-        "temp": 19
+        "density": null,
+        "temp": null
       },
       "9": {
-        "density": 7,
-        "temp": 15
+        "density": null,
+        "temp": null
       },
       "10": {
-        "density": 5,
-        "temp": 10
+        "density": null,
+        "temp": null
       },
       "11": {
-        "density": 3,
-        "temp": 5
+        "density": null,
+        "temp": null
       },
       "12": {
-        "density": 2,
-        "temp": 2
+        "density": null,
+        "temp": null
       }
     }
   }
