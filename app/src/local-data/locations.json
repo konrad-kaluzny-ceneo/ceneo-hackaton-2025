@@ -1,0 +1,104 @@
+[
+  {
+    "id": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "location": {
+      "country": "Hiszpania",
+      "region": "Katalonia",
+      "city": "Barcelona"
+    },
+    "attractions": [
+      {
+        "name": "Budowle Gaudiego",
+        "description": "Ikoniczne dzieła architektoniczne Antoniego Gaudiego, w tym Sagrada Família, Park Güell i Casa Batlló.",
+        "price": 0,
+        "images": [
+          "https://example.com/images/sagrada_familia.jpg",
+          "https://example.com/images/park_guell.jpg"
+        ]
+      },
+      {
+        "name": "Plaża Barceloneta",
+        "description": "Popularna plaża miejska idealna do relaksu, kąpieli słonecznych i sportów wodnych.",
+        "price": 0,
+        "images": [
+          "https://example.com/images/barceloneta_beach.jpg",
+          "https://example.com/images/barceloneta_sunset.jpg"
+        ]
+      },
+      {
+        "name": "Dzielnica Gotycka",
+        "description": "Historyczne centrum Barcelony z wąskimi uliczkami i średniowiecznymi budowlami.",
+        "price": 0,
+        "images": [
+          "https://example.com/images/gothic_quarter.jpg",
+          "https://example.com/images/gothic_architecture.jpg"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": { "density": 2, "temp": 12 },
+      "2": { "density": 2, "temp": 13 },
+      "3": { "density": 4, "temp": 15 },
+      "4": { "density": 6, "temp": 17 },
+      "5": { "density": 7, "temp": 20 },
+      "6": { "density": 9, "temp": 24 },
+      "7": { "density": 10, "temp": 27 },
+      "8": { "density": 10, "temp": 27 },
+      "9": { "density": 8, "temp": 24 },
+      "10": { "density": 5, "temp": 20 },
+      "11": { "density": 4, "temp": 16 },
+      "12": { "density": 3, "temp": 13 }
+    }
+  },
+  {
+    "id": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "location": {
+      "country": "Portugalia",
+      "region": "Lizbona",
+      "city": "Lizbona"
+    },
+    "attractions": [
+      {
+        "name": "Wieża Belém",
+        "description": "Renesansowa wieża obronna z XVI wieku, symbol portugalskich odkryć geograficznych.",
+        "price": 6,
+        "images": [
+          "https://example.com/images/belem_tower.jpg",
+          "https://example.com/images/belem_sunset.jpg"
+        ]
+      },
+      {
+        "name": "Alfama",
+        "description": "Najstarsza dzielnica Lizbony, pełna wąskich uliczek, muzyki fado i lokalnych restauracji.",
+        "price": 0,
+        "images": [
+          "https://example.com/images/alfama_streets.jpg",
+          "https://example.com/images/fado_night.jpg"
+        ]
+      },
+      {
+        "name": "Oceanarium w Lizbonie",
+        "description": "Jedno z największych oceanariów w Europie, prezentujące ekosystemy oceaniczne z całego świata.",
+        "price": 19,
+        "images": [
+          "https://example.com/images/lisbon_oceanarium.jpg",
+          "https://example.com/images/ocean_life.jpg"
+        ]
+      }
+    ],
+    "conditionsInMonth": {
+      "1": { "density": 2, "temp": 11 },
+      "2": { "density": 2, "temp": 12 },
+      "3": { "density": 4, "temp": 15 },
+      "4": { "density": 6, "temp": 17 },
+      "5": { "density": 7, "temp": 20 },
+      "6": { "density": 9, "temp": 24 },
+      "7": { "density": 10, "temp": 27 },
+      "8": { "density": 10, "temp": 28 },
+      "9": { "density": 8, "temp": 25 },
+      "10": { "density": 5, "temp": 21 },
+      "11": { "density": 4, "temp": 16 },
+      "12": { "density": 3, "temp": 13 }
+    }
+  }
+]

@@ -1,49 +1,28 @@
 [
   {
-    "from": {
-      "country": "Polska",
-      "region": "Dolnośląskie",
-      "city": "Wrocław"
-    },
-    "fromDate": "2025-10-10",
-    "destination": {
-      "country": "Niemcy",
-      "region": "Berlin",
-      "city": "Berlin"
-    },
-    "destinationDate": "2025-10-10",
+    "id": "9w78ey6r-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromLocationId":  "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromDate": "2025-10-10T00:00:00Z",
+    "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "toDate": "2025-10-10T00:00:00Z",
     "price": 89.99,
     "name": "Autobus FlixBus"
   },
   {
-    "from": {
-      "country": "Francja",
-      "region": "Île-de-France",
-      "city": "Paryż"
-    },
-    "fromDate": "2025-10-12",
-    "destination": {
-      "country": "Hiszpania",
-      "region": "Katalonia",
-      "city": "Barcelona"
-    },
-    "destinationDate": "2025-10-12",
+    "id": "1a2b3c4d-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromLocationId": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromDate": "2025-10-12T00:00:00Z",
+    "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "toDate": "2025-10-12T00:00:00Z",
     "price": 149.50,
     "name": "Lot Ryanair"
   },
   {
-    "from": {
-      "country": "Polska",
-      "region": "Małopolskie",
-      "city": "Kraków"
-    },
-    "fromDate": "2025-10-15",
-    "destination": {
-      "country": "Czechy",
-      "region": "Praga",
-      "city": "Praga"
-    },
-    "destinationDate": "2025-10-15",
+    "id": "5f6g7h8i-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromLocationId": "858f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "fromDate": "2025-10-15T00:00:00Z",
+    "toLocationId": "258f1b2e-3c4a-4d5e-9f6a-7b8c9d0e1f2a",
+    "toDate": "2025-10-15T00:00:00Z",
     "price": 59.00,
     "name": "Pociąg RegioJet"
   }
