@@ -6,6 +6,7 @@
     "duration": 7,
     "image": "/images/mountains.webp",
     "startDate": "2025-10-10",
+    "userId": "user-1",
     "destinations": [
       {
         "order": 1,
@@ -90,6 +91,7 @@
     "duration": 5,
     "image": "/images/mountains.webp",
     "startDate": "2025-10-10",
+    "userId": "user-2",
     "destinations": [
       {
         "order": 1,
@@ -190,6 +192,7 @@
     "duration": 6,
     "image": "/images/mountains.webp",
     "startDate": "2025-10-10",
+    "userId": "user-3",
     "destinations": [
       {
         "order": 1,
