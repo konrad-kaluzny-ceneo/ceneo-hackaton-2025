@@ -22,7 +22,7 @@ export default function TripBox({ trip }: TripBoxProps) {
           loading="eager"
         />
       </div>
-      <div className="px-6 flex-1 pb-4 flex flex-col gap-2 w-full">
+      <div className="px-6 pb-4 flex flex-col gap-2 w-full">
         <h2 className="text-primary text-2xl">{trip.name}</h2>
         <div className="text-sm text-gray-600">
           Czas trwania: {trip.duration} dni | Całkowity koszt: {trip.totalPrice} PLN

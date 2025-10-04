@@ -1,3 +1,1 @@
-export const images = {
-    DEFAULT_IMAGE: "/images/trip-train.webp"
-}
+export const DEFAULT_IMAGE = "/images/trip-train.webp";

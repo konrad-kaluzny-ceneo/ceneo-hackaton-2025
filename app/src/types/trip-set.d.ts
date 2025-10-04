@@ -36,4 +36,5 @@ export interface TripSet {
   duration: number;
   image: string | null;
   destinations: Destination[];
+  startDate: Date;
 }

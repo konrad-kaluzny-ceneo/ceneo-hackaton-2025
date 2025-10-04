@@ -15,7 +15,7 @@ const repository = inject(Repository);
  */
 export async function POST(request: NextRequest) {
   const taskQueue = inject(TaskQueue);
-  const userId = useUserId(request);
+  const userId = await useUserId();
 
   if (!userId) {
     return NextResponse.json({ error: "userId is required" }, { status: 400 });
