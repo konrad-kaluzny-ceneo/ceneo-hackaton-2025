@@ -1,4 +1,5 @@
-import { IRepository } from "../IRepository";
+import { inject } from "@/infrastructure/DIContainer";
+import { Repository as Repository } from "@/infrastructure/Repository";
 
 export interface AnswerRequest {
   userId: string;
@@ -9,7 +10,7 @@ export interface AnswerRequest {
 }
 
 export class AnswerHandler {
-  constructor(private repository: IRepository) {}
+  private readonly repository = inject(Repository);
 
   public async handle(request: AnswerRequest): Promise<void> {
     for (const item of request.items) {
