@@ -36,7 +36,7 @@ export default function ChatAiInput() {
       <Button
         disabled={isLoading || !message.trim()}
         aria-label="wyślij wiadomość"
-        className="absolute bottom-1.5 right-[8px]"
+        className="absolute bottom-3.5 right-[8px]"
         size="sm"
         onClick={() => {
           addMessage(message);

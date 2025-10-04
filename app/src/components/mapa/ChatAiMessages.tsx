@@ -3,8 +3,8 @@
 import { cn } from "@/lib/utils";
 import { Loader2Icon, MessageSquareIcon } from "lucide-react";
 import React, { useContext } from "react";
-import ChatAiMessage from "./ChatAiMessage";
 import { ChatAiContext } from "./ChatAiContext";
+import ChatAiMessage from "./ChatAiMessage";
 
 export default function ChatAiMessages() {
   const { isLoading, messages } = useContext(ChatAiContext);

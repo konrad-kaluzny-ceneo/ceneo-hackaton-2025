@@ -75,7 +75,7 @@ export default async function LocationPage({ params }: Props) {
   }
 
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full max-h-screen overflow-y-auto">
       <ChatAiWrapper locationId={id} locations={uniqueLocations} />
     </div>
   );

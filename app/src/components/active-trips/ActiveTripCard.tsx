@@ -5,7 +5,7 @@ import { ActiveTrip } from "@/types/active-trip";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle, Clock, MapPin, Plane, Train, Home, Calendar, Euro, Heart, Camera, Plus, Share2, TreePine } from "lucide-react";
+import { CheckCircle, Clock, MapPin, Plane, Train, Home, Calendar, Euro, Heart, Camera, Plus, Share2, TreePine, MessageCircleIcon } from "lucide-react";
 import Image from "next/image";
 import { DEFAULT_IMAGE } from "@/config/images";
 import MoodRatingModal from "./MoodRatingModal";
@@ -102,11 +102,14 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 <MapPin className="w-4 h-4" />
                 <span>Aktualnie w: </span>
                 {getLocationIdByCity(trip.currentLocation) ? (
-                  <Link 
-                    href={`/location/${getLocationIdByCity(trip.currentLocation)}`}
-                    className="font-semibold text-primary hover:underline"
-                  >
+                  <Link href={`/location/${getLocationIdByCity(trip.currentLocation)}`} className="font-semibold items-center flex gap-1 text-primary hover:underline">
                     {trip.currentLocation}
+                    <div className="ml-2 flex items-center gap-1 text-red-700 text-lg">
+                      <span>
+                        <MessageCircleIcon className="w-4 h-4 fill-red-700 text-red-700" />
+                      </span>
+                      <span className="flex font-bold items-center gap-1">CZAT MIEJSCA</span>
+                    </div>
                   </Link>
                 ) : (
                   <span className="font-semibold">{trip.currentLocation}</span>
@@ -126,10 +129,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                     <div key={experience.id} className="bg-gray-50 rounded-lg p-3">
                       <div className="flex items-center justify-between mb-1">
                         {getLocationIdByCity(experience.location) ? (
-                          <Link 
-                            href={`/location/${getLocationIdByCity(experience.location)}`}
-                            className="font-medium text-sm text-primary hover:underline"
-                          >
+                          <Link href={`/location/${getLocationIdByCity(experience.location)}`} className="font-medium text-sm text-primary hover:underline">
                             {experience.location}
                           </Link>
                         ) : (
@@ -157,7 +157,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             {/* Add experience buttons */}
             <div className="mt-4">
               <div className="flex gap-2">
-                <MoodRatingModal 
+                <MoodRatingModal
                   trigger={
                     <Button variant="outline" size="sm" className="flex items-center gap-1 text-xs">
                       <TreePine className="w-3 h-3" />

@@ -31,13 +31,13 @@ type Props = {
 export default function ChatAiWrapper({ locationId, locations }: Props) {
   return (
     <ChatAiContextProvider locationId={locationId}>
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full md:w-2/3">
-          <LocationMap locations={locations} maxHeight="88vh" />
+      <div className="flex flex-col">
+        <div className="w-full">
+          <LocationMap locations={locations} maxHeight="34vh" />
         </div>
 
-        <div className="relative mt-3 flex h-[59vh] w-full md:mt-0 md:h-[88vh] md:w-1/3">
-          <div className="flex h-[47vh] w-full md:h-[78vh]">
+        <div className="relative mt-3 flex h-[59vh] w-full">
+          <div className="flex h-[47vh] w-full">
             <ChatAiMessages />
           </div>
           <div className="absolute bottom-0 left-0 w-full p-4">

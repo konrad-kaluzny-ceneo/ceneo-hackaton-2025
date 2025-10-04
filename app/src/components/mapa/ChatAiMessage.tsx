@@ -51,7 +51,7 @@ const ChatAiMessage = forwardRef<HTMLDivElement, Props>(
         >
           <div
             className={cn("inline-block rounded-lg px-4 py-2", {
-              "bg-primary/30 text-slate-800": message.isUserMessage,
+              "bg-primary/10 text-slate-800": message.isUserMessage,
               "bg-slate-200 text-slate-800": !message.isUserMessage,
               "rounded-br-none":
                 !isNextMessageSamePerson && message.isUserMessage,
