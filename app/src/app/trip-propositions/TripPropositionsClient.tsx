@@ -9,6 +9,7 @@ import SortFilters from "@/components/sort-filters/SortFilters";
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import Image from "next/image";
 import { Skeleton } from "@/components/ui/skeleton";
+import { images } from "@/config/images";
 
 interface TripPropositionsClientProps {
   initialTrips: TripSet[];
@@ -48,7 +49,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
           ) : (
             trips.map((trip: TripSet) => {
               const firstAccommodation = trip.destinations.find((dest: Destination) => dest.accommodation)?.accommodation;
-              const tripImage = firstAccommodation?.images?.[0] || "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
+              const tripImage = firstAccommodation?.images?.[0] || images.DEFAULT_IMAGE;
 
               return <TripBox trip={trip} key={trip.id} />;
             })

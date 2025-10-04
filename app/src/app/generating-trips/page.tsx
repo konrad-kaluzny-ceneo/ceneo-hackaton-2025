@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
 import SortFilters from "@/components/sort-filters/SortFilters";
+import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 
 type TaskStatus = "PENDING" | "RUNNING" | "COMPLETED" | "FAILED";
 
@@ -111,35 +112,37 @@ function GeneratingTripsContent() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen px-4 py-2 gap-6 w-full">
-      <SortFilters />
+    <MaxWidthWrapper>
+      <div className="flex flex-col justify-center items-center min-h-screen py-2 gap-6 w-full">
+        <SortFilters />
 
-      <div className="flex flex-col w-full text-center space-y-6">
-        {error ? (
-          <div className="space-y-4">
-            <div className="text-6xl">😔</div>
-            <h1 className="text-xl font-semibold text-gray-900">Coś poszło nie tak</h1>
-            <p className="text-base text-gray-600">{error}</p>
-            <button onClick={() => window.location.reload()} className="mt-6 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
-              Spróbuj ponownie
-            </button>
-          </div>
-        ) : (
-          <div className="flex w-full justify-center items-center">
-            <div className="space-y-6 border border-gray-300 rounded-lg px-4 py-8 shadow-md bg-white">
-              <div className="flex justify-center">
-                <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
-              </div>
-              <h1 className="text-xl font-semibold text-gray-900">Generujemy propozycje spersonalizowanych wycieczek...</h1>
-              <p className="text-base text-gray-600">Czekaj cierpliwie, to może chwilę potrwać</p>
+        <div className="flex flex-col w-full text-center space-y-6">
+          {error ? (
+            <div className="space-y-4">
+              <div className="text-6xl">😔</div>
+              <h1 className="text-xl font-semibold text-gray-900">Coś poszło nie tak</h1>
+              <p className="text-base text-gray-600">{error}</p>
+              <button onClick={() => window.location.reload()} className="mt-6 bg-primary text-white border-none rounded-lg px-8 py-3 text-base font-bold cursor-pointer hover:bg-primary transition-colors">
+                Spróbuj ponownie
+              </button>
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="flex w-full justify-center items-center">
+              <div className="space-y-6 border border-gray-300 rounded-lg px-4 py-8 shadow-md bg-white">
+                <div className="flex justify-center">
+                  <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+                </div>
+                <h1 className="text-xl font-semibold text-gray-900">Generujemy propozycje spersonalizowanych wycieczek...</h1>
+                <p className="text-base text-gray-600">Czekaj cierpliwie, to może chwilę potrwać</p>
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="flex flex-col gap-4 w-full">
+          <CreatedByOthers />
+        </div>
       </div>
-      <div className="flex flex-col gap-4 w-full">
-        <CreatedByOthers />
-      </div>
-    </div>
+    </MaxWidthWrapper>
   );
 }
 
@@ -147,17 +150,19 @@ export default function GeneratingTripsPage() {
   return (
     <Suspense
       fallback={
-        <div className="flex justify-center items-center min-h-screen p-4">
-          <div className="w-full text-center space-y-6">
-            <div className="space-y-6">
-              <div className="flex justify-center">
-                <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+        <MaxWidthWrapper>
+          <div className="flex justify-center items-center min-h-screen">
+            <div className="w-full text-center space-y-6">
+              <div className="space-y-6">
+                <div className="flex justify-center">
+                  <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-[#3D5A4C]"></div>
+                </div>
+                <h1 className="text-2xl font-semibold text-gray-900">Ładowanie...</h1>
+                <p className="text-base text-gray-600">Przygotowujemy wszystko dla Ciebie</p>
               </div>
-              <h1 className="text-2xl font-semibold text-gray-900">Ładowanie...</h1>
-              <p className="text-base text-gray-600">Przygotowujemy wszystko dla Ciebie</p>
             </div>
           </div>
-        </div>
+        </MaxWidthWrapper>
       }
     >
       <GeneratingTripsContent />
