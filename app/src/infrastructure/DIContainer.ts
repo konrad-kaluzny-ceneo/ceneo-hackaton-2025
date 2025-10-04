@@ -3,6 +3,7 @@ import { Repository } from "./Repository";
 import { TaskQueue } from "./TaskQueue";
 import { WebSocketManager } from "./WebSocketManager";
 import { GetUserTripsHandler } from "@/features/trips/GetUserTrips";
+import { RAGService } from "./RAGService";
 
 // Typ dla konstruktora klasy
 type Constructor<T = any> = new (...args: any[]) => T;
@@ -25,6 +26,7 @@ taskQueue.setWebSocketManager(wsManager);
 
 providerMap.set(TaskQueue, taskQueue);
 providerMap.set(WebSocketManager, wsManager);
+providerMap.set(RAGService, new RAGService());
 
 // Potem AnswerHandler (zależy od Repository)
 providerMap.set(AnswerHandler, new AnswerHandler());
