@@ -12,47 +12,7 @@ type Question = {
   answers: string[];
 };
 
-const questions: Question[] = [
-  {
-    id: 1,
-    text: "Jak się dzisiaj czujesz?",
-    answers: [
-      "Szukam ciszy i spokoju",
-      "Marzę o odleceniu się od dzieci",
-      "Chcę kontaktu z naturą",
-    ],
-  },
-  {
-    id: 2,
-    text: "Jaki jest Twój budżet na podróż?",
-    answers: ["Do 2000 zł", "2000-5000 zł", "Powyżej 5000 zł"],
-  },
-  {
-    id: 3,
-    text: "Z kim planujesz podróż?",
-    answers: ["Sam/Sama", "Z partnerem", "Z rodziną", "Ze znajomymi"],
-  },
-  {
-    id: 4,
-    text: "Jak długo chcesz wyjechać?",
-    answers: ["Weekend (2-3 dni)", "Tydzień", "Dwa tygodnie lub więcej"],
-  },
-  {
-    id: 5,
-    text: "Jaki typ aktywności Cię interesuje?",
-    answers: [
-      "Relaks i odpoczynek",
-      "Zwiedzanie i kultura",
-      "Sport i przygoda",
-      "Życie nocne",
-    ],
-  },
-  {
-    id: 6,
-    text: "Jaki klimat preferujesz?",
-    answers: ["Ciepło i słońce", "Umiarkowany", "Zimno i góry"],
-  },
-];
+const questions: Question[] = require('@/local-data/questions.json');
 
 export default function QuestionnairePage() {
   const user = useUser();
