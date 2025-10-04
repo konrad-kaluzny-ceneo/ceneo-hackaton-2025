@@ -6,7 +6,7 @@ export function Friends() {
   const friends = require("@/local-data/users.json");
 
   return (
-    <div className="flex flex-col gap-2 hover:bg-accent rounded-md p-3 border cursor-pointer">
+    <div className="bg-white flex flex-col gap-2 hover:bg-accent rounded-md p-3 border cursor-pointer">
       <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2">
         {friends.slice(0, 5).map((friend: any) => (
           <Avatar key={friend.id}>
