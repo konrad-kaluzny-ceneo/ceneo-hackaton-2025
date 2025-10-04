@@ -1,0 +1,98 @@
+[
+    {
+        "id": "trip-1",
+        "name": "Romantic Paris Getaway",
+        "totalPrice": 1200.00,
+        "duration": 5,
+        "destinations": [
+            {
+                "order": 1,
+                "transport": {
+                    "from": {
+                        "country": "USA",
+                        "region": "California",
+                        "city": "Los Angeles"
+                    },
+                    "fromDate": "2024-05-01",
+                    "destination": {
+                        "country": "France",
+                        "region": "Île-de-France",
+                        "city": "Paris"
+                    },
+                    "destinationDate": "2024-05-02",
+                    "price": 700.00,
+                    "name": "Air France Flight"
+                },
+                "accommodation": {
+                    "name": "Le Meurice Hotel",
+                    "price": 500.00,
+                    "nights": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": "trip-2",
+        "name": "Safari Adventure in Kenya",
+        "totalPrice": 2000.00,
+        "duration": 10,
+        "destinations": [
+            {
+                "order": 1,
+                "transport": {
+                    "from": {
+                        "country": "Canada",
+                        "region": "Ontario",
+                        "city": "Toronto"
+                    },
+                    "fromDate": "2024-07-15",
+                    "destination": {
+                        "country": "Kenya",
+                        "region": "Nairobi",
+                        "city": "Nairobi"
+                    },
+                    "destinationDate": "2024-07-16",
+                    "price": 1300.00,
+                    "name": "Kenya Airways Flight"
+                },
+                "accommodation": {
+                    "name": "Nairobi Serena Hotel",
+                    "price": 700.00,
+                    "nights": 9
+                }
+            }
+        ]
+    },
+    {
+        "id": "trip-3",
+        "name": "Tokyo Tech Tour",
+        "totalPrice": 1500.00,
+        "duration": 7,
+        "destinations": [
+            {
+                "order": 1,
+                "transport": {
+                    "from": {
+                        "country": "Australia",
+                        "region": "New South Wales",
+                        "city": "Sydney"
+                    },
+                    "fromDate": "2024-09-10",
+                    "destination": {
+                        "country": "Japan",
+                        "region": "Kanto",
+                        "city": "Tokyo"
+                    },
+                    "destinationDate": "2024-09-11",
+                    "price": 900.00,
+                    "name": "Qantas Flight"
+                },
+                "accommodation": {
+                    "name": "Shinjuku Granbell Hotel",
+                    "price": 600.00,
+                    "nights": 6
+                }
+            }
+        ]
+    }
+]
