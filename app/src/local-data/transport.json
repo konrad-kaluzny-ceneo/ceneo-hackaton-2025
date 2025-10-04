@@ -9,6 +9,57 @@
     "name": "PKP Intercity",
     "type": "train"
   },
+  {
+    "id": "set1-2",
+    "fromLocationId": "pol-kraków-30cfd729",
+    "fromDate": "2025-10-11T12:15:00Z",
+    "toLocationId": "cze-brno-583493f8",
+    "toDate": "2025-10-11T15:46:00Z",
+    "price": 111.56,
+    "name": "Eurowings",
+    "type": "flight"
+  },
+  {
+    "id": "set1-3",
+    "fromLocationId": "cze-brno-583493f8",
+    "fromDate": "2025-10-13T12:15:00Z",
+    "toLocationId": "cze-praga-39f04dd8",
+    "toDate": "2025-10-13T15:46:00Z",
+    "price": 267.56,
+    "name": "KLM",
+    "type": "train"
+  },
+  {
+    "id": "set1-4",
+    "fromLocationId": "cze-praga-39f04dd8",
+    "fromDate": "2025-10-16T12:15:00Z",
+    "toLocationId": "pol-warsza-48f4430f",
+    "toDate": "2025-10-16T15:46:00Z",
+    "price": 267.56,
+    "name": "Ryanair",
+    "type": "flight"
+  },
+
+  {
+    "id": "set2-1",
+    "fromLocationId": "pol-kraków-30cfd729",
+    "fromDate": "2025-08-16T12:15:00Z",
+    "toLocationId": "cze-karlow-554817df",
+    "toDate": "2025-08-16T15:46:00Z",
+    "price": 110,
+    "name": "Ryanair",
+    "type": "flight"
+  },
+  {
+    "id": "set2-2",
+    "fromLocationId": "cze-karlow-554817df",
+    "fromDate": "2025-08-18T12:15:00Z",
+    "toLocationId": "pol-kraków-30cfd729",
+    "toDate": "2025-08-19T15:46:00Z",
+    "price": 220,
+    "name": "Ryanair",
+    "type": "flight"
+  },
 
 
 
