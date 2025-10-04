@@ -3,11 +3,14 @@
 import React, { useEffect, useState } from "react";
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import BackButton from "@/components/shared/BackButton";
 import { TripSet } from "@/types/trip-set";
 import { TicketIcon, BedIcon, ClockIcon, StarIcon } from "lucide-react";
 import { useUser } from "@/infrastructure/FrontendUserAccessor";
+import Image from "next/image";
+import { DEFAULT_IMAGE } from "@/config/images";
+import { Friends } from "../user/Friends";
 
 interface TripDetailProps {
   trip: TripSet;
@@ -34,13 +37,37 @@ function getTransportIcon(transportName: string): string {
 
 export default function TripDetail({ trip }: TripDetailProps) {
   return (
-    <main className="min-h-screen">
-      <MaxWidthWrapper className="flex flex-col gap-2">
-        <div className="flex items-center gap-2 justify-center">
-          <BackButton />
-          <h1 className="text-primary text-2xl font-bold text-center mb-1">Szczegóły podróży</h1>
+    <main className="min-h-screen flex flex-col gap-4">
+      <div className="relative">
+        <div className="absolute top-4 left-4 z-10">
+          <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg hover:bg-white transition-colors">
+            <BackButton />
+          </div>
         </div>
 
+        <div className="relative h-64 w-full">
+          <Image src={trip.image || DEFAULT_IMAGE} alt={trip.name} fill className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4 pb-4">
+            <h1 className="text-white text-2xl font-bold mb-2">{trip.name}</h1>
+            <div className="text-white/90 text-sm">
+              {trip.duration} dni • {trip.totalPrice} PLN
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white rounded-2xl p-6 shadow-lg mx-4 mt-[-30px] z-100">
+        <h2 className="text-primary text-xl font-bold mb-4">Opcje zakupu</h2>
+
+        <div className="space-y-3 flex flex-col gap-2">
+          <Button variant="default">Zakup cały zestaw - {trip.totalPrice} PLN</Button>
+        </div>
+
+        <div className="mt-6 space-y-4">
+          <Friends />
+        </div>
+      </div>
+      <MaxWidthWrapper className="flex flex-col gap-2">
         <div className="relative">
           <div className="absolute left-8 top-5 bottom-5 w-0.5 bg-primary" />
 
@@ -57,17 +84,6 @@ export default function TripDetail({ trip }: TripDetailProps) {
 
                   <div className="text-sm text-gray-600 mb-4">
                     {dest.transport.from.city}({getAirportCode(dest.transport.from.city)}) → {dest.transport.destination.city}({getAirportCode(dest.transport.destination.city)})
-                  </div>
-
-                  <div className="flex gap-2 mb-4">
-                    <button className={cn(buttonVariants({ variant: "default", size: "sm" }), "flex items-center gap-1")}>
-                      <TicketIcon className="w-4 h-4" />
-                      Kup bilet
-                    </button>
-                    <button className={cn(buttonVariants({ variant: "default", size: "sm" }), "flex items-center gap-1")}>
-                      <BedIcon className="w-4 h-4" />
-                      Rezerwuj nocleg
-                    </button>
                   </div>
 
                   {idx < trip.destinations.length - 1 && (
@@ -99,16 +115,6 @@ export default function TripDetail({ trip }: TripDetailProps) {
                       <div className="text-xs text-gray-600 mb-2">{dest.accommodation.description}</div>
                       <div className="text-xs text-gray-500 mb-4">
                         {dest.accommodation.location.city} | {dest.accommodation.price} PLN | {dest.accommodation.beds} łóżka
-                      </div>
-                      <div className="flex gap-2">
-                        <button className={cn(buttonVariants({ variant: "default", size: "sm" }), "flex items-center gap-1")}>
-                          <TicketIcon className="w-4 h-4" />
-                          Kup bilet
-                        </button>
-                        <button className={cn(buttonVariants({ variant: "default", size: "sm" }), "flex items-center gap-1")}>
-                          <BedIcon className="w-4 h-4" />
-                          Rezerwuj nocleg
-                        </button>
                       </div>
                     </div>
                   )}
