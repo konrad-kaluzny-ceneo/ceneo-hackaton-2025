@@ -1,84 +1,16 @@
-"use client";
+import { GetUserTripsHandler } from "@/features/trips/GetUserTrips";
+import { inject } from "@/infrastructure/DIContainer";
+import { TripSet } from "@/types/trip-set";
+import TripPropositionsClient from "@/app/trip-propositions/TripPropositionsClient";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import TripBox from "@/components/trip/TripBox";
-import TripBoxSkeleton from "@/components/trip/TripBoxSkeleton";
-import { Destination, TripSet } from "@/types/trip-set";
-import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
-import SortFilters from "@/components/sort-filters/SortFilters";
-import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
-import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton";
-
-async function getTripPropositions() {
-  const res = await fetch("/api/trips");
-  return await res.json();
-  //   const filePath = path.join(
-  //     process.cwd(),
-  //     "src",
-  //     "local-data",
-  //     "trip-propositions.json"
-  //   );
-  //   const fileContents = fs.readFileSync(filePath, "utf-8");
-  //   return JSON.parse(fileContents);
+async function getTripPropositions(): Promise<TripSet[]> {
+  const getTripsHandler = inject(GetUserTripsHandler);
+  const trips = await getTripsHandler.handle("default-user");
+  return trips as unknown as TripSet[];
 }
 
-export default function TripPropositionsPage() {
-  const [trips, setTrips] = useState<TripSet[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+export default async function TripPropositionsPage() {
+  const trips = await getTripPropositions();
 
-  useEffect(() => {
-    async function fetchTrips() {
-      try {
-        const data: TripSet[] = await getTripPropositions();
-        setTrips(data);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchTrips();
-  }, []);
-
-  return (
-    <main>
-      <MaxWidthWrapper>
-        <SortFilters isLoading={isLoading} />
-
-        {isLoading ? (
-          <div className="flex justify-center items-center">
-            <div className="flex items-center gap-3 py-4 mx-auto">
-              <Skeleton className="w-12 h-12 rounded-full" />
-              <Skeleton className="h-8 w-48" />
-            </div>
-          </div>
-        ) : trips.length > 0 && (
-          <div className="flex justify-center items-center">
-            <div className="flex items-center gap-3 py-4 mx-auto">
-              <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
-              <p className="text-primary text-2xl font-semibold">Specjalnie dla Ciebie</p>
-            </div>
-          </div>
-        )}
-
-        <div className="flex flex-col gap-8">
-          {isLoading ? (
-            <>
-              <TripBoxSkeleton />
-              <TripBoxSkeleton />
-            </>
-          ) : (
-            trips.map((trip: TripSet) => {
-              // Get the first accommodation image from the trip
-              const firstAccommodation = trip.destinations.find((dest: Destination) => dest.accommodation)?.accommodation;
-              const tripImage = firstAccommodation?.images?.[0] || "/images/af6a75af62687873e61b92e6eb76db3517d4a3a8.png";
-
-              return <TripBox trip={trip} key={trip.id} />;
-            })
-          )}
-          <CreatedByOthers isLoading={isLoading} />
-        </div>
-      </MaxWidthWrapper>
-    </main>
-  );
+  return <TripPropositionsClient initialTrips={trips} />;
 }
