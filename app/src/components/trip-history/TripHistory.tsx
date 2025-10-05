@@ -42,7 +42,7 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
             <div className={`w-1/2 ${isEven ? "pr-8 text-right" : "pl-8 text-left ml-auto"}`}>
               {trip.image && (
                 <div className="mb-4" onClick={() => setSelectedTrip(trip)}>
-                  <Image src={trip.image} alt={trip.name} width={120} height={80} className="rounded-lg object-cover w-full" />
+                  <Image src={trip.image} alt={trip.name} width={120} height={80} className="rounded-lg object-cover w-full aspect-video" />
                 </div>
               )}
             </div>
@@ -98,7 +98,7 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
             <div className={`w-1/2 ${isEven ? "pr-8 text-right" : "pl-8 text-left ml-auto"}`}>
               {trip.image && (
                 <div className="mb-4" onClick={() => setSelectedTrip(trip)}>
-                  <Image src={trip.image} alt={trip.name} width={120} height={80} className="rounded-lg object-cover w-full" />
+                  <Image src={trip.image} alt={trip.name} width={120} height={80} className="rounded-lg object-cover w-full aspect-video" />
                 </div>
               )}
             </div>

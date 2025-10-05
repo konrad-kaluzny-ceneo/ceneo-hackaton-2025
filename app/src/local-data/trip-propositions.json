@@ -26,7 +26,7 @@
     "name": "Przygoda po Europie Środkowej",
     "totalPrice": 659.49,
     "duration": 7,
-    "image": "/images/mountains.webp",
+    "image": "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
     "startDate": "2025-10-10",
     "userId": "user-1",
     "destinations": [
@@ -111,7 +111,7 @@
     "name": "Słoneczna Hiszpania",
     "totalPrice": 829.50,
     "duration": 5,
-    "image": "/images/mountains.webp",
+    "image": "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
     "startDate": "2025-10-10",
     "userId": "user-2",
     "destinations": [
@@ -212,7 +212,7 @@
     "name": "Włoskie Alpy i Jeziora",
     "totalPrice": 745.00,
     "duration": 6,
-    "image": "/images/mountains.webp",
+    "image": "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
     "startDate": "2025-10-10",
     "userId": "user-3",
     "destinations": [
