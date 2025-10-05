@@ -12,9 +12,7 @@ interface TripModalProps {
 }
 
 export default function TripModal({ trip, isOpen, onClose}: TripModalProps) {
-  console.log(trip.startDate);
   const itsPastEvent = new Date(trip.startDate) < new Date();
-  console.log("itsPastEvent", itsPastEvent);
   const allAccommodations = require("@/local-data/accommodations.json");
   const accommodations = trip.destinations.map((dest) => allAccommodations.find((accommodation: Accommodation) => accommodation.id === dest.accommodationId));
   const accommodationsToShow = accommodations.filter((accommodation: Accommodation) => accommodation !== undefined);
