@@ -24,7 +24,7 @@ export default function CreatedByOthers({ isLoading = false }: { isLoading?: boo
 
   return (
     <div className="flex flex-col gap-4 w-full">
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center justify-center">
         <Image src="/images/icons/house.png" alt="Loop" width={50} height={50} />
         <p className="text-primary text-2xl font-semibold">Podróże społeczności</p>
       </div>
