@@ -1,7 +1,9 @@
 import { NextRequest } from "next/server";
 import OpenAI from "openai";
-import activeTrips from "@/local-data/active-trips.json";
+import userSets from "@/local-data/sample-sets.json";
 import locations from "@/local-data/locations.json";
+
+const activeTrips = userSets.filter(set => set.state === "active");
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";

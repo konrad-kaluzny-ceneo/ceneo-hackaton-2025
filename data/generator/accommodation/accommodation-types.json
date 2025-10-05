@@ -1,0 +1,42 @@
+[
+  {
+      "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+      "images": [
+          "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+          "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+      ],
+      "price": 500
+  },
+  {
+      "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+      "images": [
+          "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+          "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+      ],
+      "price": 400
+  },
+  {
+      "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+      "images": [
+          "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+          "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+      ],
+      "price": 300
+  },
+  {
+      "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+      "images": [
+          "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+          "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+      ],
+      "price": 200
+  },
+  {
+      "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+      "images": [
+          "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+          "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+      ],
+      "price": 100
+  }
+]

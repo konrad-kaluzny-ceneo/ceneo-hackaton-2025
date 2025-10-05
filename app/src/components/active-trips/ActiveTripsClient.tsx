@@ -4,97 +4,87 @@ import React from "react";
 import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import { ActiveTrip } from "@/types/active-trip";
 import ActiveTripCard from "./ActiveTripCard";
+import userSets from "@/local-data/sample-sets.json";
 
-const mockActiveTrips: ActiveTrip[] = [
-  {
-    id: "active-trip-1",
-    name: "Wrocław → Kraków",
-    totalPrice: 550,
-    duration: 3,
-    image: "/images/trip-train.webp",
-    startDate: new Date("2024-02-15"),
-    endDate: new Date("2024-02-18"),
-    userId: "user-1",
-    isActive: true,
-    currentStep: 0,
-    bookingStatus: {
-      transport: false,
-      accommodation: false,
-      overall: false,
-    },
-    experiences: [
-      {
-        id: "exp-1",
-        location: "Kraków",
-        date: "2024-02-16",
-        moodRating: {
-          peacefulness: 85,
-          excitement: 90,
-          comfort: 88,
-          overall: 88,
+// Konwertuj dane JSON na format ActiveTrip
+const convertToActiveTrips = (): ActiveTrip[] => {
+  const trips: ActiveTrip[] = [];
+  
+  // Dodaj przyszłą podróż jako aktywną
+  userSets.filter(set => set.state === "future").forEach(futureSet => {
+      trips.push({
+        ...futureSet,
+        state: "future",
+        userId: "user-1",
+        startDate: new Date(futureSet.startDate),
+        endDate: new Date(new Date(futureSet.startDate).getTime() + futureSet.duration * 24 * 60 * 60 * 1000),
+        isActive: true,
+        currentStep: 1,
+        currentLocation: "Kraków",
+        bookingStatus: {
+          transport: true,
+          accommodation: true,
+          overall: true,
         },
-        description: "Kraków zachwyca swoją historią, architekturą i atmosferą. Spacer po Rynku Głównym to niezapomniane przeżycie.",
-        photos: ["/images/mountains.webp"],
-        tags: ["historia", "kultura", "architektura"],
+        experiences: [
+          {
+            id: "exp-1",
+            location: "Kraków",
+            date: "2025-10-15",
+            moodRating: {
+              peacefulness: 85,
+              excitement: 90,
+              comfort: 80,
+              overall: 85,
+            },
+            description: "Magiczny start podróży w Krakowie. Rynek Główny zapiera dech w piersiach, a atmosfera miasta jest niesamowita!",
+            photos: ["https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"],
+            tags: ["historia", "kultura", "architektura"],
+          },
+        ],
+      });
+    });
+  
+  // Dodaj historyczną podróż
+  userSets.filter(set => set.state === "history").forEach(historySet => {
+    trips.push({
+      ...historySet,
+      state: "history",
+      id: "trip-set-002", // Unikalny ID
+      userId: "user-1", 
+      startDate: new Date("2025-09-20T12:15:00Z"),
+      endDate: new Date("2025-09-27T12:15:00Z"),
+      isActive: false,
+      currentStep: historySet.destinations.length,
+      currentLocation: "Karlowe Wary",
+      bookingStatus: {
+        transport: true,
+        accommodation: true,
+        overall: true,
       },
-    ],
-    currentLocation: "Kraków",
-    destinations: [
-      {
-        order: 1,
-        transport: {
-          from: { country: "Polska", region: "Dolnośląskie", city: "Wrocław" },
-          fromDate: "2024-02-15T08:00:00Z",
-          destination: { country: "Polska", region: "Wielkopolskie", city: "Poznań" },
-          destinationDate: "2024-02-15T10:30:00Z",
-          price: 150,
-          name: "Pociąg",
+      experiences: [
+        {
+          id: "exp-hist-1",
+          location: "Karlowe Wary",
+          date: "2025-09-21",
+          moodRating: {
+            peacefulness: 95,
+            excitement: 60,
+            comfort: 90,
+            overall: 88,
+          },
+          description: "Relaksujący weekend w Karlowych Warach. Termalne źródła i piękna architektura spa sprawiły, że to była idealna ucieczka od codzienności.",
+          photos: ["https://cdn.tripzaza.com/pl/destinations/wp-content/uploads/2018/11/6-Karlovy_Vary_-_Market_Colonnade-e1541130456260.jpg"],
+          tags: ["relaks", "spa", "zdrowie", "historia"],
         },
-        accommodation: null,
-      },
-      {
-        order: 2,
-        transport: {
-          from: { country: "Polska", region: "Wielkopolskie", city: "Poznań" },
-          fromDate: "2024-02-15T14:00:00Z",
-          destination: { country: "Polska", region: "Mazowieckie", city: "Warszawa" },
-          destinationDate: "2024-02-15T17:30:00Z",
-          price: 80,
-          name: "Pociąg",
-        },
-        accommodation: {
-          location: { country: "Polska", region: "Mazowieckie", city: "Warszawa" },
-          date: "2024-02-15",
-          price: 250,
-          beds: 2,
-          name: "Hotel Warszawa Centrum",
-          description: "Stolica Polski, centrum polityczne i kulturalne kraju.",
-          images: [],
-        },
-      },
-      {
-        order: 3,
-        transport: {
-          from: { country: "Polska", region: "Mazowieckie", city: "Warszawa" },
-          fromDate: "2024-02-16T09:00:00Z",
-          destination: { country: "Polska", region: "Małopolskie", city: "Kraków" },
-          destinationDate: "2024-02-16T12:00:00Z",
-          price: 120,
-          name: "Pociąg",
-        },
-        accommodation: {
-          location: { country: "Polska", region: "Małopolskie", city: "Kraków" },
-          date: "2024-02-16",
-          price: 200,
-          beds: 2,
-          name: "Hotel Kraków Stare Miasto",
-          description: "Historyczne miasto z zamkiem królewskim, Rynkiem Głównym i bogatym dziedzictwem kulturowym.",
-          images: [],
-        },
-      },
-    ],
-  },
-];
+      ],
+    });
+  });
+  return trips;
+}
+
+
+const activeTrips = convertToActiveTrips();
 
 export default function ActiveTripsClient() {
   return (
@@ -103,7 +93,7 @@ export default function ActiveTripsClient() {
         <h1 className="text-3xl font-bold text-primary">Twoja podróż</h1>
       </MaxWidthWrapper>
 
-      {mockActiveTrips.map((trip) => (
+      {activeTrips.map((trip: ActiveTrip) => (
         <ActiveTripCard key={trip.id} trip={trip} />
       ))}
     </main>
