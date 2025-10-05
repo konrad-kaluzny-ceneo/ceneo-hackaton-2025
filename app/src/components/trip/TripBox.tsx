@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { Destination, TripSet } from "@/types/trip-set";
-import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { UserInfo } from "../user/UserInfo";
@@ -17,7 +16,13 @@ export default function TripBox({ trip }: TripBoxProps) {
   return (
     <div key={trip.id} className="bg-white w-full rounded-2xl shadow-md overflow-hidden flex flex-col">
       <div className="relative w-full h-48">
-        <Image src={trip.image || "/images/trip-train.webp"} alt={trip.name} fill className="object-cover rounded-t-2xl" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" priority={true} loading="eager" />
+        <img
+          src={trip.image || "/images/trip-train.webp"}
+          alt={trip.name}
+          className="object-cover rounded-t-2xl w-full h-full"
+          style={{ objectFit: "cover" }}
+          loading="eager"
+        />
       </div>
 
       <div className="px-6 pb-4 flex flex-col gap-2 w-full mt-4">

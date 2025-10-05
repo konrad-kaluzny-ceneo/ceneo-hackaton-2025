@@ -63,8 +63,8 @@ export default async function LocationPage({ params }: Props) {
             city: destLocation.city,
             region: destLocation.region,
             country: destLocation.country,
-            lat: 0,
-            lng: 0,
+            lat: coords.lat,
+            lng: coords.lng,
             tripName: trip.name,
           });
         }
@@ -83,8 +83,8 @@ export default async function LocationPage({ params }: Props) {
         city: location.location.city,
         region: location.location.region,
         country: location.location.country,
-        lat: 0,
-        lng: 0,
+        lat: mainCoords.lat,
+        lng: mainCoords.lng,
       });
     }
   }
