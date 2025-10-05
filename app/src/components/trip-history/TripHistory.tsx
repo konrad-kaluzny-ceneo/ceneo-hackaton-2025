@@ -68,7 +68,9 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
         </div>
       )}
 
-      {selectedTrip && <TripModal trip={selectedTrip} isOpen={!!selectedTrip} onClose={() => setSelectedTrip(null)} />}
+      {selectedTrip && <TripModal trip={selectedTrip} isOpen={!!selectedTrip} onClose={() => setSelectedTrip(null)} itsHistory={
+        selectedTrip.startDate < new Date()
+      } />}
 
       <div className="relative font-bold text-primary mt-[-20px] mb-4 z-50 bg-white rounded-lg p-4 flex items-center gap-2">
         <CalendarIcon className="w-4 h-4 text-primary" />
