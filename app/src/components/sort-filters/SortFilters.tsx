@@ -18,7 +18,7 @@ interface SortFiltersProps {
 export default function SortFilters({ isLoading = false }: SortFiltersProps) {
   if (isLoading) {
     return (
-      <div className="flex gap-3 pt-1">
+      <div className="flex gap-3 pt-1" role="status" aria-label="Ładowanie filtrów">
         <Skeleton className="h-8 w-24" />
         <Skeleton className="h-8 w-32" />
         <Skeleton className="h-8 w-20" />
@@ -27,59 +27,59 @@ export default function SortFilters({ isLoading = false }: SortFiltersProps) {
   }
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3" role="group" aria-label="Filtry sortowania">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button>
+          <Button aria-label="Wybierz typ podróży">
             Typ podróży
-            <ChevronDownIcon className="w-4 h-4 ml-2" />
+            <ChevronDownIcon className="w-4 h-4 ml-2" aria-hidden="true" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48" align="start">
           <DropdownMenuLabel>Typ aktywności</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>🧘 Relaks</DropdownMenuItem>
-            <DropdownMenuItem>🏛️ Kultura</DropdownMenuItem>
-            <DropdownMenuItem>⚽ Sport</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Relaks">🧘 Relaks</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Kultura">🏛️ Kultura</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Sport">⚽ Sport</DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
       </DropdownMenu>
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button>
+          <Button aria-label="Wybierz budżet">
             Budżet
-            <ChevronDownIcon className="w-4 h-4 ml-2" />
+            <ChevronDownIcon className="w-4 h-4 ml-2" aria-hidden="true" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48" align="start">
           <DropdownMenuLabel>Zakres cenowy</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>💰 Ekonomiczny</DropdownMenuItem>
-            <DropdownMenuItem>💳 Standard</DropdownMenuItem>
-            <DropdownMenuItem>💎 Premium</DropdownMenuItem>
-            <DropdownMenuItem>👑 Luksus</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Ekonomiczny">💰 Ekonomiczny</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Standard">💳 Standard</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Premium">💎 Premium</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Luksus">👑 Luksus</DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
       </DropdownMenu>
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button>
+          <Button aria-label="Wybierz czas trwania">
             Czas trwania
-            <ChevronDownIcon className="w-4 h-4 ml-2" />
+            <ChevronDownIcon className="w-4 h-4 ml-2" aria-hidden="true" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48" align="start">
           <DropdownMenuLabel>Długość wyjazdu</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>🌙 Krótki weekend</DropdownMenuItem>
-            <DropdownMenuItem>📅 Tydzień</DropdownMenuItem>
-            <DropdownMenuItem>🗓️ Dwa tygodnie</DropdownMenuItem>
-            <DropdownMenuItem>🌍 Długa podróż</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Krótki weekend">🌙 Krótki weekend</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Tydzień">📅 Tydzień</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Dwa tygodnie">🗓️ Dwa tygodnie</DropdownMenuItem>
+            <DropdownMenuItem aria-label="Filtr: Długa podróż">🌍 Długa podróż</DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
       </DropdownMenu>

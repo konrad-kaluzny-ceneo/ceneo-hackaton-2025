@@ -82,7 +82,7 @@ export default function RAGTestPage() {
   };
 
   return (
-    <div className="container mx-auto p-8 max-w-4xl">
+    <main className="container mx-auto p-8 max-w-4xl">
       <h1 className="text-3xl font-bold mb-6">RAG Attraction Search Test</h1>
 
       {/* Generate Embeddings Section */}
@@ -91,12 +91,16 @@ export default function RAGTestPage() {
         <p className="text-sm text-gray-600 mb-4">
           First, generate embeddings for all attractions. This only needs to be done once.
         </p>
-        <Button onClick={handleGenerateEmbeddings} disabled={generating}>
+        <Button 
+          onClick={handleGenerateEmbeddings} 
+          disabled={generating}
+          aria-label={generating ? 'Generowanie osadzeń w toku...' : 'Generuj osadzenia dla wszystkich atrakcji'}
+        >
           {generating ? 'Generating...' : 'Generate Embeddings'}
         </Button>
 
         {stats && (
-          <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded">
+          <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded" role="status" aria-live="polite">
             <h3 className="font-semibold text-green-800 mb-2">Success!</h3>
             <ul className="text-sm text-green-700">
               <li>Locations processed: {stats.locationsProcessed}</li>
@@ -114,29 +118,43 @@ export default function RAGTestPage() {
         
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-2">Search Query</label>
+            <label htmlFor="search-query" className="block text-sm font-medium mb-2">Search Query</label>
             <input
+              id="search-query"
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="e.g., medieval castles and historical architecture"
               className="w-full px-3 py-2 border rounded-md"
+              aria-describedby="search-query-help"
             />
+            <p id="search-query-help" className="text-xs text-gray-500 mt-1">
+              Wpisz opis atrakcji, które chcesz znaleźć
+            </p>
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">Number of Results</label>
+            <label htmlFor="results-limit" className="block text-sm font-medium mb-2">Number of Results</label>
             <input
+              id="results-limit"
               type="number"
               value={limit}
               onChange={(e) => setLimit(parseInt(e.target.value) || 3)}
               min="1"
               max="20"
               className="w-32 px-3 py-2 border rounded-md"
+              aria-describedby="results-limit-help"
             />
+            <p id="results-limit-help" className="text-xs text-gray-500 mt-1">
+              Liczba wyników do wyświetlenia (1-20)
+            </p>
           </div>
 
-          <Button onClick={handleSearch} disabled={loading || !query.trim()}>
+          <Button 
+            onClick={handleSearch} 
+            disabled={loading || !query.trim()}
+            aria-label={loading ? 'Wyszukiwanie w toku...' : 'Wyszukaj podobne atrakcje'}
+          >
             {loading ? 'Searching...' : 'Search'}
           </Button>
         </div>
@@ -157,6 +175,7 @@ export default function RAGTestPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => setQuery(example)}
+                aria-label={`Użyj przykładowego zapytania: ${example}`}
               >
                 {example}
               </Button>
@@ -167,32 +186,39 @@ export default function RAGTestPage() {
 
       {/* Error Display */}
       {error && (
-        <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded">
+        <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded" role="alert" aria-live="polite">
           <p className="text-red-800">{error}</p>
         </div>
       )}
 
       {/* Results Display */}
       {results.length > 0 && (
-        <div className="space-y-4">
+        <section className="space-y-4" aria-label="Wyniki wyszukiwania">
           <h2 className="text-xl font-semibold">Results ({results.length})</h2>
           {results.map((result, index) => (
-            <div key={index} className="p-4 border rounded-lg hover:shadow-md transition-shadow">
+            <article key={index} className="p-4 border rounded-lg hover:shadow-md transition-shadow">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-lg font-semibold">{result.attraction.name}</h3>
-                <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                <span 
+                  className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded"
+                  aria-label={`Dopasowanie: ${(result.score * 100).toFixed(1)} procent`}
+                >
                   Score: {(result.score * 100).toFixed(1)}%
                 </span>
               </div>
               <p className="text-gray-600 mb-2">{result.attraction.description}</p>
               <div className="flex items-center gap-4 text-sm text-gray-500">
-                <span>📍 {result.city}, {result.country}</span>
-                <span>💰 {result.attraction.price === 0 ? 'Free' : `${result.attraction.price} PLN`}</span>
+                <span aria-label={`Lokalizacja: ${result.city}, ${result.country}`}>
+                  📍 {result.city}, {result.country}
+                </span>
+                <span aria-label={`Cena: ${result.attraction.price === 0 ? 'Darmowe' : `${result.attraction.price} PLN`}`}>
+                  💰 {result.attraction.price === 0 ? 'Free' : `${result.attraction.price} PLN`}
+                </span>
               </div>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       )}
-    </div>
+    </main>
   );
 }

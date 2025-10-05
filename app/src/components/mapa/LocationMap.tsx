@@ -41,6 +41,8 @@ export default function LocationMap({ locations, maxHeight }: Props) {
       <div
         className="flex items-center justify-center bg-gray-100"
         style={{ height: maxHeight || "88vh" }}
+        role="img"
+        aria-label="Ładowanie mapy"
       >
         <p className="text-gray-500">Ładowanie mapy...</p>
       </div>
@@ -54,11 +56,18 @@ export default function LocationMap({ locations, maxHeight }: Props) {
       center={[centerLocation.lat, centerLocation.lng]}
       zoom={6}
       style={{ height: maxHeight || "88vh", zIndex: 0 }}
+      role="img"
+      aria-label={`Mapa pokazująca ${locations.length} lokalizacji`}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
       {locations.map((location, idx) => (
-        <Marker key={idx} position={[location.lat, location.lng]} icon={icon}>
+        <Marker 
+          key={idx} 
+          position={[location.lat, location.lng]} 
+          icon={icon}
+          aria-label={`Marker dla ${location.city}, ${location.region}, ${location.country}`}
+        >
           <Popup>
             <div className="flex h-fit flex-col">
               <div className="font-semibold">
