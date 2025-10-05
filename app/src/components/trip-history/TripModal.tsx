@@ -3,14 +3,21 @@
 import { TripSet } from "@/types/trip-set";
 import { buttonVariants } from "../ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
+import { Transport } from "@/types/transport";
+import { Accommodation } from "@/types/accommodation";
 
 interface TripModalProps {
   trip: TripSet;
   isOpen: boolean;
   onClose: () => void;
+  itsHistory: boolean;
 }
 
-export default function TripModal({ trip, isOpen, onClose }: TripModalProps) {
+export default function TripModal({ trip, isOpen, onClose, itsHistory }: TripModalProps) {
+  const allAccommodations = require("@/local-data/accommodations.json");
+  const accommodations = trip.destinations.map((dest) => allAccommodations.find((accommodation: Accommodation) => accommodation.id === dest.accommodationId));
+  const accommodationsToShow = accommodations.filter((accommodation: Accommodation) => accommodation !== undefined);
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-white">
@@ -40,15 +47,17 @@ export default function TripModal({ trip, isOpen, onClose }: TripModalProps) {
         <div className="mb-6">
           <h3 className="text-lg font-semibold mb-3">Trasa wycieczki</h3>
           <div className="text-primary font-medium">
-            {trip.destinations
-              .map((dest) => dest.transportId)
+            {accommodationsToShow
+              .map((accommodationsToShow: Accommodation) => {
+                return accommodationsToShow.name;
+              })
               .filter(Boolean)
               .join(" → ")}
           </div>
         </div>
 
         <div className="flex gap-2">
-          <button className={buttonVariants({ variant: "default" })}>Powtórz wycieczkę</button>
+          <button className={buttonVariants({ variant: "default" })}>{itsHistory ? "Zobacz wycieczkę" : "Powtórz wycieczkę"}</button>
           <button className={buttonVariants({ variant: "outline" })}>Udostępnij</button>
         </div>
       </DialogContent>

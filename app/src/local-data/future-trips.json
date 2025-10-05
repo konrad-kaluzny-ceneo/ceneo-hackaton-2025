@@ -1,5 +1,88 @@
 [
-    "trip-1",
-    "trip-2",
-    "trip-3"
+  {
+    "state": "future",
+    "id": "trip-future-1",
+    "userId": "our-user",
+    "name": "Przygoda po Europie Środkowej",
+    "totalPrice": 1547.22,
+    "startDate": "2025-11-15T09:00:00Z",
+    "duration": 8,
+    "image": "https://gte-gcms.images.tshiftcdn.com/resize=width:2048,fit:max/bfDSvRnSiar1ypUJD7nf?crop=1.91:1&width=1200&fit=crop",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "d3f4e2d7-c0c5-4a49-8237-b6c631481ee6",
+        "accommodationId": "81edf97c-ff1d-4623-b671-1776d1b30064"
+      },
+      {
+        "order": 2,
+        "transportId": "f285861d-9584-4279-acf0-a1246e05fbb5",
+        "accommodationId": "621bf334-a30b-4f93-85d7-dcf828df22fd"
+      },
+      {
+        "order": 3,
+        "transportId": "48814f04-b1ea-458e-9189-e6c8be2c648b",
+        "accommodationId": null
+      }
+    ]
+  },
+  {
+    "state": "future",
+    "id": "trip-future-2",
+    "userId": "our-user",
+    "name": "Królewskie Miasto i Uzdrowiskowy Relaks",
+    "totalPrice": 1823.45,
+    "startDate": "2025-12-10T10:30:00Z",
+    "duration": 6,
+    "image": "https://cdn.tripzaza.com/pl/destinations/wp-content/uploads/2018/11/6-Karlovy_Vary_-_Market_Colonnade-e1541130456260.jpg",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "db6497bb-6904-4cfa-b972-d6d2d4027334",
+        "accommodationId": "a6a76008-ea99-441b-8cdb-737aa8000391"
+      },
+      {
+        "order": 2,
+        "transportId": "73087906-8ccf-477e-bece-ea66fc0d488f",
+        "accommodationId": "c00e2689-124e-43b8-ad2b-f73d408500f9"
+      },
+      {
+        "order": 3,
+        "transportId": "8118e304-fb09-4bee-a6b1-aa93a4c737a5",
+        "accommodationId": null
+      }
+    ]
+  },
+  {
+    "state": "future",
+    "id": "trip-future-3",
+    "userId": "our-user",
+    "name": "Wędrówka po Czeskich Perełkach",
+    "totalPrice": 2145.78,
+    "startDate": "2026-01-20T08:15:00Z",
+    "duration": 10,
+    "image": "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "ffd2fee0-707b-41cf-a59a-a23451927933",
+        "accommodationId": "b97eb00a-90eb-4110-a1f3-35f7503aa45c"
+      },
+      {
+        "order": 2,
+        "transportId": "3e5aa83e-0dbd-4d17-8c1c-e2d51d18f695",
+        "accommodationId": "5ed15608-d950-4f30-a47f-cfeccc9e41c8"
+      },
+      {
+        "order": 3,
+        "transportId": "9ac72c47-83f5-49f8-8a20-e41fb85c8c44",
+        "accommodationId": "14b64f47-c4ef-4677-af51-60530a0a7a34"
+      },
+      {
+        "order": 4,
+        "transportId": "52afc841-9476-485d-8ea8-5d5ee426af78",
+        "accommodationId": null
+      }
+    ]
+  }
 ]

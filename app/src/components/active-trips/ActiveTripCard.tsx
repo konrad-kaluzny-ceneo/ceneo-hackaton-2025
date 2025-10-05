@@ -91,7 +91,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 {getLocationIdByCity(trip.currentLocation) ? (
                   <Link href={`/location/${getLocationIdByCity(trip.currentLocation)}`} className="font-semibold items-center flex gap-1 text-primary hover:underline">
                     {trip.currentLocation}
-                    <div className="ml-2 flex items-center gap-1 text-red-700 text-lg">
+                    <div className="ml-2 flex items-center gap-1 text-red-700 text-xs">
                       <span>
                         <MessageCircleIcon className="w-4 h-4 fill-red-700 text-red-700" />
                       </span>
@@ -140,21 +140,6 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 </div>
               </div>
             )}
-
-            {/* Add experience buttons */}
-            <div className="mt-4">
-              <div className="flex gap-2">
-                <MoodRatingModal
-                  trigger={
-                    <Button variant="outline" size="sm" className="flex items-center gap-1 text-xs">
-                      <TreePine className="w-3 h-3" />
-                      Oceń swój mood
-                    </Button>
-                  }
-                  onSave={handleMoodRating}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </MaxWidthWrapper>
