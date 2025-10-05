@@ -49,7 +49,12 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
         <div className=" bg-white w-full rounded-2xl shadow-md flex flex-col">
           {/* Header with image and trip info */}
             <div className="relative w-full h-48 flex items-center justify-center">
-              <img src={trip.image || DEFAULT_IMAGE} alt={trip.name} className="object-cover rounded-t-2xl w-full h-full" style={{ objectFit: "cover" }} />
+              <img 
+                src={trip.image || DEFAULT_IMAGE} 
+                alt={`Zdjęcie aktywnej wycieczki: ${trip.name}`} 
+                className="object-cover rounded-t-2xl w-full h-full" 
+                style={{ objectFit: "cover" }} 
+              />
             </div>
 
           <div className="px-6 pb-4 flex flex-col gap-2 w-full mt-4">
@@ -57,43 +62,58 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
 
             <div className="flex items-center gap-4 text-sm text-gray-600">
               <div className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
-                {formatDate(trip.startDate.toString())} - {formatDate(trip.endDate.toString())}
+                <Calendar className="w-4 h-4" aria-hidden="true" />
+                <span aria-label={`Data rozpoczęcia: ${formatDate(trip.startDate.toString())}, data zakończenia: ${formatDate(trip.endDate.toString())}`}>
+                  {formatDate(trip.startDate.toString())} - {formatDate(trip.endDate.toString())}
+                </span>
               </div>
               <div className="flex items-center gap-1">
-                <Euro className="w-4 h-4" />
-                {trip.totalPrice}
+                <Euro className="w-4 h-4" aria-hidden="true" />
+                <span aria-label={`Całkowity koszt: ${trip.totalPrice}`}>{trip.totalPrice}</span>
               </div>
             </div>
 
             {/* Status info */}
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm font-medium text-gray-600">Status</span>
-              <Badge variant={trip.bookingStatus.overall ? "default" : "secondary"}>{trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}</Badge>
+              <Badge 
+                variant={trip.bookingStatus.overall ? "default" : "secondary"}
+                aria-label={`Status rezerwacji: ${trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}`}
+              >
+                {trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}
+              </Badge>
             </div>
 
             {/* Progress info */}
             <div className="mb-4">
               <div className="flex justify-between text-sm text-gray-600 mb-2">
                 <span>Postęp podróży</span>
-                <span>
+                <span aria-label={`Ukończono ${completedSteps} z ${totalSteps} kroków`}>
                   {completedSteps}/{totalSteps} kroków
                 </span>
               </div>
-              <Progress value={progressPercentage} className="h-2" />
+              <Progress 
+                value={progressPercentage} 
+                className="h-2" 
+                aria-label={`Postęp podróży: ${Math.round(progressPercentage)} procent`}
+              />
             </div>
 
             {/* Current location */}
             {trip.currentLocation && (
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-600">
-                <MapPin className="w-4 h-4" />
+                <MapPin className="w-4 h-4" aria-hidden="true" />
                 <span>Aktualnie w: </span>
                 {getLocationIdByCity(trip.currentLocation) ? (
-                  <Link href={`/location/${getLocationIdByCity(trip.currentLocation)}`} className="font-semibold items-center flex gap-1 text-primary hover:underline">
+                  <Link 
+                    href={`/location/${getLocationIdByCity(trip.currentLocation)}`} 
+                    className="font-semibold items-center flex gap-1 text-primary hover:underline"
+                    aria-label={`Przejdź do czatu miejsca: ${trip.currentLocation}`}
+                  >
                     {trip.currentLocation}
                     <div className="ml-2 flex items-center gap-1 text-red-700 text-xs">
                       <span>
-                        <MessageCircleIcon className="w-4 h-4 fill-red-700 text-red-700" />
+                        <MessageCircleIcon className="w-4 h-4 fill-red-700 text-red-700" aria-hidden="true" />
                       </span>
                       <span className="flex font-bold items-center gap-1">CZAT MIEJSCA</span>
                     </div>
@@ -108,7 +128,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             {trip.experiences && trip.experiences.length > 0 && (
               <div className="mt-4">
                 <h4 className="text-sm font-medium text-gray-600 mb-2 flex items-center gap-2">
-                  <Heart className="w-4 h-4" />
+                  <Heart className="w-4 h-4" aria-hidden="true" />
                   Twoje doświadczenia
                 </h4>
                 <div className="space-y-2">
@@ -116,22 +136,26 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                     <div key={experience.id} className="bg-gray-50 rounded-lg p-3">
                       <div className="flex items-center justify-between mb-1">
                         {getLocationIdByCity(experience.location) ? (
-                          <Link href={`/location/${getLocationIdByCity(experience.location)}`} className="font-medium text-sm text-primary hover:underline">
+                          <Link 
+                            href={`/location/${getLocationIdByCity(experience.location)}`} 
+                            className="font-medium text-sm text-primary hover:underline"
+                            aria-label={`Przejdź do czatu miejsca: ${experience.location}`}
+                          >
                             {experience.location}
                           </Link>
                         ) : (
                           <span className="font-medium text-sm">{experience.location}</span>
                         )}
-                        <span className="text-xs text-gray-500">{experience.date}</span>
+                        <span className="text-xs text-gray-500" aria-label={`Data doświadczenia: ${experience.date}`}>{experience.date}</span>
                       </div>
                       <div className="flex items-center gap-3 mb-2">
                         <div className="flex items-center gap-1">
-                          <TreePine className="w-3 h-3 text-primary" />
-                          <span className="text-xs">{experience.moodRating.peacefulness}%</span>
+                          <TreePine className="w-3 h-3 text-primary" aria-hidden="true" />
+                          <span className="text-xs" aria-label={`Poziom spokoju: ${experience.moodRating.peacefulness} procent`}>{experience.moodRating.peacefulness}%</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <Heart className="w-3 h-3 text-red-500" />
-                          <span className="text-xs">{experience.moodRating.excitement}%</span>
+                          <Heart className="w-3 h-3 text-red-500" aria-hidden="true" />
+                          <span className="text-xs" aria-label={`Poziom ekscytacji: ${experience.moodRating.excitement} procent`}>{experience.moodRating.excitement}%</span>
                         </div>
                       </div>
                       <p className="text-xs text-gray-600">{experience.description}</p>

@@ -164,9 +164,9 @@ export default function RatingPage() {
           )}
           
           {/* Główne tło przycisku - zawsze widoczne */}
-          <div 
+          <button 
             className={cn(
-              "relative w-44 h-44 rounded-full bg-green-100 shadow-lg flex items-center justify-center transition-all duration-200 cursor-pointer select-none z-10 border-8 border-green-100",
+              "relative w-44 h-44 rounded-full bg-green-100 shadow-lg flex items-center justify-center transition-all duration-200 cursor-pointer select-none z-10 border-8 border-green-100 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-50",
               isPressed && "scale-95 bg-green-100 shadow-xl border-green-300"
             )}
             onMouseDown={startRating}
@@ -174,6 +174,20 @@ export default function RatingPage() {
             onMouseLeave={stopRating}
             onTouchStart={startRating}
             onTouchEnd={stopRating}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                if (isPressed) {
+                  stopRating();
+                } else {
+                  startRating();
+                }
+              }
+            }}
+            aria-label="Oceń poziom spokoju tego miejsca"
+            aria-pressed={isPressed}
+            role="button"
+            tabIndex={0}
           >
             {/* Wewnętrzne koło z gradientem */}
             <div 
@@ -184,7 +198,7 @@ export default function RatingPage() {
             >
               <Image 
                 src="/images/tree.png" 
-                alt="tree" 
+                alt="Ikona drzewa do oceny spokoju" 
                 width={110} 
                 height={110}
                 className={cn(
@@ -193,22 +207,26 @@ export default function RatingPage() {
                 )}
               />
             </div>
-          </div>
+          </button>
         </div>
 
         {/* Procent i opis */}
         <div className="space-y-4">
-          <div className={cn(
-            "text-6xl font-bold transition-colors duration-300",
-            rating === 0 ? "text-gray-600" : 
-            rating < 30 ? "text-red-300" :
-            rating < 70 ? "text-yellow-500" :
-            "text-green-900"
-          )}>
+          <div 
+            className={cn(
+              "text-6xl font-bold transition-colors duration-300",
+              rating === 0 ? "text-gray-600" : 
+              rating < 30 ? "text-red-300" :
+              rating < 70 ? "text-yellow-500" :
+              "text-green-900"
+            )}
+            aria-live="polite"
+            aria-label={`Poziom spokoju: ${rating} procent`}
+          >
             {rating}%
           </div>
           <div className="flex items-center justify-center gap-2 text-gray-600">
-            <TreeDeciduous className="w-4 h-4" />
+            <TreeDeciduous className="w-4 h-4" aria-hidden="true" />
             <span>Poziom spokoju w tym miejscu</span>
           </div>
         </div>
@@ -223,10 +241,11 @@ export default function RatingPage() {
             isShared && "bg-green-700 hover:bg-green-700"
           )}
           disabled={rating === 0}
+          aria-label={isShared ? "Ocena została udostępniona" : `Podziel się oceną ${rating} procent`}
         >
           {isShared ? (
             <div className="flex items-center gap-2">
-              <Check className="w-4 h-4" />
+              <Check className="w-4 h-4" aria-hidden="true" />
               Ocena udostępniona!
             </div>
           ) : (

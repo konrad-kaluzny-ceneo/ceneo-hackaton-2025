@@ -11,10 +11,15 @@ export function UserInfo({ user }: UserProps) {
   return (
     <div className="flex items-center gap-2">
       <Avatar className="w-10 h-10 border-2 border-white shadow-lg transition-transform duration-300">
-        <AvatarImage src={user.image} />
-        <AvatarFallback className="bg-gradient-to-br from-primary to-primary/80 text-white font-bold">{user.name.charAt(0)}</AvatarFallback>
+        <AvatarImage 
+          src={user.image} 
+          alt={`Avatar użytkownika ${user.name}`}
+        />
+        <AvatarFallback className="bg-gradient-to-br from-primary to-primary/80 text-white font-bold" aria-label={`Inicjał użytkownika: ${user.name.charAt(0)}`}>
+          {user.name.charAt(0)}
+        </AvatarFallback>
       </Avatar>
-      <p>{user.name}</p>
+      <p aria-label={`Nazwa użytkownika: ${user.name}`}>{user.name}</p>
     </div>
   );
 }

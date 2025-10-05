@@ -24,7 +24,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
         <SortFilters isLoading={isLoading} />
 
         {isLoading ? (
-          <div className="flex justify-center items-center w-full">
+          <div className="flex justify-center items-center w-full" role="status" aria-label="Ładowanie propozycji podróży">
             <div className="flex items-center gap-3 py-4 mx-auto">
               <Skeleton className="w-12 h-12 rounded-full" />
               <Skeleton className="h-8 w-48" />
@@ -33,13 +33,18 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
         ) : initialTrips.length > 0 && (
           <div className="flex justify-center items-center w-full">
             <div className="flex items-center gap-3 py-4 mx-auto">
-              <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
+              <Image 
+                src="/images/icons/loop.png" 
+                alt="Ikona pętli - propozycje spersonalizowane" 
+                width={50} 
+                height={50} 
+              />
               <p className="text-primary text-2xl font-semibold">Specjalnie dla Ciebie</p>
             </div>
           </div>
         )}
 
-        <div className="flex flex-col gap-8 w-full">
+        <section className="flex flex-col gap-8 w-full" aria-label="Lista propozycji podróży">
           {isLoading ? (
             <>
               <TripBoxSkeleton />
@@ -51,7 +56,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
             })
           )}
           <CreatedByOthers isLoading={isLoading} />
-        </div>
+        </section>
       </MaxWidthWrapper>
     </main>
   );

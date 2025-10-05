@@ -20,11 +20,11 @@ export default function TripBox({ trip }: TripBoxProps) {
   const accommodationsToShow = accommodations.filter((accommodation: Accommodation) => accommodation !== undefined);  
 
   return (
-    <div key={trip.id} className="bg-white w-full rounded-2xl shadow-md overflow-hidden flex flex-col">
+    <article key={trip.id} className="bg-white w-full rounded-2xl shadow-md overflow-hidden flex flex-col">
       <div className="relative w-full h-48">
         <img
           src={trip.image || "/images/trip-train.webp"}
-          alt={trip.name}
+          alt={`Zdjęcie wycieczki: ${trip.name}`}
           className="object-cover rounded-t-2xl w-full h-full"
           style={{ objectFit: "cover" }}
           loading="eager"
@@ -54,27 +54,31 @@ export default function TripBox({ trip }: TripBoxProps) {
           </p>
         </div>
 
-        <Link href={`/trip-propositions/${trip.id}`} className={cn(buttonVariants({ variant: "default" }))}>
+        <Link 
+          href={`/trip-propositions/${trip.id}`} 
+          className={cn(buttonVariants({ variant: "default" }))}
+          aria-label={`Sprawdź szczegóły wycieczki: ${trip.name}`}
+        >
           Sprawdź
         </Link>
 
         <div className="flex justify-between items-center pt-2">
           <div className="flex items-center gap-1.5">
-            <StarIcon className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-            <span className="text-sm font-medium">4.9</span>
+            <StarIcon className="w-4 h-4 text-yellow-500 fill-yellow-500" aria-hidden="true" />
+            <span className="text-sm font-medium" aria-label="Ocena: 4.9 gwiazdek">4.9</span>
           </div>
 
           <div className="flex items-center gap-1.5">
-            <TreeDeciduous className="w-4 h-4 text-primary fill-primary" />
-            <span className="text-sm font-medium">Poziom spokoju 100/100</span>
+            <TreeDeciduous className="w-4 h-4 text-primary fill-primary" aria-hidden="true" />
+            <span className="text-sm font-medium" aria-label="Poziom spokoju: 100 na 100">Poziom spokoju 100/100</span>
           </div>
 
           <div className="flex items-center gap-1.5">
-            <HeartIcon className="w-4 h-4 text-red-500 fill-red-500" />
-            <span className="text-sm font-medium">87</span>
+            <HeartIcon className="w-4 h-4 text-red-500 fill-red-500" aria-hidden="true" />
+            <span className="text-sm font-medium" aria-label="87 polubień">87</span>
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

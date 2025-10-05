@@ -41,6 +41,8 @@ export default function LocationMap({ locations, maxHeight }: Props) {
       <div
         className="flex items-center justify-center bg-gray-100"
         style={{ height: maxHeight || "88vh" }}
+        role="img"
+        aria-label="Ładowanie mapy"
       >
         <p className="text-gray-500">Ładowanie mapy...</p>
       </div>
@@ -50,30 +52,40 @@ export default function LocationMap({ locations, maxHeight }: Props) {
   const centerLocation = locations[0];
 
   return (
-    <MapContainer
-      center={[centerLocation.lat, centerLocation.lng]}
-      zoom={6}
-      style={{ height: maxHeight || "88vh", zIndex: 0 }}
+    <div 
+      role="img" 
+      aria-label={`Mapa pokazująca ${locations.length} lokalizacji`}
+      style={{ height: maxHeight || "88vh" }}
     >
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <MapContainer
+        center={[centerLocation.lat, centerLocation.lng]}
+        zoom={6}
+        style={{ height: maxHeight || "88vh", zIndex: 0 }}
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {locations.map((location, idx) => (
-        <Marker key={idx} position={[location.lat, location.lng]} icon={icon}>
-          <Popup>
-            <div className="flex h-fit flex-col">
-              <div className="font-semibold">
-                {location.city}, {location.region}
-              </div>
-              <div className="text-sm">{location.country}</div>
-              {location.tripName && (
-                <div className="mt-1 text-xs text-gray-600">
-                  Wycieczka: {location.tripName}
+        {locations.map((location, idx) => (
+          <Marker 
+            key={idx} 
+            position={[location.lat, location.lng]} 
+            icon={icon}
+          >
+            <Popup>
+              <div className="flex h-fit flex-col">
+                <div className="font-semibold">
+                  {location.city}, {location.region}
                 </div>
-              )}
-            </div>
-          </Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+                <div className="text-sm">{location.country}</div>
+                {location.tripName && (
+                  <div className="mt-1 text-xs text-gray-600">
+                    Wycieczka: {location.tripName}
+                  </div>
+                )}
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+    </div>
   );
 }

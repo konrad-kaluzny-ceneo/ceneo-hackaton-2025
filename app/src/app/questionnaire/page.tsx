@@ -83,27 +83,39 @@ export default function QuestionnairePage() {
       <div className={newLocal}>
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
-          <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
+          <Image 
+            src={questions[currentQuestion].image} 
+            alt={`Ilustracja do pytania: ${questions[currentQuestion].text}`} 
+            width={200} 
+            height={200} 
+          />
           <h1 className="text-2xl font-semibold text-gray-900">Znajdź wyjątkowe propozycje</h1>
           <p className="text-sm text-gray-600">Odpowiedz na kilka pytań, aby spersonalizować swoje doświadczenie i otrzymać rekomendacje dopasowane do Twoich potrzeb.</p>
         </div>
 
         {/* Licznik pytań */}
         <div className="text-start flex flex-col items-start gap-2">
-          <Progress value={((currentQuestion + 1) / questions.length) * 100} />
-          <p className="text-sm text-gray-600">
+          <Progress 
+            value={((currentQuestion + 1) / questions.length) * 100} 
+            aria-label={`Postęp: pytanie ${currentQuestion + 1} z ${questions.length}`}
+          />
+          <p className="text-sm text-gray-600" aria-live="polite">
             Pytanie {currentQuestion + 1} z {questions.length}
           </p>
         </div>
 
         {/* Pytanie */}
         <div className="text-center space-y-4">
-          <h2 className="text-xl font-medium text-gray-900">{questions[currentQuestion].text}</h2>
+          <h2 id="question-text" className="text-xl font-medium text-gray-900">{questions[currentQuestion].text}</h2>
 
           {questions[currentQuestion].type === "radio" && (
             <>
               {/* Odpowiedzi jako chipy */}
-              <div className="grid grid-cols-2 justify-center gap-3 mt-6 items-center">
+              <div 
+                className="grid grid-cols-2 justify-center gap-3 mt-6 items-center"
+                role="radiogroup"
+                aria-labelledby="question-text"
+              >
                 {questions[currentQuestion].answers.map((answer, index) => (
                   <Badge
                     key={index}
@@ -116,6 +128,16 @@ export default function QuestionnairePage() {
                     onClick={() => {
                       handleAnswerSelect(answer);
                       handleNext();
+                    }}
+                    role="radio"
+                    aria-checked={selectedAnswers[questions[currentQuestion].id] === answer}
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        handleAnswerSelect(answer);
+                        handleNext();
+                      }
                     }}
                   >
                     {answer}
@@ -134,9 +156,20 @@ export default function QuestionnairePage() {
                   className="w-full bg-white text-sm"
                   onChange={handleTextInputChange}
                   placeholder={questions[currentQuestion].description || "Wpisz swoją odpowiedź"}
+                  aria-label={`Odpowiedź na pytanie: ${questions[currentQuestion].text}`}
+                  aria-describedby="question-description"
                 />
+                {questions[currentQuestion].description && (
+                  <p id="question-description" className="text-sm text-gray-500 text-center">
+                    {questions[currentQuestion].description}
+                  </p>
+                )}
                 {/* Przycisk dalej */}
-                <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
+                <Button 
+                  onClick={handleNext} 
+                  disabled={!isAnswerSelected || isLoading}
+                  aria-label={currentQuestion < questions.length - 1 ? "Przejdź do następnego pytania" : "Zakończ ankietę"}
+                >
                   {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
                 </Button>
               </div>
