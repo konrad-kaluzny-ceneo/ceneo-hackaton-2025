@@ -1,0 +1,105 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+// Trip models
+enum TripState {
+  future
+  history
+  active
+}
+
+model Trip {
+  id           String        @id @default(cuid())
+  userId       String
+  name         String
+  state        TripState
+  totalPrice   Float
+  duration     Int
+  image        String?
+  startDate    DateTime
+  destinations Destination[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@index([userId])
+  @@index([state])
+  @@index([startDate])
+}
+
+model Destination {
+  id              String  @id @default(cuid())
+  order           Int
+  transportId     String
+  accommodationId String?
+  tripId          String
+  trip            Trip    @relation(fields: [tripId], references: [id], onDelete: Cascade)
+
+  @@index([tripId])
+  @@index([transportId])
+}
+
+// Task models
+enum TaskStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+}
+
+model Task {
+  id          String     @id @default(cuid())
+  status      TaskStatus @default(PENDING)
+  progress    Int?       @default(0)
+  result      String?    @db.Text
+  error       String?    @db.Text
+  userId      String?
+  createdAt   DateTime   @default(now())
+  startedAt   DateTime?
+  completedAt DateTime?
+
+  @@index([status])
+  @@index([createdAt])
+  @@index([userId])
+}
+
+model TripProposition {
+  id        String   @id @default(cuid())
+  userId    String
+  taskId    String?
+  data      String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([taskId])
+  @@index([createdAt])
+}
+
+model WebhookEvent {
+  id          String   @id @default(cuid())
+  source      String
+  eventType   String
+  payload     String   @db.Text
+  taskId      String?
+  processed   Boolean  @default(false)
+  error       String?  @db.Text
+  createdAt   DateTime @default(now())
+  processedAt DateTime?
+
+  @@index([source])
+  @@index([processed])
+  @@index([createdAt])
+}

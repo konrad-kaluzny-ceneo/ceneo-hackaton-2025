@@ -4,6 +4,7 @@ import { TaskQueue } from "./TaskQueue";
 import { WebSocketManager } from "./WebSocketManager";
 import { GetUserTripsHandler } from "@/features/trips/GetUserTrips";
 import { AttractionSearchService } from "@/features/rag";
+import { TripGenerationService } from "./TripGenerationService";
 
 // Typ dla konstruktora klasy
 type Constructor<T = any> = new (...args: any[]) => T;
@@ -30,6 +31,7 @@ providerMap.set(WebSocketManager, wsManager);
 // Potem AnswerHandler (zależy od Repository)
 providerMap.set(AnswerHandler, new AnswerHandler());
 providerMap.set(AttractionSearchService, new AttractionSearchService());
+providerMap.set(TripGenerationService, new TripGenerationService());
 
 // GetUserTripsHandler needs lazy initialization to avoid circular dependency
 // It will be created on first access in the inject function
