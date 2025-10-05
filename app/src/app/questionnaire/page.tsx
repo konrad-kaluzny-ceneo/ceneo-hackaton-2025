@@ -72,7 +72,7 @@ export default function QuestionnairePage() {
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
           <Image src={questions[currentQuestion].image} alt="Question" width={200} height={200} />
-          <h1 className="text-2xl font-semibold text-gray-900">Jak się dzisiaj czujesz?</h1>
+          <h1 className="text-2xl font-semibold text-gray-900">Znajdź wyjątkowe propozycje</h1>
           <p className="text-sm text-gray-600">Odpowiedz na kilka pytań, aby spersonalizować swoje doświadczenie i otrzymać rekomendacje dopasowane do Twoich potrzeb.</p>
         </div>
 
