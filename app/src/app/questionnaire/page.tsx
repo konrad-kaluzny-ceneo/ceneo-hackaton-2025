@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
@@ -51,6 +51,18 @@ export default function QuestionnairePage() {
       [questions[currentQuestion].id]: e.target.value,
     }));
   };
+
+  useEffect(() => {
+    // wstaw odpowiedź usera do text question, by dało się szybko przejść dalej
+    const fastAnswer = "Chcę odpocząć od zgiełku, zrelaksować się i odkryć nowe miejsca. Najbardziej interesuje mnie kultura Europejska";
+    if (questions[currentQuestion].type === "text") {
+      handleTextInputChange({
+        target: {
+          value: fastAnswer,
+        },
+      } as React.ChangeEvent<HTMLTextAreaElement>);
+    }
+  }, [currentQuestion]);
 
   const isAnswerSelected = selectedAnswers[questions[currentQuestion].id] !== undefined;
 
