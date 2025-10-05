@@ -54,7 +54,18 @@ export default function QuestionnairePage() {
 
   const newLocal = "w-full flex flex-col gap-8 max-w-2xl";
   return (
-    <div className="flex justify-center items-center p-4">
+    <div className="flex justify-center items-center p-4 relative">
+      {/* Loading Overlay */}
+      {isLoading && (
+        <div className="fixed inset-0 bg-white/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 shadow-xl max-w-sm w-full mx-4 text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-[#3D5A4C] mx-auto mb-4"></div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Przetwarzam Twoje odpowiedzi</h3>
+            <p className="text-sm text-gray-600">Analizuję Twoje preferencje, żeby przygotować idealne propozycje...</p>
+          </div>
+        </div>
+      )}
+      
       <div className={newLocal}>
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
