@@ -80,25 +80,9 @@ function GeneratingTripsContent() {
   };
 
   const connectToTask = (taskId: string) => {
-    // Zamknij poprzednie połączenie, jeśli istnieje
     if (eventSourceRef.current) {
       eventSourceRef.current.close();
     }
-
-    fetch(`/api/tasks/status?taskId=${taskId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success && data.task) {
-          setTask(data.task);
-
-          if (data.task.status === "COMPLETED") {
-            redirectToResults(data.task.result);
-          }
-        }
-      })
-      .catch((err) => {
-        console.error("Failed to fetch initial task state:", err);
-      });
 
     const eventSource = new EventSource(`/api/tasks/ws?taskId=${taskId}`);
     eventSourceRef.current = eventSource;
