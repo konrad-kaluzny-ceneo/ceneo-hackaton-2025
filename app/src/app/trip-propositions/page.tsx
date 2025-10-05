@@ -26,6 +26,10 @@ export default function TripPropositionsPage() {
     fetchTrips();
   }, []);
 
+  useEffect(() =>{
+    console.log("Fetched trips:", trips);
+  }, [trips]);
+
   {loading ? (
     <div className="flex justify-center items-center w-full">
       <div className="flex items-center gap-3 py-4 mx-auto">
