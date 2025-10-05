@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <User />
         <Header />
-        <div className="pb-16">
+        <div>
           {children}
         </div>
         <Navbar />

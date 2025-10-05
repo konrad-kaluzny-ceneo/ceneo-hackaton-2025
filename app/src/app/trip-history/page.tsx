@@ -1,3 +1,4 @@
+import MaxWidthWrapper from "@/components/shared/MaxWidthWrapper";
 import TripHistory from "@/components/trip-history/TripHistory";
 import { TripSet } from "@/types/trip-set";
 
@@ -24,8 +25,10 @@ export default async function TripHistoryPage() {
   
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-primary mb-8">Historia Wycieczek</h1>
-      <TripHistory trips={trips} futureTrips={futureTrips} />
+      <MaxWidthWrapper className="w-full">
+        <h1 className="text-3xl font-bold text-primary mb-8">Historia Wycieczek</h1>
+        <TripHistory trips={trips} futureTrips={futureTrips} />
+      </MaxWidthWrapper>
     </div>
   );
 }
