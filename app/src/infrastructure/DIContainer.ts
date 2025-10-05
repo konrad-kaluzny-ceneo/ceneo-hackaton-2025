@@ -11,25 +11,35 @@ type Constructor<T = any> = new (...args: any[]) => T;
 // Typ dla tokena - może być konstruktor lub symbol
 type InjectionToken<T = any> = Constructor<T> | symbol;
 
+// Use globalThis to persist singletons across Next.js module reloads
+// This prevents the race condition where different API routes get different instances
+const globalForDI = globalThis as unknown as {
+  providerMap: Map<InjectionToken, unknown> | undefined;
+};
+
 // Mapa tokenów do instancji - obsługuje zarówno klasy jak i symbole
-const providerMap = new Map<InjectionToken, unknown>();
+const providerMap = globalForDI.providerMap ?? new Map<InjectionToken, unknown>();
+globalForDI.providerMap = providerMap;
 
-// Inicjalizacja providerów w odpowiedniej kolejności
-// Najpierw usługi bez zależności
-providerMap.set(Repository, new Repository());
+// Initialize providers only if they don't exist yet
+if (!providerMap.has(Repository)) {
+  // Inicjalizacja providerów w odpowiedniej kolejności
+  // Najpierw usługi bez zależności
+  providerMap.set(Repository, new Repository());
 
-const taskQueue = new TaskQueue();
-const wsManager = new WebSocketManager();
+  const taskQueue = new TaskQueue();
+  const wsManager = new WebSocketManager();
 
-// Wire up TaskQueue and WebSocketManager
-taskQueue.setWebSocketManager(wsManager);
+  // Wire up TaskQueue and WebSocketManager
+  taskQueue.setWebSocketManager(wsManager);
 
-providerMap.set(TaskQueue, taskQueue);
-providerMap.set(WebSocketManager, wsManager);
+  providerMap.set(TaskQueue, taskQueue);
+  providerMap.set(WebSocketManager, wsManager);
 
-// Potem AnswerHandler (zależy od Repository)
-providerMap.set(AnswerHandler, new AnswerHandler());
-providerMap.set(AttractionSearchService, new AttractionSearchService());
+  // Potem AnswerHandler (zależy od Repository)
+  providerMap.set(AnswerHandler, new AnswerHandler());
+  providerMap.set(AttractionSearchService, new AttractionSearchService());
+}
 
 // GetUserTripsHandler needs lazy initialization to avoid circular dependency
 // It will be created on first access in the inject function
