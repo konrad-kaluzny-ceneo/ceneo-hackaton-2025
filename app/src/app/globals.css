@@ -120,3 +120,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.animate-logo-subtle {
+  animation: 6s ease-in-out infinite alternate breathe-logo;
+}
+
+@keyframes breathe-logo {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}

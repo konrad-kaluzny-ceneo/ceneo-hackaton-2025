@@ -25,8 +25,8 @@ export default function CreatedByOthers({ isLoading = false }: { isLoading?: boo
   return (
     <div className="flex flex-col gap-4 w-full items-center">
       <div className="flex items-center gap-3">
-        <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
-        <p className="text-primary text-2xl font-semibold">Stworzone przez innych</p>
+        <Image src="/images/icons/house.png" alt="Loop" width={50} height={50} />
+        <p className="text-primary text-2xl font-semibold">Podróże społeczności</p>
       </div>
       <div className="flex flex-col gap-6 w-full items-center">
         {tripsFromOthers.map((trip: TripSet) => (

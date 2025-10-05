@@ -6,9 +6,17 @@ import Link from "next/link";
 
 export default function StartPage() {
   return (
-    <div className="flex justify-center items-center p-4">
-      <div className="flex flex-col items-center w-full gap-8">
-        <Image src="/logo.png" alt="Start" width={500} height={500} />
+    <div 
+      className="flex justify-center items-center p-4 min-h-[calc(100vh-4rem)] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url(/images/icons/background.png)' }}
+    >
+      <div className="flex flex-col items-center w-full gap-8 text-primary">
+        <Image src="/images/icons/logo.png" alt="Start" width={150} height={150} className="animate-logo-subtle" />
+        
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-4xl font-bold">Here.</h1>
+          <p className="text-lg font-medium">Travel slow. Feel more.</p>
+        </div>
 
         <Link href="/questionnaire" className={cn(buttonVariants({ variant: "default" }), "w-fit")}>
           <MapPinHouse />

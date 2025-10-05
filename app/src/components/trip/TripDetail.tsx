@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import BackButton from "@/components/shared/BackButton";
 import { TripSet } from "@/types/trip-set";
-import { TicketIcon, BedIcon, ClockIcon, StarIcon } from "lucide-react";
+import { TicketIcon, BedIcon, ClockIcon, Sparkles, PlaneIcon, TrainIcon, BusIcon, HomeIcon } from "lucide-react";
 import { useUser } from "@/infrastructure/FrontendUserAccessor";
 import Image from "next/image";
 import { DEFAULT_IMAGE } from "@/config/images";
@@ -29,22 +29,16 @@ function getAirportCode(city: string): string {
   return codes[city] || "XXX";
 }
 
-function getTransportIcon(transportName: string): string {
-  if (transportName.includes("Lot")) return "✈️";
-  if (transportName.includes("Pociąg")) return "🚂";
-  return "🚌";
+function getTransportIcon(transportName: string) {
+  if (transportName.includes("Lot")) return <PlaneIcon className="w-6 h-6 text-primary" />;
+  if (transportName.includes("Pociąg")) return <TrainIcon className="w-6 h-6 text-primary" />;
+  return <BusIcon className="w-6 h-6 text-primary" />;
 }
 
 export default function TripDetail({ trip }: TripDetailProps) {
   return (
     <main className="flex flex-col gap-4">
       <div className="relative">
-        <div className="absolute top-4 left-4 z-10">
-          <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg hover:bg-white transition-colors">
-            <BackButton />
-          </div>
-        </div>
-
         <div className="relative h-64 w-full">
           <Image src={trip.image || DEFAULT_IMAGE} alt={trip.name} fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -78,7 +72,7 @@ export default function TripDetail({ trip }: TripDetailProps) {
               <div className="ml-16">
                 <div className="bg-white rounded-2xl p-6 mb-4 shadow-sm">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-2xl">{getTransportIcon(dest.transport.name)}</span>
+                    {getTransportIcon(dest.transport.name)}
                     <h3 className="text-primary text-xl font-semibold">{dest.transport.name.split(" ")[0]}</h3>
                   </div>
 
@@ -97,9 +91,9 @@ export default function TripDetail({ trip }: TripDetailProps) {
                   )}
 
                   {dest.accommodation && (
-                    <div className="bg-primary/10 rounded-xl p-4 mb-4">
+                    <div className="bg-primary/10 rounded-2xl p-4 mb-4">
                       <div className="flex items-start gap-2">
-                        <StarIcon className="w-5 h-5 text-primary mt-0.5" />
+                        <Sparkles className="w-12 h-12 text-primary" />
                         <p className="text-sm text-gray-700">Pamiętaj o czasie na odbiór bagażu i transfer z lotniska na dworzec kolejowy w {dest.transport.destination.city}.</p>
                       </div>
                     </div>
@@ -108,7 +102,7 @@ export default function TripDetail({ trip }: TripDetailProps) {
                   {dest.accommodation && (
                     <div className="bg-primary/10 rounded-2xl p-6 mb-4 shadow-sm">
                       <div className="flex items-center gap-2 mb-3">
-                        <span className="text-2xl">🏠</span>
+                        <HomeIcon className="w-6 h-6 text-primary" />
                         <h3 className="text-primary text-xl font-semibold">Zakwaterowanie</h3>
                       </div>
                       <div className="text-sm font-bold text-gray-800 mb-1">{dest.accommodation.name}</div>
@@ -123,7 +117,7 @@ export default function TripDetail({ trip }: TripDetailProps) {
                 {idx === trip.destinations.length - 1 && (
                   <div className="bg-[#f5f5f5] rounded-xl p-4 mb-6">
                     <div className="flex items-start gap-2">
-                      <StarIcon className="w-5 h-5 text-primary mt-0.5" />
+                      <Sparkles className="w-12 h-12 text-primary" />
                       <p className="text-sm text-gray-700">Jesteś na miejscu! Dobra robota. Pamiętaj, żeby w wolnej chwili odwiedzić pobliskie wodospady 💦</p>
                     </div>
                   </div>
