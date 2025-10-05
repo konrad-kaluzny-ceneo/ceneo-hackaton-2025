@@ -13,6 +13,11 @@ export default function Header({ showBackButton = true, title }: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
   
+  // Ukryj cały nagłówek na stronie /start
+  if (pathname === "/start") {
+    return null;
+  }
+  
   // Ukryj przycisk wstecz na głównej stronie i stronie z propozycjami
   const shouldShowBackButton = showBackButton && pathname !== "/" && pathname !== "/trip-propositions" && pathname !== "/start";
 
