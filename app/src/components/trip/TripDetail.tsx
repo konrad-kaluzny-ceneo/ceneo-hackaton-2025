@@ -37,7 +37,7 @@ function getTransportIcon(transportName: string): string {
 
 export default function TripDetail({ trip }: TripDetailProps) {
   return (
-    <main className="min-h-screen flex flex-col gap-4">
+    <main className="flex flex-col gap-4">
       <div className="relative">
         <div className="absolute top-4 left-4 z-10">
           <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg hover:bg-white transition-colors">

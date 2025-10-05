@@ -114,7 +114,7 @@ function GeneratingTripsContent() {
 
   return (
     <MaxWidthWrapper>
-      <div className="flex flex-col justify-center items-center min-h-screen py-2 gap-6 w-full">
+      <div className="flex flex-col justify-center items-center py-2 gap-6 w-full">
         <SortFilters />
 
         <div className="flex flex-col w-full text-center space-y-6">
@@ -152,7 +152,7 @@ export default function GeneratingTripsPage() {
     <Suspense
       fallback={
         <MaxWidthWrapper>
-          <div className="flex justify-center items-center min-h-screen">
+          <div className="flex justify-center items-center">
             <div className="w-full text-center space-y-6">
               <div className="space-y-6">
                 <div className="flex justify-center">
