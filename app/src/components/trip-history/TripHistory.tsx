@@ -12,7 +12,7 @@ interface TripHistoryProps {
 }
 
 // Helper function to get historical date without mutating original data
-function getHistoricalDate(startDate: string): Date {
+function getHistoricalDate(startDate: Date | string): Date {
   const originalDate = new Date(startDate);
   originalDate.setDate(originalDate.getDate() - 30);
   return originalDate;
@@ -39,7 +39,7 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
                 <div className="p-4 transition-shadow cursor-pointer" onClick={() => setSelectedTrip(trip)}>
                   <h3 className="font-semibold text-primary">{trip.name}</h3>
                   <p className="text-xs text-gray-600 mt-1">
-                    {new Date(trip.startDate).toLocaleDateString("pl-PL")} • {trip.duration} dni • {trip.totalPrice} PLN
+                    {historicalDate.toLocaleDateString("pl-PL")} • {trip.duration} dni • {trip.totalPrice} PLN
                   </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
                 <div className="p-4 transition-shadow cursor-pointer" onClick={() => setSelectedTrip(trip)}>
                   <h3 className="font-semibold text-primary">{trip.name}</h3>
                   <p className="text-xs text-gray-600 mt-1">
-                    {new Date(trip.startDate).toLocaleDateString("pl-PL")} • {trip.duration} dni • {trip.totalPrice} PLN
+                    {historicalDate.toLocaleDateString("pl-PL")} • {trip.duration} dni • {trip.totalPrice} PLN
                   </p>
                 </div>
               </div>
