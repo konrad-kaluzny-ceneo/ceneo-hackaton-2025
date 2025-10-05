@@ -240,7 +240,7 @@
           "destination": {
             "country": "Włochy",
             "region": "Lombardia",
-            "city": "Chiavenna"
+            "city": "Kraków"
           },
           "destinationDate": "2025-10-13",
           "price": 35.00,
@@ -250,12 +250,12 @@
           "location": {
             "country": "Włochy",
             "region": "Lombardia",
-            "city": "Chiavenna"
+            "city": "Kraków"
           },
           "date": "2025-10-13",
           "price": 280.00,
           "beds": 2,
-          "name": "Alpine Vista Chiavenna",
+          "name": "Alpine Vista Kraków",
           "description": "Malownicza miejscowość na północy Włoch. Poczuj włoski klimat i odwiedź pobliski wodospad.",
           "images": [
             "/images/mountains.webp"
@@ -268,7 +268,7 @@
           "from": {
             "country": "Włochy",
             "region": "Lombardia",
-            "city": "Chiavenna"
+            "city": "Kraków"
           },
           "fromDate": "2025-10-16",
           "destination": {

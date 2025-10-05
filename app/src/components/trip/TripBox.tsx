@@ -5,7 +5,7 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { UserInfo } from "../user/UserInfo";
 import { User } from "@/types/user";
-import { HeartIcon, SparklesIcon, StarIcon } from "lucide-react";
+import { AudioLines, HeartIcon, StarIcon } from "lucide-react";
 
 interface TripBoxProps {
   trip: TripSet;
@@ -38,10 +38,12 @@ export default function TripBox({ trip }: TripBoxProps) {
             {trip.destinations
               .map((dest: Destination, idx: number) => {
                 const cities = [];
-                if (idx === 0) {
+                if (idx === 0 && dest.transport) {
                   cities.push(dest.transport.from.city);
                 }
-                cities.push(dest.transport.destination.city);
+                if (dest.transport) {
+                  cities.push(dest.transport.destination.city);
+                }
                 return cities;
               })
               .flat()
@@ -60,7 +62,7 @@ export default function TripBox({ trip }: TripBoxProps) {
           </div>
 
           <div className="flex items-center gap-1.5">
-            <SparklesIcon className="w-4 h-4 text-primary fill-primary" />
+            <AudioLines className="w-4 h-4 text-primary fill-primary" />
             <span className="text-sm font-medium">Poziom spokoju 100/100</span>
           </div>
 

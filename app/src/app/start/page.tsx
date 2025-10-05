@@ -1,6 +1,6 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { SearchIcon } from "lucide-react";
+import { MapPinHouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function StartPage() {
         <Image src="/logo.png" alt="Start" width={500} height={500} />
 
         <Link href="/questionnaire" className={cn(buttonVariants({ variant: "default" }), "w-fit")}>
-          <SearchIcon />
+          <MapPinHouse />
           Rozpocznij podróż
         </Link>
       </div>
