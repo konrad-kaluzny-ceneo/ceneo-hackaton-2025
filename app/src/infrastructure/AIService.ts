@@ -12,5 +12,6 @@ export async function callAI(prompt: string) {
         model: "gpt-4o",
         input: prompt,
     });
+    console.log(response.output_text);
     return response.output_text;
 }

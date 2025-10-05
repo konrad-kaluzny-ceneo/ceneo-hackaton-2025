@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TripBox from "@/components/trip/TripBox";
 import TripBoxSkeleton from "@/components/trip/TripBoxSkeleton";
 import { Destination, TripSet } from "@/types/trip-set";
@@ -16,7 +16,6 @@ interface TripPropositionsClientProps {
 }
 
 export default function TripPropositionsClient({ initialTrips }: TripPropositionsClientProps) {
-  const [trips, setTrips] = useState<TripSet[]>(initialTrips);
   const [isLoading, setIsLoading] = useState(false);
 
   return (
@@ -31,7 +30,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
               <Skeleton className="h-8 w-48" />
             </div>
           </div>
-        ) : trips.length > 0 && (
+        ) : initialTrips.length > 0 && (
           <div className="flex justify-center items-center w-full">
             <div className="flex items-center gap-3 py-4 mx-auto">
               <Image src="/images/icons/loop.png" alt="Loop" width={50} height={50} />
@@ -47,7 +46,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
               <TripBoxSkeleton />
             </>
           ) : (
-            trips.map((trip: TripSet) => {
+            initialTrips.map((trip: TripSet) => {
               return <TripBox trip={trip} key={trip.id} />;
             })
           )}

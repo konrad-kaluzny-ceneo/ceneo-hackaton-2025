@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import CreatedByOthers from "@/components/custom-trips/CreatedByOthers";
 import SortFilters from "@/components/sort-filters/SortFilters";
@@ -21,19 +21,36 @@ function GeneratingTripsContent() {
   const searchParams = useSearchParams();
   const [task, setTask] = useState<Task | null>(null);
   const [error, setError] = useState<string>("");
+  const taskCreatedRef = useRef(false);
+  const eventSourceRef = useRef<EventSource | null>(null);
 
   useEffect(() => {
+    let isMounted = true;
+    
     const initializeTask = async () => {
       const urlTaskId = searchParams.get("taskId");
 
       if (urlTaskId) {
         connectToTask(urlTaskId);
       } else {
-        await createNewTask();
+        // Sprawdź czy task już nie został utworzony
+        if (isMounted && !taskCreatedRef.current) {
+          taskCreatedRef.current = true;
+          await createNewTask();
+        }
       }
     };
 
     initializeTask();
+    
+    // Cleanup function - zamyka EventSource i zapobiega utworzeniu drugiego taska
+    return () => {
+      isMounted = false;
+      if (eventSourceRef.current) {
+        eventSourceRef.current.close();
+        eventSourceRef.current = null;
+      }
+    };
   }, []);
 
   const createNewTask = async () => {
@@ -63,6 +80,11 @@ function GeneratingTripsContent() {
   };
 
   const connectToTask = (taskId: string) => {
+    // Zamknij poprzednie połączenie, jeśli istnieje
+    if (eventSourceRef.current) {
+      eventSourceRef.current.close();
+    }
+
     fetch(`/api/tasks/status?taskId=${taskId}`)
       .then((res) => res.json())
       .then((data) => {
@@ -79,6 +101,7 @@ function GeneratingTripsContent() {
       });
 
     const eventSource = new EventSource(`/api/tasks/ws?taskId=${taskId}`);
+    eventSourceRef.current = eventSource;
 
     eventSource.onmessage = (event) => {
       try {
@@ -88,9 +111,11 @@ function GeneratingTripsContent() {
 
           if (message.task.status === "COMPLETED") {
             eventSource.close();
+            eventSourceRef.current = null;
             redirectToResults(message.task.result);
           } else if (message.task.status === "FAILED") {
             eventSource.close();
+            eventSourceRef.current = null;
             setError(message.task.error || "Failed to generate trips");
           }
         }
