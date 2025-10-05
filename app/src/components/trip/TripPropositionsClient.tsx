@@ -19,7 +19,7 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <main className="flex flex-col gap-4 w-full pb-8">
+    <main className="flex flex-col gap-4 w-full">
       <MaxWidthWrapper className="pt-2 flex flex-col gap-4">
         <SortFilters isLoading={isLoading} />
 
