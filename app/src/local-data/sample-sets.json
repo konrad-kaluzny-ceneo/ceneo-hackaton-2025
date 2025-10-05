@@ -1,5 +1,6 @@
-{
-  "future": {
+[
+  {
+    "state": "future",
     "id": "trip-set-001",
     "userId": "user-1",
     "name": "Magiczne Trio: Kraków - Praga - Brno",
@@ -31,7 +32,8 @@
     ]
   },
 
-  "history": {
+  {
+    "state": "history",
     "id": "trip-set-001",
     "userId": "user-1",
     "name": "Weekend w Karlowych Warach – relaks i historia",
@@ -52,4 +54,4 @@
       }
     ]
   }
-}
+]

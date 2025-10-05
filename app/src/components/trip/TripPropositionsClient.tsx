@@ -48,9 +48,6 @@ export default function TripPropositionsClient({ initialTrips }: TripProposition
             </>
           ) : (
             trips.map((trip: TripSet) => {
-              const firstAccommodation = trip.destinations.find((dest: Destination) => dest.accommodation)?.accommodation;
-              const tripImage = firstAccommodation?.images?.[0] || DEFAULT_IMAGE;
-
               return <TripBox trip={trip} key={trip.id} />;
             })
           )}
