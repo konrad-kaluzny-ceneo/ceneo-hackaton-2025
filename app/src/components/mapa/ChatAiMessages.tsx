@@ -45,7 +45,7 @@ export default function ChatAiMessages() {
           );
         })
       ) : (
-        <div className="flex flex-1 flex-col items-center justify-center pb-12 gap-2">
+        <div className="flex flex-1 flex-col items-center justify-center gap-2">
           <MessageSquareIcon className="h-8 w-8 text-blue-500" />
           <h3 className="text-xl font-semibold">Wszystko gotowe!</h3>
           <p className="text-sm text-zinc-500">
