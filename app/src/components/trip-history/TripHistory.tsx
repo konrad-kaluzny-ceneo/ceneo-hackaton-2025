@@ -11,6 +11,13 @@ interface TripHistoryProps {
   futureTrips: TripSet[];
 }
 
+// Helper function to get historical date without mutating original data
+function getHistoricalDate(startDate: string): Date {
+  const originalDate = new Date(startDate);
+  originalDate.setDate(originalDate.getDate() - 30);
+  return originalDate;
+}
+
 export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
   const [selectedTrip, setSelectedTrip] = useState<TripSet | null>(null);
 
@@ -20,10 +27,8 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
       <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300 h-full"></div>
 
       {trips.map((trip, index) => {
-        // Subtract 30 days to make trips appear as historical
-        const originalDate = new Date(trip.startDate);
-        originalDate.setDate(originalDate.getDate() - 30);
-        trip.startDate = originalDate;
+        // Get historical date without mutating original data
+        const historicalDate = getHistoricalDate(trip.startDate);
         const isEven = index % 2 === 0;
 
         return (
