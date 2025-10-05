@@ -140,21 +140,6 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 </div>
               </div>
             )}
-
-            {/* Add experience buttons */}
-            <div className="mt-4">
-              <div className="flex gap-2">
-                <MoodRatingModal
-                  trigger={
-                    <Button variant="outline" size="sm" className="flex items-center gap-1 text-xs">
-                      <TreePine className="w-3 h-3" />
-                      Oceń swój mood
-                    </Button>
-                  }
-                  onSave={handleMoodRating}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </MaxWidthWrapper>
