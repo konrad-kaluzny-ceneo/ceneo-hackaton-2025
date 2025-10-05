@@ -91,7 +91,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 {getLocationIdByCity(trip.currentLocation) ? (
                   <Link href={`/location/${getLocationIdByCity(trip.currentLocation)}`} className="font-semibold items-center flex gap-1 text-primary hover:underline">
                     {trip.currentLocation}
-                    <div className="ml-2 flex items-center gap-1 text-red-700 text-lg">
+                    <div className="ml-2 flex items-center gap-1 text-red-700 text-xs">
                       <span>
                         <MessageCircleIcon className="w-4 h-4 fill-red-700 text-red-700" />
                       </span>
