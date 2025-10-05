@@ -1,6 +1,7 @@
 {
   "future": {
     "id": "trip-set-001",
+    "userId": "user-1",
     "name": "Magiczne Trio: Kraków - Praga - Brno",
     "totalPrice": 2847.23,
     "startDate": "2025-10-09T12:15:00Z",
@@ -10,17 +11,17 @@
       {
         "order": 1,
         "transportId": "set1-1",
-        "accommodationId": ["set1-1", "set1-1-2"]
+        "accommodationId": "a6a76008-ea99-441b-8cdb-737aa8000391"
       },
       {
         "order": 2,
         "transportId": "set1-2",
-        "accommodationId": ["set1-2", "set1-2-2"]
+        "accommodationId": "5ed15608-d950-4f30-a47f-cfeccc9e41c8"
       },
       {
         "order": 3,
         "transportId": "set1-3",
-        "accommodationId": ["set1-3", "set1-3-2", "set1-3-3"]
+        "accommodationId": "12737de9-9c7b-4fc4-a791-bf216259aa76"
       },
       {
         "order": 4,
@@ -32,6 +33,7 @@
 
   "history": {
     "id": "trip-set-001",
+    "userId": "user-1",
     "name": "Weekend w Karlowych Warach – relaks i historia",
     "totalPrice": 2847.23,
     "startDate": "2025-10-09T12:15:00Z",
@@ -41,7 +43,7 @@
       {
         "order": 1,
         "transportId": "set2-1",
-        "accommodationId": ["set2-1", "set2-2"]
+        "accommodationId": "c00e2689-124e-43b8-ad2b-f73d408500f9"
       },
       {
         "order": 2,

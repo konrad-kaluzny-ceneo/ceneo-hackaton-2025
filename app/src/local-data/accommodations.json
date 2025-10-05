@@ -1,0 +1,662 @@
+[
+  {
+    "id": "a6a76008-ea99-441b-8cdb-737aa8000391",
+    "locationId": "pol-kraków-30cfd729",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "b68a3448-ee0b-418b-97de-9c9d8c658f5b",
+    "locationId": "pol-kraków-30cfd729",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "314c1be2-42b0-4274-9b1c-b057f011689a",
+    "locationId": "pol-kraków-30cfd729",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "a5dd6e94-4c86-4ce2-925c-59033ff0fda3",
+    "locationId": "pol-kraków-30cfd729",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "42ed38e3-3f48-4bdc-9795-be48a86a55a1",
+    "locationId": "pol-kraków-30cfd729",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "5da75be3-9119-4e5c-a5db-32f6c2ac0d58",
+    "locationId": "pol-warsza-48f4430f",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "c50b9f37-69c3-4043-94c2-53d7273df72b",
+    "locationId": "pol-warsza-48f4430f",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "a0aaed3e-2e4a-4fb2-9e37-2911387ddbaa",
+    "locationId": "pol-warsza-48f4430f",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "009b7027-00bd-47a2-b573-9ff135200d0e",
+    "locationId": "pol-warsza-48f4430f",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "c5fa8c06-57de-416a-95ef-c13c46ba04fb",
+    "locationId": "pol-warsza-48f4430f",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "e46dadda-998b-4cc2-80dd-85b4a0f69c55",
+    "locationId": "pol-gdańsk-2812f824",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "f06f5e43-6b35-4218-aadb-ca6e1690a020",
+    "locationId": "pol-gdańsk-2812f824",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "1acb1f54-8cd3-4c44-b108-12cff49ca290",
+    "locationId": "pol-gdańsk-2812f824",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "31d39977-1585-4630-b864-72bbae281215",
+    "locationId": "pol-gdańsk-2812f824",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "3f37b1ab-25a6-4641-bb1d-d2e0389fe9ca",
+    "locationId": "pol-gdańsk-2812f824",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "621bf334-a30b-4f93-85d7-dcf828df22fd",
+    "locationId": "pol-zakopa-883cd0be",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "f553c671-8990-4207-b96e-bb9527be7718",
+    "locationId": "pol-zakopa-883cd0be",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "a0a31081-2ca6-40b6-be0f-9583800c1ef3",
+    "locationId": "pol-zakopa-883cd0be",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "98691380-8771-4610-98c2-3077a2e9ae43",
+    "locationId": "pol-zakopa-883cd0be",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "68f7c084-7831-472e-b6fc-f0eaea22e313",
+    "locationId": "pol-zakopa-883cd0be",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "df4e34e0-a69e-449a-807a-4ca83f038a46",
+    "locationId": "pol-wrocła-ae7634a1",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "66d2d62a-af30-45af-84f0-1ef9a03ed0c4",
+    "locationId": "pol-wrocła-ae7634a1",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "bb3d049f-7263-4931-8012-fa0c74e892a2",
+    "locationId": "pol-wrocła-ae7634a1",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "1e553698-e591-4ab3-8fa7-6bed2593e597",
+    "locationId": "pol-wrocła-ae7634a1",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "da7b4372-5fcd-4d7b-ad57-c61711d06282",
+    "locationId": "pol-wrocła-ae7634a1",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "9da2570b-563d-4b0b-956a-468036d74ba0",
+    "locationId": "pol-kazimi-c18a09ef",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "58efebe1-49cd-45a4-a8d5-dd17e02a2bd8",
+    "locationId": "pol-kazimi-c18a09ef",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "d365a778-6dd6-4185-b866-f15e3d69fccd",
+    "locationId": "pol-kazimi-c18a09ef",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "8a63b7fc-c80f-4efb-b409-8706778ea7af",
+    "locationId": "pol-kazimi-c18a09ef",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "d1017037-0a95-4373-af5d-c8f31e1549f4",
+    "locationId": "pol-kazimi-c18a09ef",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "81edf97c-ff1d-4623-b671-1776d1b30064",
+    "locationId": "cze-praga-39f04dd8",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "b97eb00a-90eb-4110-a1f3-35f7503aa45c",
+    "locationId": "cze-praga-39f04dd8",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "b92b9e68-f0e3-4a8d-a3f2-637979b63a84",
+    "locationId": "cze-praga-39f04dd8",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "12737de9-9c7b-4fc4-a791-bf216259aa76",
+    "locationId": "cze-praga-39f04dd8",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "c7ea7d91-53a2-4041-b252-32ad7801c576",
+    "locationId": "cze-praga-39f04dd8",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "3d7b9255-afd5-4301-8545-cad3d86be738",
+    "locationId": "cze-českýk-7b5d54d2",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "b6ba20e8-94d8-4a30-9eb3-4b21befbefae",
+    "locationId": "cze-českýk-7b5d54d2",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "b30dcbf6-d0df-4890-95e2-068cbaff8484",
+    "locationId": "cze-českýk-7b5d54d2",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "7fdaada2-6e33-4c2a-8eb5-57fdfea509d5",
+    "locationId": "cze-českýk-7b5d54d2",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "0147efbb-0cf9-43d2-b29e-06aebb398cc2",
+    "locationId": "cze-českýk-7b5d54d2",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "14b64f47-c4ef-4677-af51-60530a0a7a34",
+    "locationId": "cze-brno-583493f8",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "5ed15608-d950-4f30-a47f-cfeccc9e41c8",
+    "locationId": "cze-brno-583493f8",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "55f3e91f-cacd-4671-9f18-796c1fffdf8d",
+    "locationId": "cze-brno-583493f8",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "e85d2ade-88ae-4efd-925f-a718213ee155",
+    "locationId": "cze-brno-583493f8",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "ec864a44-1dca-47e6-b5d7-925a45401117",
+    "locationId": "cze-brno-583493f8",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "e34ea1c6-d1a7-4e4a-a9b1-d3d8c2259988",
+    "locationId": "cze-karlow-554817df",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "84404202-81f8-455d-b63a-5bc2bf7f531e",
+    "locationId": "cze-karlow-554817df",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "c00e2689-124e-43b8-ad2b-f73d408500f9",
+    "locationId": "cze-karlow-554817df",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "2f177969-72e3-4238-a256-652e5e90a502",
+    "locationId": "cze-karlow-554817df",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "648aaa16-d018-4f20-bff1-d20e1f96fd61",
+    "locationId": "cze-karlow-554817df",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "4cdff0cc-2e84-48c0-af31-bb2dd11d0257",
+    "locationId": "cze-telč-cf2b2729",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "9b53ee69-0031-4024-a5e1-8d8e2936308c",
+    "locationId": "cze-telč-cf2b2729",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "64a8086f-05d4-45ef-a2fc-278e9ae38c8c",
+    "locationId": "cze-telč-cf2b2729",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "cad6813a-02b3-4010-934d-c280e6733f22",
+    "locationId": "cze-telč-cf2b2729",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "1f498b0c-7d03-410d-b7b5-5758cbd9584d",
+    "locationId": "cze-telč-cf2b2729",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "c38ce896-183b-493a-9a83-c2035657b794",
+    "locationId": "cze-kutnáh-6e7cfa09",
+    "name": "Grand Hotel Europa",
+    "description": "Luksusowy hotel w centrum miasta z elegancko urządzonymi pokojami, spa i restauracją. Idealny dla podróży biznesowych i turystycznych.",
+    "price": 500,
+    "images": [
+      "https://u.profitroom.pl/2019-palac-alexandrinum-pl/thumb/1920x1080/uploads/Alexandrinum2zew_082022_45copy.jpg",
+      "https://tse4.mm.bing.net/th/id/OIP.DJqSTXtyHD95830UQ1ax3gHaEK?cb=12&pid=ImgDet&w=474&h=266&rs=1&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "8cdb47d6-2cd0-4053-88ee-19f5137cf5b3",
+    "locationId": "cze-kutnáh-6e7cfa09",
+    "name": "Boutique Palace Resort",
+    "description": "Klimatyczny boutique hotel z unikalnym wystrojem, personalną obsługą. Komfortowe pokoje z widokiem na miasto.",
+    "price": 400,
+    "images": [
+      "https://th.bing.com/th/id/R.469e4b467f2868445dd2fbcf33c1098c?rik=TiuhTHfzRRLf9A&pid=ImgRaw&r=0",
+      "https://i.pinimg.com/736x/73/12/d6/7312d65449497bc59829cb9b7cb63c72.jpg"
+    ]
+  },
+  {
+    "id": "0c0241e3-519f-491b-b929-8b341f92a7df",
+    "locationId": "cze-kutnáh-6e7cfa09",
+    "name": "Golden Crown Hotel",
+    "description": "Nowoczesny hotel z doskonałą lokalizacją blisko głównych atrakcji. Przestronne pokoje z pełnym wyposażeniem.",
+    "price": 300,
+    "images": [
+      "https://th.bing.com/th/id/R.cba835da6d6fd6757599f117cac6c184?rik=cCSXdzUpD7%2bL9w&riu=http%3a%2f%2fwww.homesquare.pl%2ffiles%2fuploads%2f2014%2f12%2fNowoczesny-hotel.jpg&ehk=WVJbKPRopOgqS22KnyLOagDkIgH8RTESs65tXqGqFnw%3d&risl=&pid=ImgRaw&r=0",
+      "https://tse2.mm.bing.net/th/id/OIP.Yvg9F9ZKEh17z8WQtqlngQHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  },
+  {
+    "id": "c0d75275-c187-4a84-a49e-f5840c88d9e2",
+    "locationId": "cze-kutnáh-6e7cfa09",
+    "name": "Royal Garden Suites",
+    "description": "Designerski hotel z artystycznym wystrojem i wyjątkową atmosferą. Każdy pokój to dzieło sztuki z nowoczesnymi udogodnieniami.",
+    "price": 200,
+    "images": [
+      "https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg",
+      "https://images.adsttc.com/media/images/634e/5c9b/eb99/d038/7eb2/b3a7/large_jpg/interior-focus-curves_8.jpg?1666079905"
+    ]
+  },
+  {
+    "id": "64235c76-c3e1-4b59-a3da-3fbfedc0c78d",
+    "locationId": "cze-kutnáh-6e7cfa09",
+    "name": "Emerald City Lodge",
+    "description": "Rodzinny i niedrogi hotel oferujący komfortowy pobyt ze śniadaniem. Pokoje z balkonami i pięknym widokiem na okolicę.",
+    "price": 100,
+    "images": [
+      "https://tse4.mm.bing.net/th/id/OIP.qhDkOvbVXX16YZE_ryh57gHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "https://tse1.mm.bing.net/th/id/OIP.RauVCLJO8UIGNclIJDBVTwHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+    ]
+  }
+]

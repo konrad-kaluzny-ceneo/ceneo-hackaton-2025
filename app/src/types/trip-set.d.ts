@@ -25,10 +25,8 @@ export interface AccommodationInTrip {
 
 export interface Destination {
   order: number;
-  transport?: TransportInTrip;
-  accommodation?: AccommodationInTrip | null;
-  transportId?: string;
-  accommodationId?: [string] | null;
+  transportId: string;
+  accommodationId: string | null;
 }
 
 export interface TripSet {
