@@ -20,6 +20,10 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
       <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300 h-full"></div>
 
       {trips.map((trip, index) => {
+        // Subtract 30 days to make trips appear as historical
+        const originalDate = new Date(trip.startDate);
+        originalDate.setDate(originalDate.getDate() - 30);
+        trip.startDate = originalDate;
         const isEven = index % 2 === 0;
 
         return (
@@ -68,9 +72,7 @@ export default function TripHistory({ trips, futureTrips }: TripHistoryProps) {
         </div>
       )}
 
-      {selectedTrip && <TripModal trip={selectedTrip} isOpen={!!selectedTrip} onClose={() => setSelectedTrip(null)} itsHistory={
-        selectedTrip.startDate < new Date()
-      } />}
+      {selectedTrip && <TripModal trip={selectedTrip} isOpen={!!selectedTrip} onClose={() => setSelectedTrip(null)} />}
 
       <div className="relative font-bold text-primary mt-[-20px] mb-4 z-50 bg-white rounded-lg p-4 flex items-center gap-2">
         <CalendarIcon className="w-4 h-4 text-primary" />

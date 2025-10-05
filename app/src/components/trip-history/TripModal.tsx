@@ -3,17 +3,18 @@
 import { TripSet } from "@/types/trip-set";
 import { buttonVariants } from "../ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
-import { Transport } from "@/types/transport";
 import { Accommodation } from "@/types/accommodation";
 
 interface TripModalProps {
   trip: TripSet;
   isOpen: boolean;
   onClose: () => void;
-  itsHistory: boolean;
 }
 
-export default function TripModal({ trip, isOpen, onClose, itsHistory }: TripModalProps) {
+export default function TripModal({ trip, isOpen, onClose}: TripModalProps) {
+  console.log(trip.startDate);
+  const itsPastEvent = new Date(trip.startDate) < new Date();
+  console.log("itsPastEvent", itsPastEvent);
   const allAccommodations = require("@/local-data/accommodations.json");
   const accommodations = trip.destinations.map((dest) => allAccommodations.find((accommodation: Accommodation) => accommodation.id === dest.accommodationId));
   const accommodationsToShow = accommodations.filter((accommodation: Accommodation) => accommodation !== undefined);
@@ -57,7 +58,7 @@ export default function TripModal({ trip, isOpen, onClose, itsHistory }: TripMod
         </div>
 
         <div className="flex gap-2">
-          <button className={buttonVariants({ variant: "default" })}>{itsHistory ? "Zobacz wycieczkę" : "Powtórz wycieczkę"}</button>
+          <button className={buttonVariants({ variant: "default" })}>{itsPastEvent ? "Powtórz wycieczkę" : "Sprawdź wycieczkę"}</button>
           <button className={buttonVariants({ variant: "outline" })}>Udostępnij</button>
         </div>
       </DialogContent>
