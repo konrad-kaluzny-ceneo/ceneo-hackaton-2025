@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <User />
         <Header />
-        <div>
+        <div className="mb-24">
           {children}
         </div>
         <Navbar />
