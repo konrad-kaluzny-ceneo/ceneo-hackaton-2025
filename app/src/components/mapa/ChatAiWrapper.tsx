@@ -36,7 +36,7 @@ export default function ChatAiWrapper({ locationId, locations }: Props) {
           <LocationMap locations={locations} maxHeight="34vh" />
         </div>
 
-        <div className="relative mt-3 flex h-[59vh] w-full">
+        <div className="relative mt-3 flex  w-full">
           <div className="flex h-[47vh] w-full">
             <ChatAiMessages />
           </div>
