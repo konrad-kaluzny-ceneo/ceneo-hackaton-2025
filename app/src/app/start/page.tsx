@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function StartPage() {
   return (
     <div 
-      className="flex justify-center items-center p-4 min-h-[calc(100vh-4rem)] bg-cover bg-center bg-no-repeat"
+      className="flex justify-center items-center p-4 bg-cover bg-center bg-no-repeat min-h-screen"
       style={{ backgroundImage: 'url(/images/icons/background.png)' }}
     >
       <div className="flex flex-col items-center w-full gap-8 text-primary">

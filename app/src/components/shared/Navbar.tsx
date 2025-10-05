@@ -10,8 +10,9 @@ export default function Navbar() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
-      <div className="flex justify-around items-center py-2 px-4 h-16 max-w-2xl mx-auto">
+    <div className="fixed bottom-4 left-4 right-4 z-50">
+      <div className="bg-white/95 rounded-full shadow-xl border border-gray-100 backdrop-blur-sm">
+        <div className="flex justify-around items-center py-3 px-6 h-16 max-w-2xl mx-auto">
         {/* <Link href="/" className={`flex flex-col items-center gap-1 min-w-0 ${
           isActive('/') ? 'text-primary' : 'text-gray-600'
         }`}>
@@ -48,6 +49,7 @@ export default function Navbar() {
           <History className="w-6 h-6" />
           <span className="text-xs">Historia</span>
         </Link>
+        </div>
       </div>
     </div>
   );
