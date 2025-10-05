@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { AudioLines, MapPin, RefreshCw, Loader2 } from "lucide-react";
+import { TreeDeciduous, MapPin, RefreshCw, Loader2, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useGeolocation } from "@/hooks/useGeolocation";
@@ -13,6 +13,7 @@ export default function RatingPage() {
   const [currentLocation, setCurrentLocation] = useState<string>("");
   const [loadingLocation, setLoadingLocation] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
+  const [isShared, setIsShared] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   
@@ -45,6 +46,15 @@ export default function RatingPage() {
   const handleShare = () => {
     const locationInfo = currentLocation ? ` w ${currentLocation}` : '';
     console.log(`Podzielenie się oceną: ${rating}%${locationInfo}`);
+    
+    // Pokaż feedback sukcesu
+    setIsShared(true);
+    
+    // Ukryj feedback po 3 sekundach
+    setTimeout(() => {
+      setIsShared(false);
+    }, 3000);
+    
     // Tutaj można dodać logikę udostępniania z informacją o lokalizacji
   };
 
@@ -129,27 +139,35 @@ export default function RatingPage() {
                 Lokalizacja niedostępna
               </div>
             )}
-              <button
+              {/* <button
                 onClick={handleRefreshLocation}
                 disabled={geoLoading || loadingLocation}
                 className="ml-2 p-1 hover:bg-blue-100 rounded-full transition-colors disabled:opacity-50"
                 title="Odśwież lokalizację"
               >
                 <RefreshCw className={cn("w-3 h-3", (geoLoading || loadingLocation) && "animate-spin")} />
-              </button>
+              </button> */}
           </div>
           
           <p className="text-gray-600">
             Przytrzymaj ikonę drzewa, aby ocenić poziom spokoju.
           </p>
         </div>
-
-        {/* Ikona drzewa z kółkiem */}
+        <div>
+        {/* Ikona drzewa z kółkiem i animacją fal */}
         <div className="relative flex justify-center">
+          {/* Animowane fale podczas przytrzymania */}
+          {isPressed && (
+            <>
+              <div className="absolute w-48 h-48 rounded-full bg-green-300 bg-opacity-30 animate-ping" style={{ animationDuration: '1s' }} />
+            </>
+          )}
+          
+          {/* Główne tło przycisku - zawsze widoczne */}
           <div 
             className={cn(
-              "w-40 h-40 rounded-full bg-green-100 bg-opacity-50 flex items-center justify-center transition-all duration-200 cursor-pointer select-none",
-              isPressed && "scale-95 bg-green-200"
+              "relative w-44 h-44 rounded-full bg-green-100 shadow-lg flex items-center justify-center transition-all duration-200 cursor-pointer select-none z-10 border-8 border-green-100",
+              isPressed && "scale-95 bg-green-100 shadow-xl border-green-300"
             )}
             onMouseDown={startRating}
             onMouseUp={stopRating}
@@ -157,20 +175,21 @@ export default function RatingPage() {
             onTouchStart={startRating}
             onTouchEnd={stopRating}
           >
+            {/* Wewnętrzne koło z gradientem */}
             <div 
               className={cn(
-                "w-32 h-32 rounded-full bg-green-200 bg-opacity-70 flex items-center justify-center transition-all duration-200",
-                isPressed && "bg-green-300 bg-opacity-80"
+                "w-36 h-36 rounded-full flex items-center justify-center transition-all duration-200",
+                isPressed && "from-green-500 to-green-200 scale-95"
               )}
             >
               <Image 
                 src="/images/tree.png" 
                 alt="tree" 
-                width={80} 
-                height={80}
+                width={110} 
+                height={110}
                 className={cn(
-                  "transition-transform duration-200",
-                  isPressed && "scale-110"
+                  "transition-transform duration-200 drop-shadow-sm",
+                  isPressed && "scale-120"
                 )}
               />
             </div>
@@ -189,18 +208,30 @@ export default function RatingPage() {
             {rating}%
           </div>
           <div className="flex items-center justify-center gap-2 text-gray-600">
-            <AudioLines className="w-4 h-4" />
+            <TreeDeciduous className="w-4 h-4" />
             <span>Poziom spokoju w tym miejscu</span>
           </div>
         </div>
+        </div>
+        
 
         {/* Przycisk */}
         <Button 
           onClick={handleShare}
-          className="w-full"
+          className={cn(
+            "w-full transition-all duration-300",
+            isShared && "bg-green-700 hover:bg-green-700"
+          )}
           disabled={rating === 0}
         >
-          Podziel się oceną ({rating}%)
+          {isShared ? (
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4" />
+              Ocena udostępniona!
+            </div>
+          ) : (
+            `Podziel się oceną (${rating}%)`
+          )}
         </Button>
       </div>
     </div>

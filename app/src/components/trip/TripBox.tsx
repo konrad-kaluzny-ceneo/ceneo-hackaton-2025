@@ -4,7 +4,7 @@ import Link from "next/link";
 import { buttonVariants } from "../ui/button";
 import { UserInfo } from "../user/UserInfo";
 import { User } from "@/types/user";
-import { AudioLines, HeartIcon, StarIcon } from "lucide-react";
+import { TreeDeciduous, HeartIcon, StarIcon } from "lucide-react";
 
 interface TripBoxProps {
   trip: TripSet;
@@ -59,7 +59,7 @@ export default function TripBox({ trip }: TripBoxProps) {
           </div>
 
           <div className="flex items-center gap-1.5">
-            <AudioLines className="w-4 h-4 text-primary fill-primary" />
+            <TreeDeciduous className="w-4 h-4 text-primary fill-primary" />
             <span className="text-sm font-medium">Poziom spokoju 100/100</span>
           </div>
 
