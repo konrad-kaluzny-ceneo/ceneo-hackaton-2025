@@ -26,7 +26,7 @@ export type TaskUpdateListener = (task: Task) => void;
 export class TaskQueue {
   private tasks = new Map<string, Task>();
   private listeners = new Map<string, Set<TaskUpdateListener>>();
-  private queue: Array<{ id: string; handler: TaskHandler }> = [];
+  private queue: Array<{ id: string; handler: TaskHandler; userId?: string; persistToDb?: boolean }> = [];
   private isProcessing = false;
   private wsManager: any = null; // Will be set via setWebSocketManager
 
@@ -42,7 +42,7 @@ export class TaskQueue {
    * @param handler The async function to execute
    * @returns Task ID for tracking
    */
-  enqueue<T>(handler: TaskHandler<T>): string {
+  enqueue<T>(handler: TaskHandler<T>, options?: { userId?: string; persistToDb?: boolean }): string {
     const taskId = this.generateTaskId();
     
     const task: Task<T> = {
@@ -53,12 +53,15 @@ export class TaskQueue {
     };
 
     this.tasks.set(taskId, task);
-    this.queue.push({ id: taskId, handler });
+    this.queue.push({ 
+      id: taskId, 
+      handler,
+      userId: options?.userId,
+      persistToDb: options?.persistToDb ?? false
+    });
     
-    // Notify listeners about new task
     this.notifyListeners(taskId, task);
     
-    // Start processing if not already running
     if (!this.isProcessing) {
       this.processQueue();
     }
@@ -154,32 +157,74 @@ export class TaskQueue {
       const task = this.tasks.get(item.id);
       if (!task) continue;
 
-      // Update task to running
       task.status = TaskStatus.RUNNING;
       task.startedAt = new Date();
       task.progress = 0;
       this.notifyListeners(item.id, task);
 
+      if (item.persistToDb) {
+        await this.persistTaskToDb(item.id, task, item.userId);
+      }
+
       try {
-        // Execute the task handler
         const result = await item.handler();
 
-        // Mark as completed
         task.status = TaskStatus.COMPLETED;
         task.result = result;
         task.progress = 100;
         task.completedAt = new Date();
         this.notifyListeners(item.id, task);
+
+        if (item.persistToDb) {
+          await this.persistTaskToDb(item.id, task, item.userId);
+        }
       } catch (error) {
-        // Mark as failed
         task.status = TaskStatus.FAILED;
         task.error = error instanceof Error ? error.message : String(error);
         task.completedAt = new Date();
         this.notifyListeners(item.id, task);
+
+        if (item.persistToDb) {
+          await this.persistTaskToDb(item.id, task, item.userId);
+        }
       }
     }
 
     this.isProcessing = false;
+  }
+
+  private async persistTaskToDb(taskId: string, task: Task, userId?: string): Promise<void> {
+    try {
+      const { db } = await import("@/db");
+      
+      const existingTask = await db.task.findUnique({ where: { id: taskId } });
+
+      const taskData = {
+        status: task.status,
+        progress: task.progress ?? 0,
+        result: task.result ? JSON.stringify(task.result) : null,
+        error: task.error ?? null,
+        userId: userId ?? null,
+        startedAt: task.startedAt,
+        completedAt: task.completedAt,
+      };
+
+      if (existingTask) {
+        await db.task.update({
+          where: { id: taskId },
+          data: taskData,
+        });
+      } else {
+        await db.task.create({
+          data: {
+            id: taskId,
+            ...taskData,
+          },
+        });
+      }
+    } catch (error) {
+      console.error("Failed to persist task to database:", error);
+    }
   }
 
   private notifyListeners(taskId: string, task: Task): void {
@@ -194,7 +239,7 @@ export class TaskQueue {
     }
   }
 
-  private generateTaskId(): string {
+  public generateTaskId(): string {
     return `task_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
   }
 }
