@@ -36,17 +36,9 @@ export default function TripBox({ trip }: TripBoxProps) {
           <p className="font-bold">Podgląd podróży:</p>
           <p>
             {trip.destinations
-              .map((dest: Destination, idx: number) => {
-                const cities = [];
-                if (idx === 0 && dest.transport) {
-                  cities.push(dest.transport.from.city);
-                }
-                if (dest.transport) {
-                  cities.push(dest.transport.destination.city);
-                }
-                return cities;
+              .map((dest: Destination) => {
+                return dest.transportId;
               })
-              .flat()
               .join(" → ")}
           </p>
         </div>

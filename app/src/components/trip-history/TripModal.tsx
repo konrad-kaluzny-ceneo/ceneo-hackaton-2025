@@ -41,17 +41,8 @@ export default function TripModal({ trip, isOpen, onClose }: TripModalProps) {
           <h3 className="text-lg font-semibold mb-3">Trasa wycieczki</h3>
           <div className="text-primary font-medium">
             {trip.destinations
-              .map((dest, idx) => {
-                const cities = [];
-                if (idx === 0 && dest.transport) {
-                  cities.push(dest.transport.from.city);
-                }
-                if (dest.transport) {
-                  cities.push(dest.transport.destination.city);
-                }
-                return cities;
-              })
-              .flat()
+              .map((dest) => dest.transportId)
+              .filter(Boolean)
               .join(" → ")}
           </div>
         </div>
