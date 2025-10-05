@@ -5,6 +5,8 @@ import { buttonVariants } from "../ui/button";
 import { UserInfo } from "../user/UserInfo";
 import { User } from "@/types/user";
 import { TreeDeciduous, HeartIcon, StarIcon } from "lucide-react";
+import { Transport } from "@/types/transport";
+import { Accommodation } from "@/types/accommodation";
 
 interface TripBoxProps {
   trip: TripSet;
@@ -12,6 +14,10 @@ interface TripBoxProps {
 
 export default function TripBox({ trip }: TripBoxProps) {
   const user = require("@/local-data/users.json").find((user: User) => user.id === trip.userId);
+  
+  const allAccommodations = require("@/local-data/accommodations.json");
+  const accommodations = trip.destinations.map((dest) => allAccommodations.find((accommodation: Accommodation) => accommodation.id === dest.accommodationId));
+  const accommodationsToShow = accommodations.filter((accommodation: Accommodation) => accommodation !== undefined);  
 
   return (
     <div key={trip.id} className="bg-white w-full rounded-2xl shadow-md overflow-hidden flex flex-col">
@@ -40,9 +46,9 @@ export default function TripBox({ trip }: TripBoxProps) {
         <div className="text-sm text-primary font-medium flex-col gap-1">
           <p className="font-bold">Podgląd podróży:</p>
           <p>
-            {trip.destinations
-              .map((dest: Destination) => {
-                return dest.transportId;
+            {accommodationsToShow
+              .map((accommodation: Accommodation) => {
+                return accommodation.name;
               })
               .join(" → ")}
           </p>

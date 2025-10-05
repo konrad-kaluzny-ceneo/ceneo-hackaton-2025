@@ -14,11 +14,7 @@ async function getTripHistory() {
 }
 
 async function getFutureTrips() {
-  const futureTripIds = require("@/local-data/future-trips.json");
-  const tripPropositions = require("@/local-data/trip-propositions.json");
-  const futureTrips = tripPropositions.filter((trip: TripSet) => 
-    futureTripIds.includes(trip.id)
-  );
+  const futureTrips = require("@/local-data/future-trips.json");
   return futureTrips;
 }
 
