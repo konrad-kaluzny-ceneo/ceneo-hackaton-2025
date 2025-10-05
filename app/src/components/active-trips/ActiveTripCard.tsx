@@ -34,9 +34,34 @@ function formatDate(dateString: string) {
 }
 
 export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
-  const completedSteps = trip.bookingStatus.transport ? 1 : 0;
-  const totalSteps = trip.destinations.length;
-  const progressPercentage = (completedSteps / totalSteps) * 100;
+  // Oblicz rzeczywisty postęp na podstawie dat
+  const calculateProgress = () => {
+    const now = new Date();
+    const startDate = new Date(trip.startDate);
+    const endDate = new Date(trip.endDate);
+    
+    // Jeśli trip jeszcze się nie rozpoczął
+    if (now < startDate) {
+      return { progressPercentage: 0, completedDays: 0, totalDays: trip.duration };
+    }
+    
+    // Jeśli trip się już skończył
+    if (now > endDate) {
+      return { progressPercentage: 100, completedDays: trip.duration, totalDays: trip.duration };
+    }
+    
+    // Trip jest w trakcie - oblicz ile dni minęło
+    const totalMs = endDate.getTime() - startDate.getTime();
+    const elapsedMs = now.getTime() - startDate.getTime();
+    const progressPercentage = Math.max(0, Math.min(100, (elapsedMs / totalMs) * 100));
+    
+    const completedDays = Math.floor(elapsedMs / (1000 * 60 * 60 * 24)) + 1; // +1 bo pierwszy dzień też się liczy
+    const totalDays = trip.duration;
+    
+    return { progressPercentage, completedDays, totalDays };
+  };
+
+  const { progressPercentage, completedDays, totalDays } = calculateProgress();
 
   const handleMoodRating = (rating: { peacefulness: number; excitement: number; comfort: number; overall: number }) => {
     // Tutaj można dodać logikę zapisywania oceny
@@ -77,10 +102,12 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm font-medium text-gray-600">Status</span>
               <Badge 
-                variant={trip.bookingStatus.overall ? "default" : "secondary"}
+                variant={progressPercentage >= 100 ? "default" : progressPercentage > 0 ? "secondary" : "outline"}
                 aria-label={`Status rezerwacji: ${trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}`}
               >
-                {trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}
+                
+                {progressPercentage >= 100 ? "Zakończona" : progressPercentage > 0 ? "W trakcie" : "Nadchodząca"}
+              
               </Badge>
             </div>
 
@@ -89,7 +116,7 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
               <div className="flex justify-between text-sm text-gray-600 mb-2">
                 <span>Postęp podróży</span>
                 <span aria-label={`Ukończono ${completedSteps} z ${totalSteps} kroków`}>
-                  {completedSteps}/{totalSteps} kroków
+                  {completedDays}/{totalDays} dni ({Math.round(progressPercentage)}%)
                 </span>
               </div>
               <Progress 
@@ -97,6 +124,11 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
                 className="h-2" 
                 aria-label={`Postęp podróży: ${Math.round(progressPercentage)} procent`}
               />
+              {progressPercentage > 0 && progressPercentage < 100 && (
+                <div className="text-xs text-gray-500 mt-1">
+                  Pozostało {totalDays - completedDays} dni
+                </div>
+              )}
             </div>
 
             {/* Current location */}

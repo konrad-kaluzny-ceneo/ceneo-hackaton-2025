@@ -11,10 +11,10 @@ const convertToActiveTrips = (): ActiveTrip[] => {
   const trips: ActiveTrip[] = [];
   
   // Dodaj przyszłą podróż jako aktywną
-  userSets.filter(set => set.state === "future").forEach(futureSet => {
+  userSets.filter(set => set.state === "active").forEach(futureSet => {
       trips.push({
         ...futureSet,
-        state: "future",
+        state: "active",
         userId: "user-1",
         startDate: new Date(futureSet.startDate),
         endDate: new Date(new Date(futureSet.startDate).getTime() + futureSet.duration * 24 * 60 * 60 * 1000),
@@ -46,14 +46,14 @@ const convertToActiveTrips = (): ActiveTrip[] => {
     });
   
   // Dodaj historyczną podróż
-  userSets.filter(set => set.state === "history").forEach(historySet => {
+  userSets.filter(set => set.state === "future").forEach(historySet => {
     trips.push({
       ...historySet,
-      state: "history",
+      state: "future",
       id: "trip-set-002", // Unikalny ID
       userId: "user-1", 
-      startDate: new Date("2025-09-20T12:15:00Z"),
-      endDate: new Date("2025-09-27T12:15:00Z"),
+      startDate: new Date(historySet.startDate),
+      endDate: new Date(new Date(historySet.startDate).getTime() + historySet.duration * 24 * 60 * 60 * 1000),
       isActive: false,
       currentStep: historySet.destinations.length,
       currentLocation: "Karlowe Wary",
@@ -93,8 +93,8 @@ export default function ActiveTripsClient() {
         <h1 className="text-3xl font-bold text-primary">Twoja podróż</h1>
       </MaxWidthWrapper>
 
-      {activeTrips.map((trip: ActiveTrip) => (
-        <ActiveTripCard key={trip.id} trip={trip} />
+      {activeTrips.map((trip: ActiveTrip, idx) => (
+        <ActiveTripCard key={idx} trip={trip} />
       ))}
     </main>
   );

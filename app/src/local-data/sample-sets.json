@@ -1,11 +1,11 @@
 [
   {
-    "state": "future",
+    "state": "active",
     "id": "trip-set-001",
     "userId": "user-1",
-    "name": "Magiczne Trio: Kraków - Praga - Brno",
+    "name": "Magiczne Trio: Kraków, Praga, Brno",
     "totalPrice": 2847.23,
-    "startDate": "2025-10-09T12:15:00Z",
+    "startDate": "2025-10-03T12:15:00Z",
     "duration": 7,
     "image": "https://gte-gcms.images.tshiftcdn.com/resize=width:2048,fit:max/bfDSvRnSiar1ypUJD7nf?crop=1.91:1&width=1200&fit=crop",
     "destinations": [
@@ -31,16 +31,15 @@
       }
     ]
   },
-
   {
-    "state": "history",
+    "state": "future",
     "id": "trip-set-001",
     "userId": "user-1",
-    "name": "Weekend w Karlowych Warach – relaks i historia",
+    "name": "Europejskie Skarby w Tydzień",
     "totalPrice": 2847.23,
     "startDate": "2025-10-09T12:15:00Z",
     "duration": 7,
-    "image": "https://cdn.tripzaza.com/pl/destinations/wp-content/uploads/2018/11/6-Karlovy_Vary_-_Market_Colonnade-e1541130456260.jpg",
+    "image": "https://tse4.mm.bing.net/th/id/OIP.xxhVFMmJAqVNvsaEbJqPIwHaDt?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
     "destinations": [
       {
         "order": 1,
@@ -50,6 +49,38 @@
       {
         "order": 2,
         "transportId": "set2-2",
+        "accommodationId": null
+      }
+    ]
+  },
+  {
+    "state": "future",
+    "id": "trip-set-001",
+    "userId": "user-1",
+    "name": "Magiczne Trio: Kraków, Praga, Brno",
+    "totalPrice": 2847.23,
+    "startDate": "2025-10-16T12:15:00Z",
+    "duration": 7,
+    "image": "https://gte-gcms.images.tshiftcdn.com/resize=width:2048,fit:max/bfDSvRnSiar1ypUJD7nf?crop=1.91:1&width=1200&fit=crop",
+    "destinations": [
+      {
+        "order": 1,
+        "transportId": "set1-1",
+        "accommodationId": "a6a76008-ea99-441b-8cdb-737aa8000391"
+      },
+      {
+        "order": 2,
+        "transportId": "set1-2",
+        "accommodationId": "5ed15608-d950-4f30-a47f-cfeccc9e41c8"
+      },
+      {
+        "order": 3,
+        "transportId": "set1-3",
+        "accommodationId": "12737de9-9c7b-4fc4-a791-bf216259aa76"
+      },
+      {
+        "order": 4,
+        "transportId": "set1-4",
         "accommodationId": null
       }
     ]

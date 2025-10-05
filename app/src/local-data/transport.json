@@ -2,9 +2,9 @@
   {
     "id": "set1-1",
     "fromLocationId": "pol-warsza-48f4430f",
-    "fromDate": "2025-10-09T12:15:00Z",
+    "fromDate": "2025-10-03T12:15:00Z",
     "toLocationId": "pol-kra-30cfd729",
-    "toDate": "2025-10-09T15:46:00Z",
+    "toDate": "2025-10-03T15:46:00Z",
     "price": 131.66,
     "name": "PKP Intercity",
     "type": "train"
@@ -12,9 +12,9 @@
   {
     "id": "set1-2",
     "fromLocationId": "pol-kra-30cfd729",
-    "fromDate": "2025-10-11T12:15:00Z",
+    "fromDate": "2025-10-05T12:15:00Z",
     "toLocationId": "cze-brno-583493f8",
-    "toDate": "2025-10-11T15:46:00Z",
+    "toDate": "2025-10-05T15:46:00Z",
     "price": 111.56,
     "name": "Eurowings",
     "type": "flight"
@@ -22,9 +22,9 @@
   {
     "id": "set1-3",
     "fromLocationId": "cze-brno-583493f8",
-    "fromDate": "2025-10-13T12:15:00Z",
+    "fromDate": "2025-10-08T12:15:00Z",
     "toLocationId": "cze-praga-39f04dd8",
-    "toDate": "2025-10-13T15:46:00Z",
+    "toDate": "2025-10-08T15:46:00Z",
     "price": 267.56,
     "name": "KLM",
     "type": "train"
