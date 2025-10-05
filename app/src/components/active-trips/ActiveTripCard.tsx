@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ActiveTrip } from "@/types/active-trip";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -34,6 +34,14 @@ function formatDate(dateString: string) {
 }
 
 export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
+  // Stan dla hydration fix
+  const [isClient, setIsClient] = useState(false);
+  const [progressData, setProgressData] = useState({
+    progressPercentage: 0,
+    completedDays: 0,
+    totalDays: trip.duration
+  });
+
   // Oblicz rzeczywisty postęp na podstawie dat
   const calculateProgress = () => {
     const now = new Date();
@@ -61,7 +69,13 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
     return { progressPercentage, completedDays, totalDays };
   };
 
-  const { progressPercentage, completedDays, totalDays } = calculateProgress();
+  // useEffect dla client-side calculations
+  useEffect(() => {
+    setIsClient(true);
+    setProgressData(calculateProgress());
+  }, []);
+
+  const { progressPercentage, completedDays, totalDays } = progressData;
 
   const handleMoodRating = (rating: { peacefulness: number; excitement: number; comfort: number; overall: number }) => {
     // Tutaj można dodać logikę zapisywania oceny
@@ -102,12 +116,10 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm font-medium text-gray-600">Status</span>
               <Badge 
-                variant={progressPercentage >= 100 ? "default" : progressPercentage > 0 ? "secondary" : "outline"}
+                variant={isClient && progressPercentage >= 100 ? "default" : isClient && progressPercentage > 0 ? "secondary" : "outline"}
                 aria-label={`Status rezerwacji: ${trip.bookingStatus.overall ? "Zarezerwowane" : "W trakcie"}`}
               >
-                
-                {progressPercentage >= 100 ? "Zakończona" : progressPercentage > 0 ? "W trakcie" : "Nadchodząca"}
-              
+                {!isClient ? "Ładowanie..." : progressPercentage >= 100 ? "Zakończona" : progressPercentage > 0 ? "W trakcie" : "Nadchodząca"}
               </Badge>
             </div>
 
@@ -115,16 +127,16 @@ export default function ActiveTripCard({ trip }: ActiveTripCardProps) {
             <div className="mb-4">
               <div className="flex justify-between text-sm text-gray-600 mb-2">
                 <span>Postęp podróży</span>
-                <span aria-label={`Ukończono ${completedSteps} z ${totalSteps} kroków`}>
-                  {completedDays}/{totalDays} dni ({Math.round(progressPercentage)}%)
+                <span aria-label={`Ukończono ${completedDays} z ${totalDays} dni`}>
+                  {completedDays}/{totalDays} dni {isClient && `(${Math.round(progressPercentage)}%)`}
                 </span>
               </div>
               <Progress 
-                value={progressPercentage} 
+                value={isClient ? progressPercentage : 0} 
                 className="h-2" 
                 aria-label={`Postęp podróży: ${Math.round(progressPercentage)} procent`}
               />
-              {progressPercentage > 0 && progressPercentage < 100 && (
+              {isClient && progressPercentage > 0 && progressPercentage < 100 && (
                 <div className="text-xs text-gray-500 mt-1">
                   Pozostało {totalDays - completedDays} dni
                 </div>
