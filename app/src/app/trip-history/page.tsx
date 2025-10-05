@@ -24,7 +24,7 @@ export default async function TripHistoryPage() {
   const futureTrips = await getFutureTrips();
   
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4">
       <MaxWidthWrapper className="w-full">
         <h1 className="text-3xl font-bold text-primary mb-8">Historia Wycieczek</h1>
         <TripHistory trips={trips} futureTrips={futureTrips} />
