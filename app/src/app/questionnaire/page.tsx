@@ -119,9 +119,9 @@ export default function QuestionnairePage() {
               <div className="flex flex-col gap-3 mt-6 items-center">
                 <Textarea
                   value={selectedAnswers[questions[currentQuestion].id]}
-                  className="w-full bg-white"
+                  className="w-full bg-white text-sm"
                   onChange={handleTextInputChange}
-                  placeholder="Wpisz swoją odpowiedź"
+                  placeholder={questions[currentQuestion].description || "Wpisz swoją odpowiedź"}
                 />
                 {/* Przycisk dalej */}
                 <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>

@@ -4,4 +4,5 @@ export type Question = {
   answers: string[];
   type: "radio" | "text";
   image: string;
+  description: string | null;
 };
