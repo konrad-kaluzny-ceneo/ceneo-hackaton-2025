@@ -98,7 +98,7 @@ const mockActiveTrips: ActiveTrip[] = [
 
 export default function ActiveTripsClient() {
   return (
-    <main className="min-h-screen flex flex-col gap-4">
+    <main className="flex flex-col gap-4">
       <MaxWidthWrapper className="py-6">
         <h1 className="text-3xl font-bold text-primary">Twoja podróż</h1>
       </MaxWidthWrapper>

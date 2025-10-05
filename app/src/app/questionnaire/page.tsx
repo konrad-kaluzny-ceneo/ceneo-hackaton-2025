@@ -54,7 +54,7 @@ export default function QuestionnairePage() {
 
   const newLocal = "w-full flex flex-col gap-8 max-w-2xl";
   return (
-    <div className="flex justify-center items-center min-h-screen p-4">
+    <div className="flex justify-center items-center p-4">
       <div className={newLocal}>
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
