@@ -33,11 +33,11 @@ export default function ChatAiWrapper({ locationId, locations }: Props) {
     <ChatAiContextProvider locationId={locationId}>
       <div className="flex flex-col">
         <div className="w-full">
-          <LocationMap locations={locations} maxHeight="34vh" />
+          <LocationMap locations={locations} maxHeight="55vh" />
         </div>
 
         <div className="relative mt-3 flex  w-full">
-          <div className="flex h-[47vh] w-full">
+          <div className="flex h-[27vh] w-full">
             <ChatAiMessages />
           </div>
           <div className="absolute bottom-0 left-0 w-full p-4">
