@@ -6,13 +6,8 @@ import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
-
-type Question = {
-  id: number;
-  text: string;
-  answers: string[];
-  image: string;
-};
+import { Question } from "@/types/question";
+import { Textarea } from "@/components/ui/textarea";
 
 const questions: Question[] = require("@/local-data/questions.json");
 
@@ -50,6 +45,13 @@ export default function QuestionnairePage() {
     }
   };
 
+  const handleTextInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setSelectedAnswers((prev) => ({
+      ...prev,
+      [questions[currentQuestion].id]: e.target.value,
+    }));
+  };
+
   const isAnswerSelected = selectedAnswers[questions[currentQuestion].id] !== undefined;
 
   const newLocal = "w-full flex flex-col gap-8 max-w-2xl";
@@ -65,7 +67,7 @@ export default function QuestionnairePage() {
           </div>
         </div>
       )}
-      
+
       <div className={newLocal}>
         {/* Nagłówek */}
         <div className="text-center space-y-2 flex flex-col items-center">
@@ -86,29 +88,49 @@ export default function QuestionnairePage() {
         <div className="text-center space-y-4">
           <h2 className="text-xl font-medium text-gray-900">{questions[currentQuestion].text}</h2>
 
-          {/* Odpowiedzi jako chipy */}
-          <div className="flex flex-col gap-3 mt-6 items-center">
-            {questions[currentQuestion].answers.map((answer, index) => (
-              <Badge
-                key={index}
-                variant={selectedAnswers[questions[currentQuestion].id] === answer ? "default" : "outline"}
-                className={`
-                  py-3 px-6 cursor-pointer text-base font-normal justify-center
-                  transition-all duration-200 hover:shadow-md
-                  ${selectedAnswers[questions[currentQuestion].id] === answer ? "bg-primary text-white hover:bg-primary" : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"}
-                `}
-                onClick={() => { handleAnswerSelect(answer); handleNext(); }}
-              >
-                {answer}
-              </Badge>
-            ))}
-          </div>
-        </div>
+          {questions[currentQuestion].type === "radio" && (
+            <>
+              {/* Odpowiedzi jako chipy */}
+              <div className="grid grid-cols-2 justify-center gap-3 mt-6 items-center">
+                {questions[currentQuestion].answers.map((answer, index) => (
+                  <Badge
+                    key={index}
+                    variant={selectedAnswers[questions[currentQuestion].id] === answer ? "default" : "outline"}
+                    className={`
+                py-3 px-6 cursor-pointer text-base font-normal justify-center w-full
+                transition-all duration-200 hover:shadow-md
+                ${selectedAnswers[questions[currentQuestion].id] === answer ? "bg-primary text-white hover:bg-primary" : "bg-white text-gray-700 border-gray-300 hover:border-[#3D5A4C] hover:bg-gray-50"}
+              `}
+                    onClick={() => {
+                      handleAnswerSelect(answer);
+                      handleNext();
+                    }}
+                  >
+                    {answer}
+                  </Badge>
+                ))}
+              </div>
+            </>
+          )}
 
-        {/* Przycisk dalej */}
-        {/* <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
-          {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
-        </Button> */}
+          {questions[currentQuestion].type === "text" && (
+            <>
+              {/* Odpowiedzi jako chipy */}
+              <div className="flex flex-col gap-3 mt-6 items-center">
+                <Textarea
+                  value={selectedAnswers[questions[currentQuestion].id]}
+                  className="w-full bg-white"
+                  onChange={handleTextInputChange}
+                  placeholder="Wpisz swoją odpowiedź"
+                />
+                {/* Przycisk dalej */}
+                <Button onClick={handleNext} disabled={!isAnswerSelected || isLoading}>
+                  {currentQuestion < questions.length - 1 ? "Dalej" : "Zakończ"}
+                </Button>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

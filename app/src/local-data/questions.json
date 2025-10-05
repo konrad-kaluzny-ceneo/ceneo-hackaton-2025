@@ -1,64 +1,65 @@
 [
     {
         "id": 1,
-        "text": "Jak się dzisiaj czujesz?",
+        "text": "Jaki typ podróży Cię interesuje?",
         "answers": [
-            "Szukam ciszy i spokoju",
-            "Marzę o odleceniu się od dzieci",
-            "Chcę kontaktu z naturą"
+            "Rodzinna",
+            "Budżetowa",
+            "Eksluzywna"
         ],
+        "type": "radio",
         "image": "/images/questions/question_1.png"
     },
     {
         "id": 2,
+        "text": "Jaki typ aktywności najbardziej Cię interesuje?",
+        "answers": [
+            "Sport",
+            "Kultura",
+            "Relaks",
+            "Nocne życie"
+        ],
+        "type": "radio",
+        "image": "/images/questions/question_1.png"
+    },
+    {
+        "id": 3,
         "text": "Jaki jest Twój budżet na podróż?",
         "answers": [
             "Do 2000 zł",
             "2000-5000 zł",
             "Powyżej 5000 zł"
         ],
-        "image": "/images/questions/question_1.png"
-    },
-    {
-        "id": 3,
-        "text": "Z kim planujesz podróż?",
-        "answers": [
-            "Sam/Sama",
-            "Z partnerem",
-            "Z rodziną",
-            "Ze znajomymi"
-        ],
+        "type": "radio",
         "image": "/images/questions/question_1.png"
     },
     {
         "id": 4,
-        "text": "Jak długo chcesz wyjechać?",
+        "text": "Jak długa ma być to podróż?",
         "answers": [
-            "Weekend (2-3 dni)",
+            "Weekend",
             "Tydzień",
-            "Dwa tygodnie lub więcej"
+            "2 tygodnie",
+            "Więcej niż 2 tygodnie"
         ],
+        "type": "radio",
         "image": "/images/questions/question_1.png"
     },
     {
         "id": 5,
-        "text": "Jaki typ aktywności Cię interesuje?",
-        "answers": [
-            "Relaks i odpoczynek",
-            "Zwiedzanie i kultura",
-            "Sport i przygoda",
-            "Życie nocne"
-        ],
-        "image": "/images/questions/question_1.png"
-    },
-    {
-        "id": 6,
         "text": "Jaki klimat preferujesz?",
         "answers": [
             "Ciepło i słońce",
             "Umiarkowany",
             "Zimno i góry"
         ],
+        "type": "radio",
+        "image": "/images/questions/question_1.png"
+    },
+    {
+        "id": 6,
+        "text": "Jest coś jeszcze, co powinienem wiedzieć?",
+        "type": "text",
         "image": "/images/questions/question_1.png"
     }
 ]
