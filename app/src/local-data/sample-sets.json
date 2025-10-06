@@ -57,11 +57,11 @@
     "state": "future",
     "id": "trip-set-001",
     "userId": "user-1",
-    "name": "Magiczne Trio: Kraków, Praga, Brno",
+    "name": "Czeskie Impresje: Kutna Hora, Karlowe Wary, Praga",
     "totalPrice": 2847.23,
     "startDate": "2025-10-16T12:15:00Z",
     "duration": 7,
-    "image": "https://gte-gcms.images.tshiftcdn.com/resize=width:2048,fit:max/bfDSvRnSiar1ypUJD7nf?crop=1.91:1&width=1200&fit=crop",
+    "image": "https://cdn.tripzaza.com/pl/destinations/wp-content/uploads/2018/11/6-Karlovy_Vary_-_Market_Colonnade-e1541130456260.jpg",
     "destinations": [
       {
         "order": 1,
