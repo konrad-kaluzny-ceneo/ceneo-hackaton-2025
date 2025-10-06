@@ -52,6 +52,7 @@ const getAccommodationById = (id: string | null) => {
 export default function TripDetail({ trip }: TripDetailProps) {
   return (
     <main className="flex flex-col gap-4">
+      
       <div className="relative">
         <div className="relative h-64 w-full">
           <img
@@ -63,25 +64,27 @@ export default function TripDetail({ trip }: TripDetailProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <div className="absolute bottom-4 left-4 right-4 pb-4">
-            <h1 className="text-white text-2xl font-bold mb-2">{trip.name}</h1>
-            <div className="text-white/90 text-sm">
-              {trip.duration} dni • {trip.totalPrice} PLN
-            </div>
+            <MaxWidthWrapper className="flex flex-col gap-2">
+              <h1 className="text-white text-2xl font-bold mb-2">{trip.name}</h1>
+              <div className="text-white/90 text-sm">
+                {trip.duration} dni • {trip.totalPrice} PLN
+              </div>
+            </MaxWidthWrapper>
           </div>
         </div>
       </div>
-      <div className="bg-white rounded-2xl p-6 shadow-lg mx-4 mt-[-30px] z-100">
-        <h2 className="text-primary text-xl font-bold mb-4">Opcje zakupu</h2>
-
-        <div className="space-y-3 flex flex-col gap-2">
-          <Button variant="default">Zakup cały zestaw - {trip.totalPrice} PLN</Button>
-        </div>
-
-        <div className="mt-6 space-y-4">
-          <Friends />
-        </div>
-      </div>
       <MaxWidthWrapper className="flex flex-col gap-2">
+        <div className="bg-white rounded-2xl p-6 shadow-lg mt-[-30px] z-100">
+          <h2 className="text-primary text-xl font-bold mb-4">Opcje zakupu</h2>
+
+          <div className="space-y-3 flex flex-col gap-2">
+            <Button variant="default">Zakup cały zestaw - {trip.totalPrice} PLN</Button>
+          </div>
+
+          <div className="mt-6 space-y-4">
+            <Friends />
+          </div>
+        </div>
         <div className="relative">
           <div className="absolute left-8 top-5 bottom-5 w-0.5 bg-primary" />
 
@@ -118,7 +121,7 @@ export default function TripDetail({ trip }: TripDetailProps) {
                   {accommodation && (
                     <div className="bg-primary/10 rounded-2xl p-4 mb-4">
                       <div className="flex items-start gap-2">
-                        <Sparkles className="w-12 h-12 text-primary" />
+                        <Sparkles className="w-5 h-5 text-primary" />
                         <p className="text-sm text-gray-700">Pamiętaj o czasie na odbiór bagażu i transfer z lotniska na dworzec kolejowy w {cityTo}.</p>
                       </div>
                     </div>
@@ -142,7 +145,7 @@ export default function TripDetail({ trip }: TripDetailProps) {
                 {idx === trip.destinations.length - 1 && (
                   <div className="bg-[#f5f5f5] rounded-xl p-4 mb-6">
                     <div className="flex items-start gap-2">
-                      <Sparkles className="w-12 h-12 text-primary" />
+                      <Sparkles className="w-5 h-5 text-primary" />
                       <p className="text-sm text-gray-700">Jesteś na miejscu! Dobra robota. Pamiętaj, żeby w wolnej chwili odwiedzić pobliskie wodospady 💦</p>
                     </div>
                   </div>
